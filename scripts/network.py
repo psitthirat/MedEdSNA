@@ -1,5 +1,6 @@
 import pandas as pd
 import numpy as np
+from tqdm import tqdm
 import networkx as nx
 import community as community_louvain
 from collections import defaultdict
@@ -20,7 +21,7 @@ def network_coauthorship(df, node_col, node_label=None, filter_col=None, filter_
     # Track frequency of each node (country or author) by DOI presence
     node_frequency = df_nx.groupby(node_col)['DOI'].nunique().to_dict()
 
-    for doi, group in grouped:
+    for doi, group in tqdm(grouped, total=len(grouped), desc="Building coauthorship graph"):
         authors = group[node_col].dropna().unique()
         for i, author1 in enumerate(authors):
             for author2 in authors[i + 1:]:
@@ -51,22 +52,20 @@ def network_params(df, G, filter_col=None, filter_value=None, homophily_attr=Non
     single_author = sum(1 for _, group in grouped if len(group['Author ID'].dropna().unique()) == 1)
     single_country = sum(1 for _, group in grouped if len(group['Country'].dropna().unique()) == 1)    
 
+    # if centralities:
+        
     # Centralities
     degree_centrality = nx.degree_centrality(G)
     betweenness_centrality = nx.betweenness_centrality(G)
     closeness_centrality = nx.closeness_centrality(G)
     eigenvector_centrality = nx.eigenvector_centrality(G, max_iter=1000, tol=1e-06) if G.number_of_nodes() > 0 else {}
-
-    for node in G.nodes():
-        G.nodes[node]['degree_centrality'] = degree_centrality.get(node, 0)
-        G.nodes[node]['betweenness_centrality'] = betweenness_centrality.get(node, 0)
-        G.nodes[node]['closeness_centrality'] = closeness_centrality.get(node, 0)
-        G.nodes[node]['eigenvector_centrality'] = eigenvector_centrality.get(node, 0)
-
+        
+    print('Analysed centrality successfully.')
+    
     # Community detection and modularity
     node_community = community_louvain.best_partition(G, random_state=42)
     nx.set_node_attributes(G, node_community, 'modularity_class')
-    modularity_score = community_louvain.modularity(node_community, G)
+    modularity_score = community_louvain.modularity(node_community, G, weight='weight')
     num_communities = len(set(node_community.values()))
 
     # Participation Coefficient
@@ -88,6 +87,8 @@ def network_params(df, G, filter_col=None, filter_value=None, homophily_attr=Non
     avg_participation = np.mean(list(participation_coefficients.values())) if participation_coefficients else 0
     top_participation = max(participation_coefficients.values()) if participation_coefficients else 0
 
+    print('Analysed community and participation coefficient successfully.')
+
     # Graph-level stats
     num_nodes = G.number_of_nodes()
     num_edges = G.number_of_edges()
@@ -107,15 +108,36 @@ def network_params(df, G, filter_col=None, filter_value=None, homophily_attr=Non
 
         largest_nodes = G_largest.number_of_nodes()
 
-        if G_largest.number_of_nodes() > 1:
+        if G_largest.number_of_nodes() > 1:            
             avg_shortest_path = nx.average_shortest_path_length(G_largest)
+            
+            C_rand_list = []
+            L_rand_list = []
+            
+            for _ in range(10):
+                
+                # Generate a random graph with the same number of nodes and edges
+                G_rand = nx.gnm_random_graph(n=G.number_of_nodes(), m=G.number_of_edges())
+                if nx.is_connected(G_rand):
+                    C_rand = nx.average_clustering(G_rand)
+                    L_rand = nx.average_shortest_path_length(G_rand)
+                    C_rand_list.append(C_rand)
+                    L_rand_list.append(L_rand)
+                    
+            C_rand_avg = sum(C_rand_list) / len(C_rand_list)
+            L_rand_avg = sum(L_rand_list) / len(L_rand_list)
+                    
             diameter = nx.diameter(G_largest)
-            small_world = avg_clustering / avg_shortest_path if avg_shortest_path else np.nan
+            
+            small_world = (avg_clustering / C_rand_avg) / (avg_shortest_path / L_rand_avg) if avg_shortest_path else np.nan
+            
         else:
             avg_shortest_path = diameter = small_world = np.nan
     else:
         avg_shortest_path = diameter = small_world = np.nan
         largest_nodes = np.nan
+
+    print('Analysed shortest path successfully.')
 
     # Homophily (fraction of same-attribute links)
     homophily_results = {}
@@ -130,6 +152,8 @@ def network_params(df, G, filter_col=None, filter_value=None, homophily_attr=Non
                     same += 1
                 total += 1
             homophily_results[f"Homophily on {attr}"] = same / total if total > 0 else np.nan
+
+    print('Analysed homophily successfully.')
 
     # Collect into dictionary
     network_stats = {

@@ -1,0 +1,26 @@
+# Utilities
+pandas
+numpy
+tqdm
+ipywidgets
+
+# Statistical
+scipy
+
+# Language modeling
+fuzzywuzzy
+stanza
+
+# Geoutilities
+geopandas
+geopy
+
+# Social network analysis
+networkx
+python-louvain
+
+# Visualization
+matplotlib
+plotly
+nbformat
+upsetplot
