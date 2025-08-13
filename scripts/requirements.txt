@@ -3,9 +3,13 @@ pandas
 numpy
 tqdm
 ipywidgets
+tabulate
+openpyxl
 
 # Statistical
 scipy
+scikit-learn
+statsmodels
 
 # Language modeling
 fuzzywuzzy
