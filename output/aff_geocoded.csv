@@ -1443,7 +1443,7 @@
 1441,"Wegner Health Sciences Library, University of South Dakota, Sioux Falls, SD, United States","Sioux Falls, SD, United States","Wegner Health Sciences Library, University of South Dakota",43.5476008,-96.7293629,USA,North America
 1442,"Faculty Educational Development, Department of Medicine, Johns Hopkins University School of Medicine, Baltimore, MD, United States","Baltimore, MD, United States","Faculty Educational Development, Department of Medicine, Johns Hopkins University School of Medicine",39.2908816,-76.610759,USA,North America
 1443,"Department of Surgery, Graduate Medical Education, University of Alabama at Birmingham, Birmingham, AL, United States","Birmingham, Birmingham, AL, United States","Department of Surgery, Graduate Medical Education, University of Alabama",33.5123059,-86.8071775,USA,North America
-1444,"Pbi Education, Jacksonville, FL, United States","Jacksonville, FL, United States",Pbi Education,12.7985512,99.968988351087,THA,Asia
+1444,"Pbi Education, Jacksonville, FL, United States","Jacksonville, FL, United States",Pbi Education,30.31976160566768,-81.65594177723246,USA,North America
 1445,"Biostatistics, Epidemiology, and Research Design (BERD) Methods Core, Department of Biostatistics and Bioinformatics, Duke University School of Medicine, Durham, NC, United States","Durham, NC, United States","Research Design, BERD, Methods Core, Department of Biostatistics and Bioinformatics, Duke University School of Medicine",35.996653,-78.9018053,USA,North America
 1446,"Department of Biostatistics and Bioinformatics, Duke University School of Medicine, Durham, NC, United States","Durham, NC, United States","Department of Biostatistics and Bioinformatics, Duke University School of Medicine",35.996653,-78.9018053,USA,North America
 1447,"Quantitative Sciences Unit, Department of Medicine, Stanford University School of Medicine, Palo Alto, CA, United States","Palo Alto, CA, United States","Quantitative Sciences Unit, Department of Medicine, Stanford University School of Medicine",37.4443293,-122.1598465,USA,North America
@@ -1487,8 +1487,8 @@
 1485,"Department of Educational Development and Research, Faculty of Health, Medicine and Life Sciences, Maastricht University, Maastricht, Netherlands","Maastricht, Netherlands","Department of Educational Development and Research, Faculty of Health, Medicine and Life Sciences, Maastricht University",50.85798545,5.69698818182211,NLD,Europe
 1486,"Institute of Anaesthesiology, Intensive Care and Pain Medicine, Orthopedic University Hospital Balgrist, Zurich, Switzerland, Institute of Anaesthesiology, University of Zurich, University Hospital of Zurich, Zurich, Switzerland","Balgrist, Zurich, Switzerland, Zurich, Zurich, Switzerland","Institute of Anaesthesiology, Intensive Care and Pain Medicine, Orthopedic University Hospital, Institute of Anaesthesiology, University of Zurich, University Hospital",47.3744489,8.5410422,CHE,Europe
 1487,"Institute for Medical Education, University of Bern, Bern, Switzerland","Bern, Switzerland","Institute for Medical Education, University of Bern",46.9484742,7.4521749,CHE,Europe
-1488,"Department of Family Medicine, United States",United States,Department of Family Medicine,18.79023585,98.9776114460558,THA,Asia
-1489,"Department of Psychiatry, United States",United States,Department of Psychiatry,31.5696419,74.3176814,PAK,Asia
+1488,"Department of Family Medicine, United States",United States,Department of Family Medicine,39.5477253,-119.816399671253,USA,North America
+1489,"Department of Psychiatry, United States",United States,Department of Psychiatry,39.5477253,-119.816399671253,USA,North America
 1490,"Department of Pediatrics, United States",United States,Department of Pediatrics,39.5477253,-119.816399671253,USA,North America
 1491,"Department of Family Medicine, University of North Carolina School of Medicine, United States",United States,"Department of Family Medicine, University of North Carolina School of Medicine",39.7837304,-100.445882,USA,North America
 1492,"Department of Medicine, George Washington School of Medicine and Health Sciences, Washington, DC, United States","Washington, DC, United States","Department of Medicine, George Washington School of Medicine and Health Sciences",38.8950368,-77.0365427,USA,North America
@@ -2860,7 +2860,7 @@
 2858,"Markkula Center for Applied Ethics, Santa Clara University, Santa Clara, CA, United States","Santa Clara, CA, United States","Markkula Center for Applied Ethics, Santa Clara University",37.3541132,-121.955174,USA,North America
 2859,"Ethics Quality Consulting, Berkeley, CA, United States","Berkeley, CA, United States",Ethics Quality Consulting,37.8708393,-122.272863,USA,North America
 2860,"Department of Medicine, Stanford University, School of Medicine, Stanford, CA, United States","Stanford, CA, United States","Department of Medicine, Stanford University, School of Medicine",37.427467,-122.1702445,USA,North America
-2861,"National Institute on Drug Abuse, Bethesda, MD, United States","Bethesda, MD, United States",National Institute on Drug Abuse,13.9780116,100.6188762,THA,Asia
+2861,"National Institute on Drug Abuse, Bethesda, MD, United States","Bethesda, MD, United States",National Institute on Drug Abuse,39.047894748623776,-77.11171372891761,USA,North America
 2862,"Division of Epidemiology, Services, and Prevention Research, National Institute on Drug Abuse, Bethesda, MD, United States","Bethesda, MD, United States","Division of Epidemiology, Services, Prevention Research, National Institute on Drug Abuse",38.98127255,-77.1233587139655,USA,North America
 2863,"Division of General Internal Medicine, Department of Medicine, University of Michigan, Ann Arbor, MI, United States","Ann Arbor, MI, United States","General Internal Medicine, Department of Medicine, University of Michigan",42.2813722,-83.7484616,USA,North America
 2864,"Department of Radiation Oncology, Brigham and Women's Hospital, Harvard Medical School, Boston, MA, United States","Boston, MA, United States","Department of Radiation Oncology, Brigham and Women's Hospital, Harvard Medical School",42.3554334,-71.060511,USA,North America
@@ -18455,7 +18455,7 @@
 18453,"Department of Urology, Addenbrooke's Hospital, Cambridge, United Kingdom","Cambridge, United Kingdom","Department of Urology, Addenbrooke's Hospital",52.2055314,0.1186637,GBR,Europe
 18454,"Department of Urology, Swansea Bay University Health Board, Swansea, United Kingdom","Swansea, United Kingdom","Department of Urology, Swansea Bay University Health Board",51.6195955,-3.9459248,GBR,Europe
 18455,"Division of Endocrinology, Department of Medicine, Université de Sherbrooke, Sherbrooke, J1H 5N4, QC, Canada","Sherbrooke, J1H 5N4, QC, Canada","Division of Endocrinology, Department of Medicine, Université de Sherbrooke",45.403271,-71.889038,CAN,North America
-18456,"Department of Family Medicine, Université de Sherbrooke, Sherbrooke, J1H 5N4, QC, Canada","Université de Sherbrooke, Sherbrooke, J1H 5N4, QC, Canada",Department of Family Medicine,18.79023585,98.9776114460558,THA,Asia
+18456,"Department of Family Medicine, Université de Sherbrooke, Sherbrooke, J1H 5N4, QC, Canada","Université de Sherbrooke, Sherbrooke, J1H 5N4, QC, Canada",Department of Family Medicine,48.4267813,-71.0482783,CAN,North America
 18457,"Department of Biochemistry, Collaborative Research for Effective Diagnosis research unit, Université de Sherbrooke, Sherbrooke, J1H 5N4, QC, Canada","Sherbrooke, J1H 5N4, QC, Canada","Department of Biochemistry, Collaborative Research for Effective Diagnosis, Université de Sherbrooke",45.403271,-71.889038,CAN,North America
 18458,"Department of Pediatrics, Université de Sherbrooke, Sherbrooke, J1H 5N4, QC, Canada","Sherbrooke, J1H 5N4, QC, Canada","Department of Pediatrics, Université de Sherbrooke",45.403271,-71.889038,CAN,North America
 18459,"Royal College of Physicians and Surgeons of Canada, Ottawa, Canada","Ottawa, Canada",Royal College of Physicians and Surgeons of Canada,45.4208777,-75.6901106,CAN,North America
@@ -21762,7 +21762,7 @@
 21760,"Department of Medicine, McGill University, Montreal, Canada","Montreal, Canada","Department of Medicine, McGill University",45.5031824,-73.5698065,CAN,North America
 21761,"Department of Hospital Medicine, St Elizabeth Medical Center, Edgewood, KY, United States","Edgewood, KY, United States","Department of Hospital Medicine, St Elizabeth Medical Center",39.0186719,-84.581888,USA,North America
 21762,"Department of Internal Medicine, McGill University, Montreal, Canada","Montreal, Canada","Department of Internal Medicine, McGill University",45.5031824,-73.5698065,CAN,North America
-21763,"Department of Family Medicine, Hopital St. Nicolas, St Marc, Haiti","Hopital St. Nicolas, St Marc, Haiti",Department of Family Medicine,18.79023585,98.9776114460558,THA,Asia
+21763,"Department of Family Medicine, Hopital St. Nicolas, St Marc, Haiti","Hopital St. Nicolas, St Marc, Haiti",Department of Family Medicine,19.11364649315504,-72.69898473302952,HTI,North America
 21764,"Dartmouth Hitchcock Medical Center, One Medical Center Drive, Lebanon, NH, United States","Lebanon, NH, United States","Dartmouth Hitchcock Medical Center, One Medical Center Drive",43.643032,-72.251587,USA,North America
 21765,"Department of Medicine, David Geffen School of Medicine, University of California Los Angeles, Los Angeles, United States","Los Angeles, Los Angeles, United States","Department of Medicine, David Geffen School of Medicine, University of California",34.0536909,-118.242766,USA,North America
 21766,"ARC Health Resources, Congers, NY, United States","Congers, NY, United States",ARC Health Resources,41.146634,-73.9432236275049,USA,North America
@@ -37573,23 +37573,23 @@
 37571,"UT Southwestern, United States","UT Southwestern, United States",,32.9352349,-96.9809668,USA,North America
 37572,"Doctor of Osteopathic Medicine Program, Master of Science in Biomedical Sciences Program, United States",United States,,39.7837304,-100.445882,USA,North America
 37573,"Baycrest, Toronto, ON, Canada","Baycrest, Toronto, ON, Canada",,43.7285227,-79.4373895,CAN,North America
-37574,"Planned Parenthood of Southern New England, New Haven, CT, United States","New England, New Haven, CT, United States",,41.339484999999996,-72.97964613991286,USA,North America
+37574,"Planned Parenthood of Southern New England, New Haven, CT, United States","New England, New Haven, CT, United States",,41.339485,-72.9796461,USA,North America
 37575,"Swedish First Hill, Seattle, WA, United States","First Hill, Seattle, WA, United States",,47.6093053,-122.3249839,USA,North America
 37576,"Zurich, Switzerland","Zurich, Switzerland",,47.3744489,8.5410422,CHE,Europe
 37577,"Family Medicine Residency of Western Montana, United States","Montana, United States",,47.3752671,-109.638757,USA,North America
-37578,"South Carolina School of Medicine Greenville, Greenville, SC, United States","South Carolina, Greenville, Greenville, SC, United States",,34.842850299999995,-82.40175244073288,USA,North America
+37578,"South Carolina School of Medicine Greenville, Greenville, SC, United States","South Carolina, Greenville, Greenville, SC, United States",,34.8428503,-82.4017524,USA,North America
 37579,"Toronto, ON, Canada","Toronto, Canada",,43.6534817,-79.3839347,CAN,North America
 37580,Academic Medicine,,,,,,
 37581,"New York, NY, United States","New York, NY, United States",,40.7127281,-74.0060152,USA,North America
 37582,"Nbme, Philadelphia, PA, United States","Nbme, Philadelphia, PA, United States",,39.9527237,-75.1635262,USA,North America
 37583,"Family Voices of Wisconsin, Madison, WI, United States","Wisconsin, Madison, WI, United States",,43.0746978,-89.3841692,USA,North America
-37584,"Children’s Hospital of Orange County, Orange, CA, United States","Orange County, Orange, CA, United States",,33.6742048,-117.86802428008934,USA,North America
+37584,"Children’s Hospital of Orange County, Orange, CA, United States","Orange County, Orange, CA, United States",,33.6742048,-117.8680243,USA,North America
 37585,"Rady Children’s Specialists of San Diego, San Diego, CA, United States","San Diego, San Diego, CA, United States",,32.7174202,-117.162772,USA,North America
-37586,"Naval Medical Center Camp Lejeune Camp Lejeune, NC, United States","Camp Lejeune, NC, United States",,34.63973385,-77.34183480015744,USA,North America
-37587,"Budapest, Hungary","Budapest, Hungary",,47.4978789,19.0402383,HUN,Europe
+37586,"Naval Medical Center Camp Lejeune Camp Lejeune, NC, United States","Camp Lejeune, NC, United States",,34.6397338,-77.3418348,USA,North America
+37587,"Budapest, Hungary","Budapest, Hungary",,47.4813896,19.1460941,HUN,Europe
 37588,"Rome, Italy","Rome, Italy",,41.8933203,12.4829321,ITA,Europe
 37589,"Ljubljana, Slovenia","Ljubljana, Slovenia",,46.0500268,14.5069289,SVN,Europe
-37590,"Berlin, Germany","Berlin, Germany",,52.510885,13.3989367,DEU,Europe
+37590,"Berlin, Germany","Berlin, Germany",,52.5173885,13.3951309,DEU,Europe
 37591,"Bratislava, Slovakia","Bratislava, Slovakia",,48.1516988,17.1093063,SVK,Europe
 37592,"Be'Er Sheva, Israel",Israel,,30.8124247,34.8594762,ISR,Asia
 37593,"Kumberg, Austria",Austria,,47.59397,14.12456,AUT,Europe
@@ -37602,9 +37602,9 @@
 37600,Vanderbilt School of Medicine,,Vanderbilt School of Medicine,,,,
 37601,"Medical Education, Faculty of Biology, Medicine, and Health, University of Manchester, Manchester, United Kingdom","Manchester, Manchester, United Kingdom",,53.4794892,-2.2451148,GBR,Europe
 37602,"Faculty Of Medicine And Health, The University Of Sydney, Sydney, NSW, Australia","Sydney, Sydney, NSW, Australia",,-33.8698439,151.2082848,AUS,Oceania
-37603,"Obstetrics And Gynecology And Women's And Gender Studies, Center For Bioethics And Social Sciences In Medicine And Global Reach, University Of Michigan, Ann Arbor, MI, United States","Michigan, Ann Arbor, MI, United States",,42.2813722,-83.7484616,USA,North America
+37603,"Obstetrics And Gynecology And Women's And Gender Studies, Center For Bioethics And Social Sciences In Medicine And Global Reach, University Of Michigan, Ann Arbor, MI, United States","Michigan, Ann Arbor, MI, United States",,42.2942142,-83.7100389,USA,North America
 37604,"Faculty of Education, Université de Sherbrooke, Longueuil, QC, Canada","Université de Sherbrooke, Longueuil, QC, Canada",,45.5249263,-73.5219251,CAN,North America
-37605,"McLean, VA, United States","McLean, VA, United States",,38.93668525,-77.1858430261388,USA,North America
+37605,"McLean, VA, United States","McLean, VA, United States",,38.9366853,-77.185843,USA,North America
 37606,Building the Next Generation of Academic Physicians (BNGAP),,"the Next Generation of Academic Physicians, BNGAP",,,,
 37607,Yale University School of Medicine,,Yale University School of Medicine,,,,
 37608,"Vot-ER, Boston, MA, United States","Boston, MA, United States",,42.3554334,-71.060511,USA,North America
@@ -37625,7 +37625,7 @@
 37623,"Section of Research and Data Analytics, School of Continuous Professional Development",,,,,,
 37624,"Author affiliations: M.S. Kerr, TCU and UNTHSC School of Medicine",,"TCU, UNTHSC School of Medicine",,,,
 37625,Case Western Reserve University School of Medicine,,Western Reserve University School of Medicine,,,,
-37626,"P.S. O'Sullivan, University of California, San Francisco, Mexico","California, San Francisco, Mexico",,19.540503,-98.90542735026295,MEX,North America
+37626,"P.S. O'Sullivan, University of California, San Francisco, Mexico","California, San Francisco, Mexico",,20.5022595,-100.8058741,MEX,North America
 37627,"M. John, Zucker Hillside Hospital at Northwell Health",,"Zucker Hillside Hospital, Northwell Health",,,,
 37628,"N. Vapiwala, Perelman School of Medicine, University of Pennsylvania, Author affiliations: C. Williams",,"Perelman School of Medicine, University of Pennsylvania",,,,
 37629,"K. Dore, Altus Assessments",,Altus Assessments,,,,
@@ -37651,13 +37651,13 @@
 37649,"S. Wilkinson, E. Gilbertson, M. Robinson, S. Gelhard, M. Fix, University of Utah School of Medicine",,University of Utah School of Medicine,,,,
 37650,New York University Grossman School of Medicine,,New York University Grossman School of Medicine,,,,
 37651,"M. Marin, M. Triola, New York University Grossman School of Medicine Institute for Innovations in Medical Education",,New York University Grossman School of Medicine Institute for Innovations in Medical Education,,,,
-37652,"M. Ko, University of California, Davis, United States","California, Davis, United States",,38.548310150000006,-121.72581522803966,USA,North America
+37652,"M. Ko, University of California, Davis, United States","California, Davis, United States",,38.5337904,-121.7907544,USA,North America
 37653,Oregon Health and Sciences University,,Oregon Health and Sciences University,,,,
 37654,Ohio State University Wexner Medical Center,,"Ohio State University, Wexner Medical Center",,,,
 37655,"Keck School of Medicine, University of Southern California, Author affiliations: C. Young ,C.-C. Fung",,"Keck School of Medicine, University of Southern California",,,,
 37656,University of South Florida Health Morsani College of Medicine,,University of South Florida Health Morsani College of Medicine,,,,
 37657,"Author affiliations: P. Pillai, S. Bagwell, M. Beamsley, University of Wisconsin School of Medicine and Public Health",,"University of Wisconsin School of Medicine, Public Health",,,,
-37658,"Author affiliations: E. Cantor, S. Patel, P. Tsing, VA Greater Los Angeles Healthcare System","VA, Los Angeles",,34.0571149,-118.45944705545887,USA,North America
+37658,"Author affiliations: E. Cantor, S. Patel, P. Tsing, VA Greater Los Angeles Healthcare System","VA, Los Angeles",,34.0571149,-118.4594471,USA,North America
 37659,"L. Balasuriya, M. Nunez-Smith, R. Gonzalez-Colaso, D. Latimore, D. Boatright, M. Sharifi, Yale University School of Medicine",,Yale University School of Medicine,,,,
 37660,"Warren Alpert Medical School, Brown University",,"Warren Alpert Medical School, Brown University",,,,
 37661,Virginia Commonwealth University Medical Center,,Virginia Commonwealth University Medical Center,,,,
@@ -37676,36 +37676,36 @@
 37674,"M. Dieterle, E. Odukoya, S. McTaggart, S. Monrad, University of Michigan Medical School",,University of Michigan Medical School,,,,
 37675,"Author affiliations: M. Imm, L. Chandran, University of Miami Leonard M. Miller School of Medicine",,"University of Miami, Leonard M. Miller School of Medicine",,,,
 37676,"Durham, NC, United States","Durham, NC, United States",,35.996653,-78.9018053,USA,North America
-37677,"Education and Public Policy, University of California, Berkeley, CA, United States","California, Berkeley, CA, United States",,37.86818735,-122.25851751434905,USA,North America
+37677,"Education and Public Policy, University of California, Berkeley, CA, United States","California, Berkeley, CA, United States",,37.8754996,-122.2390685,USA,North America
 37678,"Family Medicine Residency Program, Hospital Saint Nicolas, Haiti, Haiti","Saint Nicolas, Haiti, Haiti",,19.1399952,-72.3570972,HTI,North America
 37679,"Medical Education, Zanmi Lasante/Partners in Health, Cange, Haiti","Cange, Haiti",,18.9319436,-71.9935934,HTI,North America
 37680,"Graduate Medical Education, Zanmi Lasante/Partners in Health, Croix-des-Bouquets, Haiti","Croix-des-Bouquets, Haiti",,18.5775444,-72.2296219,HTI,North America
-37681,"Zanmi Lasante/Partners in Health, Mirebalais Hospital, Mirebalais, Haiti","Mirebalais Hospital, Mirebalais, Haiti",,18.835888150000002,-72.11647578660813,HTI,North America
+37681,"Zanmi Lasante/Partners in Health, Mirebalais Hospital, Mirebalais, Haiti","Mirebalais Hospital, Mirebalais, Haiti",,18.8358882,-72.1164758,HTI,North America
 37682,"Mirebalais Hospital, Mirebalais, Haiti","Mirebalais, Haiti",,18.8344163,-72.104836,HTI,North America
 37683,"Faculté de Médecine et de Pharmacie de l'Université d'État d'Haiti, Port-Au-Prince, Haiti",Haiti,,19.1399952,-72.3570972,HTI,North America
 37684,"Service Universitaire de Psychiatrie de l'Adolescent, Argenteuil Hospital Centre, Argenteuil, France","Argenteuil, France",,48.9479069,2.2481797,FRA,Europe
 37685,"Utrecht, Netherlands","Utrecht, Netherlands",,52.0907006,5.1215634,NLD,Europe
 37686,"Institute of Medical Education Research Rotterdam, Erasmus MC, Rotterdam, Netherlands","Rotterdam, Erasmus MC, Rotterdam, Netherlands",,51.9109324,4.4680514,NLD,Europe
 37687,"Society to Improve Diagnosis in Medicine, New York, NY, United States","New York, NY, United States",,40.7127281,-74.0060152,USA,North America
-37688,"College of Family Physicians of Canada, Mississauga, ON, Canada","Canada, Mississauga, ON, Canada",,43.5896231,-79.6443879,CAN,North America
+37688,"College of Family Physicians of Canada, Mississauga, ON, Canada","Canada, Mississauga, ON, Canada",,43.6863953,-79.6064457,CAN,North America
 37689,"instructor of pediatrics, Harvard Medical School associate professor of biomedical ethics, psychiatry, University of Virginia professor of medicine, humanities, public health sciences, Penn State College of Medicine Associate professor of emergency medicine and public health, Queen's University assistant professor of medicine, Johns Hopkins Bayview Medical Center professor of psychiatry and behavioral sciences, Johns Hopkins Medicine",,"Harvard Medical School, University of Virginia, Penn State College of Medicine, Queen's University, Johns Hopkins Bayview Medical Center, Johns Hopkins Medicine",,,,
-37690,"Aria Jefferson, Philadelphia, PA, United States","Aria Jefferson, Philadelphia, PA, United States",,40.0711287,-74.98305767092307,USA,North America
-37691,"New Orleans, LA, United States","New Orleans, LA, United States",,29.9759983,-90.0782127,USA,North America
+37690,"Aria Jefferson, Philadelphia, PA, United States","Aria Jefferson, Philadelphia, PA, United States",,40.0711287,-74.9830577,USA,North America
+37691,"New Orleans, LA, United States","New Orleans, LA, United States",,29.9559145,-90.0730259,USA,North America
 37692,"Department of Medicine, Uniformed Services University of the Health Sciences Public Knowledge Project, Simon Fraser University Library",,"Department of Medicine, Uniformed Services University, the Health Sciences Public Knowledge Project, Simon Fraser University Library",,,,
 37693,"Division of Hospital Medicine, Department of Medicine",,"Division of Hospital Medicine, Department of Medicine",,,,
 37694,"Healthfinch, Madison, WI, United States","Healthfinch, Madison, WI, United States",,43.074761,-89.3837613,USA,North America
 37695,Sculpture by Augusto Rivalta,,,,,,
 37696,"Aquifer, Lebanon, NH, United States","Lebanon, NH, United States",,43.643032,-72.251587,USA,North America
-37697,"25 Shattuck St., Boston, 02215, MA, United States","Shattuck St., Boston, 02215, MA, United States",,42.3369239626687,-71.10731575088032,USA,North America
+37697,"25 Shattuck St., Boston, 02215, MA, United States","Shattuck St., Boston, 02215, MA, United States",,42.3361848,-71.1060359,USA,North America
 37698,"associate professor of medicine, Uniformed Services University of the Health Sciences associate director for community engagement & learning, Public Knowledge Project at the Simon Fraser Library",,"Uniformed Services University of the Health Sciences, Public Knowledge Project, the Simon Fraser Library",,,,
 37699,"Dharamshala, India","Dharamshala, India",,32.2143039,76.3196717,IND,Asia
 37700,"AM Last Pages, United States",United States,,39.7837304,-100.445882,USA,North America
-37701,"Discipline of Family Medicine, School of Nursing and Public Health, University of KwaZulu-Natal, Durban, South Africa","KwaZulu-Natal, Durban, South Africa",,-29.86805515,30.978411950041696,ZAF,Africa
+37701,"Discipline of Family Medicine, School of Nursing and Public Health, University of KwaZulu-Natal, Durban, South Africa","KwaZulu-Natal, Durban, South Africa",,-29.8680551,30.978412,ZAF,Africa
 37702,"Lifespan, Providence, RI, United States","Providence, RI, United States",,41.8239891,-71.4128343,USA,North America
 37703,"Osmosis, Baltimore, MD, United States","Baltimore, MD, United States",,39.2908816,-76.610759,USA,North America
-37704,"Medical School Brandenburg, Brandenburg Campus, Brandenburg an der Havel, Germany","Brandenburg, Brandenburg Campus, Brandenburg, der Havel, Germany",,52.42153145,12.472123514285368,DEU,Europe
+37704,"Medical School Brandenburg, Brandenburg Campus, Brandenburg an der Havel, Germany","Brandenburg, Brandenburg Campus, Brandenburg, der Havel, Germany",,52.4215315,12.4721235,DEU,Europe
 37705,"Director of Curriculum and Faculty Support; and Assistant Dean for Assessment and Evaluation, University of Utah School of Medicine",,"Curriculum and Faculty Support, University of Utah School of Medicine",,,,
-37706,"Blue Origin, Kent, WA, United States","Blue Origin, Kent, WA, United States",,47.407176750000005,-122.24016302698797,USA,North America
+37706,"Blue Origin, Kent, WA, United States","Blue Origin, Kent, WA, United States",,47.4103384,-122.2397515,USA,North America
 37707,"Boston, MA, United States","Boston, MA, United States",,42.3554334,-71.060511,USA,North America
 37708,"Hamilton, ON, Canada","Hamilton, Canada",,43.2560802,-79.8728583,CAN,North America
 37709,"medical director, Robert Graham Center; senior manager, Research and Product Services, HealthLandscape, Robert Graham Center; director, Robert Graham Center; and research associate, University of El Salvador, Institute for Studies in History, Anthropology, and Archeology",,"Research and Product Services, HealthLandscape, Robert Graham Center, Robert Graham Center, University of El Salvador, Institute for Studies in History, Anthropology",,,,
@@ -37714,51 +37714,51 @@
 37712,"Houston, Texas, United States","Houston, Texas, United States",,29.7589382,-95.3676974,USA,North America
 37713,"Woodbury, NJ, United States","Woodbury, NJ, United States",,39.8381691,-75.1526774,USA,North America
 37714,"8393 N. Via Mia St., Scottsdale, 85258, AZ, United States","Scottsdale, 85258, AZ, United States",,33.4942189,-111.926018,USA,North America
-37715,"Enteral UK, Selby, North Yorkshire, United Kingdom","UK, Selby, North Yorkshire, United Kingdom",,53.7836255,-1.0688275420204851,GBR,Europe
-37716,"ResearchNed, Nijmegen, Netherlands","Nijmegen, Netherlands",,51.842574850000005,5.838960628748229,NLD,Europe
+37715,"Enteral UK, Selby, North Yorkshire, United Kingdom","UK, Selby, North Yorkshire, United Kingdom",,53.7836255,-1.0688275,GBR,Europe
+37716,"ResearchNed, Nijmegen, Netherlands","Nijmegen, Netherlands",,51.8425749,5.8389606,NLD,Europe
 37717,"Fort Belvoir Community Hospital, 9300 DeWitt Loop, Fort Belvoir, 22060, VA, United States","Fort Belvoir, 22060, VA, United States",,38.7104757,-77.1471487,USA,North America
 37718,"Albert Einstein College of Medicine, United States",United States,,39.7837304,-100.445882,USA,North America
 37719,"AnMed Health Family Medicine Residency Program, Anderson, SC, United States","Anderson, SC, United States",,34.5258335,-82.652962,USA,North America
 37720,"Reading Hospital, United States",United States,,39.7837304,-100.445882,USA,North America
 37721,"College of Family Physicians of Canada, Mississauga, ON, Canada, Toronto, ON, Canada","Canada, Mississauga, ON, Canada, Toronto, ON, Canada",,43.6534817,-79.3839347,CAN,North America
-37722,"ED 139, Université Paris X, Paris, France","Université Paris X, Paris, France",,48.86086561254544,2.3168538808092345,FRA,Europe
+37722,"ED 139, Université Paris X, Paris, France","Université Paris X, Paris, France",,48.8334983,2.3583612,FRA,Europe
 37723,"200 Elizabeth St., Toronto, M5G 2C4, ON, Canada","Toronto, M5G 2C4, Canada",,43.6534817,-79.3839347,CAN,North America
-37724,"675 N. St. Clair St., Chicago, 60611, IL, United States","Clair St., Chicago, 60611, IL, United States",,41.89536916720033,-87.62278998886134,USA,North America
-37725,"Institute, St. Michael's Hospital, Toronto, ON, Canada","St. Michael's Hospital, Toronto, ON, Canada",,43.6536408,-79.37780684414469,CAN,North America
+37724,"675 N. St. Clair St., Chicago, 60611, IL, United States","Clair St., Chicago, 60611, IL, United States",,41.8914024,-87.6226683,USA,North America
+37725,"Institute, St. Michael's Hospital, Toronto, ON, Canada","St. Michael's Hospital, Toronto, ON, Canada",,43.6536408,-79.3778068,CAN,North America
 37726,"Division of Infectious Diseases, NUHS Tower, 1E Kent Ridge Rd., Singapore, 119228, Singapore","Singapore, Singapore",,1.357107,103.8194992,SGP,Asia
 37727,"DEFACTUM, Evald Krogs Gade 16A, Aarhus C, 8000, Denmark","DEFACTUM, Aarhus, Denmark",,56.1496278,10.2134046,DNK,Europe
 37728,"Independent service user educator researcher, Toronto, ON, Canada","Toronto, Canada",,43.6534817,-79.3839347,CAN,North America
 37729,"Clinic for Swine, University of Veterinary Medicine Vienna, Vienna, Austria","Vienna, Vienna, Austria",,48.1857192,16.4221587,AUT,Europe
 37730,"Dermatologie am Rhein, Blumenrain 20, Basel, 4051, Switzerland","Blumenrain 20, Basel, Switzerland",,47.5610411,7.5870192,CHE,Europe
 37731,"Independent Researcher, Utrecht, Netherlands","Utrecht, Netherlands",,52.0907006,5.1215634,NLD,Europe
-37732,"Universidad de Caldas, Caldas, Manizales, Colombia","Universidad de Caldas, Caldas, Manizales, Colombia",,5.0556,-75.49388812020327,COL,South America
-37733,"College of Family Physicians of Canada, Mississauga, Canada","Canada, Mississauga, Canada",,43.5896231,-79.6443879,CAN,North America
-37734,"Université de Sherbrooke, Christina St-Onge, 3001 12e Avenue Nord, Sherbrooke, J1H 5N4, QC, Canada","Christina St-Onge, Sherbrooke, J1H 5N4, QC, Canada",,45.44769525,-71.86980425,CAN,North America
-37735,"Rijksuniversiteit Groningen, Groningen, Netherlands","Rijksuniversiteit Groningen, Groningen, Netherlands",,53.21944155,6.562986329174857,NLD,Europe
+37732,"Universidad de Caldas, Caldas, Manizales, Colombia","Universidad de Caldas, Caldas, Manizales, Colombia",,5.0556,-75.4938881,COL,South America
+37733,"College of Family Physicians of Canada, Mississauga, Canada","Canada, Mississauga, Canada",,43.6863953,-79.6064457,CAN,North America
+37734,"Université de Sherbrooke, Christina St-Onge, 3001 12e Avenue Nord, Sherbrooke, J1H 5N4, QC, Canada","Christina St-Onge, Sherbrooke, J1H 5N4, QC, Canada",,45.4476755,-71.8682891,CAN,North America
+37735,"Rijksuniversiteit Groningen, Groningen, Netherlands","Rijksuniversiteit Groningen, Groningen, Netherlands",,53.2194416,6.5629863,NLD,Europe
 37736,"South Western Sydney Local Health District, Sydney, Australia","South Western Sydney, Local Health District, Sydney, Australia",,-33.8698439,151.2082848,AUS,Oceania
 37737,"South Western Sydney Local Health District, Sydney, Australia, St Vincent’s Health Network Sydney, Sydney, Australia","South Western Sydney, Local Health District, Sydney, Australia, St Vincent’s, Sydney, Sydney, Australia",,-33.8698439,151.2082848,AUS,Oceania
-37738,"Medical Device Management and Training, Schindeller 11, Gerbrunn, 97218, Germany","Schindeller 11, Gerbrunn, Germany",,49.7848194,9.990837159774347,DEU,Europe
-37739,"Rijnstate, Arnhem, Netherlands","Rijnstate, Arnhem, Netherlands",,51.983497150000005,5.897454961159682,NLD,Europe
-37740,"Behavioural Medicine, University of KwaZulu-Natal, Durban, South Africa","KwaZulu-Natal, Durban, South Africa",,-29.86805515,30.978411950041696,ZAF,Africa
-37741,"Département de kinésiologie, Université de Montréal, Montréal, QC, Canada","Université de Montréal, Montréal, QC, Canada",,45.50475765,-73.61454175576318,CAN,North America
-37742,"USF Rainha D. Amélia, Porto, Portugal","Porto, Portugal",,41.1494512,-8.6107884,PRT,Europe
+37738,"Medical Device Management and Training, Schindeller 11, Gerbrunn, 97218, Germany","Schindeller 11, Gerbrunn, Germany",,49.7848194,9.9908372,DEU,Europe
+37739,"Rijnstate, Arnhem, Netherlands","Rijnstate, Arnhem, Netherlands",,51.9834972,5.897455,NLD,Europe
+37740,"Behavioural Medicine, University of KwaZulu-Natal, Durban, South Africa","KwaZulu-Natal, Durban, South Africa",,-29.8680551,30.978412,ZAF,Africa
+37741,"Département de kinésiologie, Université de Montréal, Montréal, QC, Canada","Université de Montréal, Montréal, QC, Canada",,45.5047577,-73.6145418,CAN,North America
+37742,"USF Rainha D. Amélia, Porto, Portugal","Porto, Portugal",,41.1502195,-8.6103497,PRT,Europe
 37743,"Sunnybrook Base Hospital, Toronto, ON, Canada","Toronto, ON, Canada",,43.6534817,-79.3839347,CAN,North America
-37744,"Institut für Qualität und Weiterbildung, Technische Hochschule Deggendorf, Edlmairstraße 9, Deggendorf, 94469, Germany","Weiterbildung, Technische, Deggendorf, Edlmairstraße 9, Deggendorf, Germany",,48.83006292984901,12.957117987568274,DEU,Europe
+37744,"Institut für Qualität und Weiterbildung, Technische Hochschule Deggendorf, Edlmairstraße 9, Deggendorf, 94469, Germany","Weiterbildung, Technische, Deggendorf, Edlmairstraße 9, Deggendorf, Germany",,48.8310117,12.9577626,DEU,Europe
 37745,"General Practice Training Valley to Coast, Mayfield, NSW, Australia","Coast, Mayfield, NSW, Australia",,-32.8983333,151.7344444,AUS,Oceania
 37746,"Abbotsford, Melbourne, VA, Australia","Abbotsford, Melbourne, VA, Australia",,-37.8142454,144.9631732,AUS,Oceania
 37747,"Belleville General Hospital, 265 Dundas Street East, Belleville, K8N 5A9, ON, Canada","Belleville, K8N 5A9, Canada",,44.1633264,-77.3852556,CAN,North America
 37748,"Ottawa, Canada","Ottawa, Canada",,45.4208777,-75.6901106,CAN,North America
 37749,"Ajijic, Jalisco, Mexico","Ajijic, Jalisco, Mexico",,20.3001977,-103.261934,MEX,North America
-37750,"Szczecin, Poland","Szczecin, Poland",,53.4301818,14.5509623,POL,Europe
-37751,"School of Medicine of Itajubá, Minas Gerais, Itajubá, Brazil","Itajubá, Minas Gerais, Itajubá, Brazil",,-22.44675125,-45.443771088260974,BRA,South America
-37752,"Urgent Care and Medical Emergency Unit, Azienda Provinciale Per i Servizi Sanitari, Trento, Italy","Azienda Provinciale, Servizi Sanitari, Trento, Italy",,46.0429618,11.130669850614753,ITA,Europe
+37750,"Szczecin, Poland","Szczecin, Poland",,53.4298114,14.5928676,POL,Europe
+37751,"School of Medicine of Itajubá, Minas Gerais, Itajubá, Brazil","Itajubá, Minas Gerais, Itajubá, Brazil",,-22.4467512,-45.4437711,BRA,South America
+37752,"Urgent Care and Medical Emergency Unit, Azienda Provinciale Per i Servizi Sanitari, Trento, Italy","Azienda Provinciale, Servizi Sanitari, Trento, Italy",,46.0429618,11.1306699,ITA,Europe
 37753,"The Fourth Central Hospital of Baoding, Hebei, Baoding, China","Baoding, Hebei, Baoding, China",,38.8634576,115.5957278,CHN,Asia
 37754,"General Practitioner, Private Practice, Ibb, Yemen",Yemen,,16.3471243,47.8915271,YEM,Asia
 37755,"Pharmacy department, Zamzam Hospital, Alexandria, Egypt","Zamzam Hospital, Alexandria, Egypt",,31.1991806,29.8951716,EGY,Africa
-37756,"Departamento de Fisiologia, Universidade Federal de São Paulo, São Paulo, Brazil","Departamento de Fisiologia, Universidade Federal de São Paulo, São Paulo, Brazil",,-23.5992708,-46.64309241171101,BRA,South America
-37757,"St James’s Hospital, Dublin 8, Dublin, Ireland","Dublin 8, Dublin, Ireland",,53.35034215,-6.32031133226833,IRL,Europe
-37758,"Aga Khan University of East Africa, P.O Box, Nairobi, 39340-00623, Kenya","East Africa, P.O Box, Nairobi, Kenya",,-1.3035781,36.8112587,KEN,Africa
-37759,"Infectious diseases Registrar, Beaumont Hospital, Dublin, Ireland","Beaumont Hospital, Dublin, Ireland",,53.3894874,-6.224728781677493,IRL,Europe
+37756,"Departamento de Fisiologia, Universidade Federal de São Paulo, São Paulo, Brazil","Departamento de Fisiologia, Universidade Federal de São Paulo, São Paulo, Brazil",,-23.5992708,-46.6430924,BRA,South America
+37757,"St James’s Hospital, Dublin 8, Dublin, Ireland","Dublin 8, Dublin, Ireland",,53.3503422,-6.3203113,IRL,Europe
+37758,"Aga Khan University of East Africa, P.O Box, Nairobi, 39340-00623, Kenya","East Africa, P.O Box, Nairobi, Kenya",,-1.2899173,36.8091782,KEN,Africa
+37759,"Infectious diseases Registrar, Beaumont Hospital, Dublin, Ireland","Beaumont Hospital, Dublin, Ireland",,53.3894874,-6.2247288,IRL,Europe
 37760,"Research Fellow - Knowledge & Implementation Hub, Aged Care Research & Industry Innovation, Adelaide, Australia","Adelaide, Australia",,-34.9281805,138.5999312,AUS,Oceania
 37761,"CHU Rennes, Rennes, France","Rennes, France",,48.1113387,-1.6800198,FRA,Europe
 37762,"CHU Orléans, Orléans, France","Orléans, France",,47.9027336,1.9086066,FRA,Europe
@@ -37766,179 +37766,179 @@
 37764,"Health Science Faculty of Health Sciences, Higher Colleges of Technology, Ras Al Khaimah, United Arab Emirates","Ras Al Khaimah, United Arab Emirates",,25.7737705,55.938232,ARE,Asia
 37765,"Neural KIDS, Xátiva, Spain","Xátiva, Spain",,38.988085,-0.5200428,ESP,Europe
 37766,"UMM Klinik für Kinderchirurgie, Theodor-Kutzer-Ufer 1-3, Mannheim, 68167, Germany","Kinderchirurgie, Mannheim, Germany",,49.4892913,8.4673098,DEU,Europe
-37767,"Kinder- und Jugendarztpraxis Dr. Seitz, Werderstraße 3, Bad Saulgau, 88348, Germany","Werderstraße, Germany",,53.63287606658795,11.422019177255107,DEU,Europe
-37768,"Klinik für Kinder- und Jugendmedizin, Klinikum Ludwigsburg, Posilipostr. 4, Ludwigsburg, 71640, Germany","Jugendmedizin, Klinikum Ludwigsburg, Ludwigsburg, Germany",,48.8995668,9.20409035547178,DEU,Europe
+37767,"Kinder- und Jugendarztpraxis Dr. Seitz, Werderstraße 3, Bad Saulgau, 88348, Germany","Werderstraße, Germany",,53.6271823,11.4205474,DEU,Europe
+37768,"Klinik für Kinder- und Jugendmedizin, Klinikum Ludwigsburg, Posilipostr. 4, Ludwigsburg, 71640, Germany","Jugendmedizin, Klinikum Ludwigsburg, Ludwigsburg, Germany",,48.8995668,9.2040904,DEU,Europe
 37769,"Division of Infectious Diseases, NUHS Tower Block, Level 10, 1E Kent Ridge Road, Singapore, 119228, Singapore","Singapore, Singapore",,1.357107,103.8194992,SGP,Asia
-37770,"Albert Einstein College of Medicine Bronx, 1935 Eastchester Road, Apt 22A, New York, 10461, NY, United States","Medicine Bronx, Eastchester Road, Apt 22A, New York, 10461, NY, United States",,40.84585849916695,-73.84111368668243,USA,North America
+37770,"Albert Einstein College of Medicine Bronx, 1935 Eastchester Road, Apt 22A, New York, 10461, NY, United States","Medicine Bronx, Eastchester Road, Apt 22A, New York, 10461, NY, United States",,40.8458473,-73.84114,USA,North America
 37771,"Changzhou Second People’s Hospital, Changzhou, 213164, China","Changzhou, China",,31.8122623,119.9691539,CHN,Asia
-37772,"Can Tho University of Medicine and Pharmacy, 179 Nguyen Van Cu, An Khanh Ward, An Khánh, Cần Thơ City, Viet Nam","An Khanh Ward, An Khánh, Cần Thơ City, Viet Nam",,10.0315481,105.7554049,VNM,Asia
-37773,"Genomics England, London, United Kingdom","Genomics England, London, United Kingdom",,51.4893335,-0.14405508452768728,GBR,Europe
+37772,"Can Tho University of Medicine and Pharmacy, 179 Nguyen Van Cu, An Khanh Ward, An Khánh, Cần Thơ City, Viet Nam","An Khanh Ward, An Khánh, Cần Thơ City, Viet Nam",,10.0448176,105.7554453,VNM,Asia
+37773,"Genomics England, London, United Kingdom","Genomics England, London, United Kingdom",,51.5074456,-0.1277653,GBR,Europe
 37774,"Faculty of Health Studies, University in Mostar, Zrinski Frankopan 34, Mostar, 88000, Bosnia and Herzegovina","Mostar, Zrinski Frankopan 34, Mostar, Bosnia, Herzegovina",,43.3435855,17.8076584,BIH,Europe
-37775,"National Hospital of Sri Lanka, Colombo, Sri Lanka","Sri Lanka, Colombo, Sri Lanka",,6.909068400000001,79.8696496224916,LKA,Asia
+37775,"National Hospital of Sri Lanka, Colombo, Sri Lanka","Sri Lanka, Colombo, Sri Lanka",,6.9090684,79.8696496,LKA,Asia
 37776,"VinUniversity, Ha Noi, Viet Nam",Viet Nam,,15.9266657,107.9650855,VNM,Asia
 37777,"Center for community Health and Injury Prevention, Ha Noi, Viet Nam",,Center for community Health and Injury Prevention,,,,
-37778,"Clinic for Psychiatry, Engelthal Hospital, Engelthal, Germany","Engelthal Hospital, Engelthal, Germany",,49.476872650000004,11.407283085040806,DEU,Europe
+37778,"Clinic for Psychiatry, Engelthal Hospital, Engelthal, Germany","Engelthal Hospital, Engelthal, Germany",,49.4768727,11.4072598,DEU,Europe
 37779,"Universitätsklinukum Ruppin-Brandenburg, Neuruppin, Germany","Neuruppin, Germany",,52.9243859,12.8092919,DEU,Europe
 37780,"Bilge Çocuk Special Education and Rehabilitation Center, Beysukent, Çankaya, Ankara, s06800, Turkey","Beysukent, Çankaya, Ankara, Turkey",,39.8810262,32.7112662,TUR,Asia
 37781,"Marathon Family Practice, Marathon, P0T 2E0, ON, Canada",Canada,,61.0666922,-107.991707,CAN,North America
-37782,"Emergency Medicine, Prince Sultan Military Medical City, Riyadh, Saudi Arabia","Prince Sultan Military Medical City, Riyadh, Saudi Arabia",,24.6920506,46.71371379890641,SAU,Asia
+37782,"Emergency Medicine, Prince Sultan Military Medical City, Riyadh, Saudi Arabia","Prince Sultan Military Medical City, Riyadh, Saudi Arabia",,24.6920506,46.7137138,SAU,Asia
 37783,"Orthopedic practice, Wetzlar, 35578, Germany","Wetzlar, Germany",,50.570561,8.531245,DEU,Europe
-37784,"5th Floor The Aga Khan University Centre, P.O. Box 30270-00100, 3rd Parklands Avenue, Nairobi, Kenya","P.O., Parklands Avenue, Nairobi, Kenya",,-1.2571166093692523,36.81784651870444,KEN,Africa
+37784,"5th Floor The Aga Khan University Centre, P.O. Box 30270-00100, 3rd Parklands Avenue, Nairobi, Kenya","P.O., Parklands Avenue, Nairobi, Kenya",,-1.2597495,36.8134723,KEN,Africa
 37785,"Bacha Khan Medical College Mardan, Mardan, Pakistan","Mardan, Mardan, Pakistan",,34.1919212,72.0347136,PAK,Asia
-37786,"London, United Kingdom","London, United Kingdom",,51.4893335,-0.14405508452768728,GBR,Europe
-37787,"Departamento de Fisioterapia, Universidad de Málaga, Málaga, Spain","Departamento de Fisioterapia, Universidad de Málaga, Málaga, Spain",,36.7165576,-4.495336390634675,ESP,Europe
+37786,"London, United Kingdom","London, United Kingdom",,51.5074456,-0.1277653,GBR,Europe
+37787,"Departamento de Fisioterapia, Universidad de Málaga, Málaga, Spain","Departamento de Fisioterapia, Universidad de Málaga, Málaga, Spain",,36.7165576,-4.4953364,ESP,Europe
 37788,"Independent Researcher, Can Tho, Viet Nam",,,,,,
-37789,"Université Laval, Québec, Canada","Université Laval, Québec, Canada",,46.78116215,-71.27680024340233,CAN,North America
+37789,"Université Laval, Québec, Canada","Université Laval, Québec, Canada",,46.7811622,-71.2768002,CAN,North America
 37790,"Université Alassane Ouattara, Bouaké, Cote d'Ivoire","Bouaké, Cote d'Ivoire",,7.6890212,-5.0283552,CIV,Africa
-37791,"Vijayratna Diabetes Centre, Sumeru Centre, Ahmedabad, Paldi, India","Sumeru Centre, Ahmedabad, Paldi, India",,23.02267875,72.57072579394716,IND,Asia
+37791,"Vijayratna Diabetes Centre, Sumeru Centre, Ahmedabad, Paldi, India","Sumeru Centre, Ahmedabad, Paldi, India",,23.0226788,72.5707258,IND,Asia
 37792,"San Francisco, CA, United States","San Francisco, CA, United States",,37.7792588,-122.4193286,USA,North America
-37793,"Clinic for Swine, University of Veterinary Medicine Vienna, Veterinaerplatz 1, Vienna, 1210, Austria","Vienna, Veterinaerplatz 1, Vienna, Austria",,48.25301345,16.430183798777627,AUT,Europe
-37794,"Aga Khan University of East Africa, P.O Box 39340-00623, Nairobi, Kenya","East Africa, Nairobi, Kenya",,-1.2686662000000002,36.81613772646084,KEN,Africa
-37795,"General Internal Medicine Cedars-Sinai, Los Angeles, CA, United States","Sinai, Los Angeles, CA, United States",,34.0751604,-118.38109362449856,USA,North America
-37796,"Clinical Pharmacology and Pharmacotherapy, KU Leuven, Louvain, Belgium","KU Leuven, Louvain, Belgium",,50.87030125,4.694868351142256,BEL,Europe
+37793,"Clinic for Swine, University of Veterinary Medicine Vienna, Veterinaerplatz 1, Vienna, 1210, Austria","Vienna, Veterinaerplatz 1, Vienna, Austria",,48.2530134,16.4301838,AUT,Europe
+37794,"Aga Khan University of East Africa, P.O Box 39340-00623, Nairobi, Kenya","East Africa, Nairobi, Kenya",,-1.2686662,36.8161377,KEN,Africa
+37795,"General Internal Medicine Cedars-Sinai, Los Angeles, CA, United States","Sinai, Los Angeles, CA, United States",,34.0751604,-118.3810936,USA,North America
+37796,"Clinical Pharmacology and Pharmacotherapy, KU Leuven, Louvain, Belgium","KU Leuven, Louvain, Belgium",,50.8775987,4.6937047,BEL,Europe
 37797,"Care in Mind, Hope House, Hercules Business Park, Stockport, SK3 0UX, United Kingdom","Hope House, Hercules Business Park, Stockport, SK3 0UX, United Kingdom",,53.407901,-2.160243,GBR,Europe
-37798,"Radboud universitair medisch centrum, Postbus 9101, 6500 HB, Nijmegen (149), Netherlands","Nijmegen, Netherlands",,51.842574850000005,5.838960628748229,NLD,Europe
+37798,"Radboud universitair medisch centrum, Postbus 9101, 6500 HB, Nijmegen (149), Netherlands","Nijmegen, Netherlands",,51.8425749,5.8389606,NLD,Europe
 37799,"Independent researcher, Binyamina, Israel",Israel,,30.8124247,34.8594762,ISR,Asia
 37800,"Centre de simulation LabForSIMS, Département de Recherche et Innovation Pédagogique en Santé, Faculté de médecine, Université Paris Saclay, Le Kremlin-Bicêtre, 94275, France",France,,46.603354,1.8883335,FRA,Europe
 37801,"Scoala de Pian By Lena Napradean, Bucharest, Romania","Bucharest, Romania",,44.4361414,26.1027202,ROU,Europe
 37802,"Associação Sons Do Estaminé, Trofa, Portugal","Trofa, Portugal",,41.3363471,-8.5585061,PRT,Europe
 37803,"Necker Children’s Hospital, 149 Rue Sèvres, Paris, 75015, France","149 Rue Sèvres, Paris, France",,48.846456,2.3156805,FRA,Europe
-37804,"King Faisal Hospital Rwanda, P.O Box 2534, Kigali, Rwanda","Rwanda, Kigali, Rwanda",,-1.9359845500000001,30.155930321973806,RWA,Africa
+37804,"King Faisal Hospital Rwanda, P.O Box 2534, Kigali, Rwanda","Rwanda, Kigali, Rwanda",,-1.9359846,30.1559303,RWA,Africa
 37805,"Musculoskeletal Centre of Excellence, International Medical Centre, Jeddah, Saudi Arabia","Jeddah, Saudi Arabia",,21.5504432,39.1742363,SAU,Asia
 37806,"General Medical Practice Van Lennep Huisartsenpraktijk, Driebergen, Netherlands","Driebergen, Netherlands",,52.0581423,5.245932,NLD,Europe
 37807,"Adapt Physical Therapy Winnipeg, Winnipeg, MB, Canada","Winnipeg, Winnipeg, Canada",,49.8889694,-97.1342592,CAN,North America
 37808,"Guangzhou university of traditional Chinese medicine, Guangzhou, China","Guangzhou, Guangzhou, China",,23.1526233,113.2522641,CHN,Asia
 37809,"Dunvegan Medical Centre, 48 Dunvegan Avenue, Gauging, Edenvale, South Africa","Dunvegan Avenue, Gauging, Edenvale, South Africa",,-26.1366667,28.1511111,ZAF,Africa
-37810,"Eaglescliffe Health Centre, Sunningdale Drive, Eaglescliffe, Stockton-on-Tees, United Kingdom","Sunningdale Drive, Eaglescliffe, Stockton, United Kingdom",,54.519857700138495,-1.3480867457252592,GBR,Europe
-37811,"King Faisal Hospital Rwanda, Kigali, Rwanda","Rwanda, Kigali, Rwanda",,-1.9359845500000001,30.155930321973806,RWA,Africa
+37810,"Eaglescliffe Health Centre, Sunningdale Drive, Eaglescliffe, Stockton-on-Tees, United Kingdom","Sunningdale Drive, Eaglescliffe, Stockton, United Kingdom",,54.5198577,-1.3480867,GBR,Europe
+37811,"King Faisal Hospital Rwanda, Kigali, Rwanda","Rwanda, Kigali, Rwanda",,-1.9359846,30.1559303,RWA,Africa
 37812,H.,,,,,,
 37813,"Capturo AS, Skjetten, Norway","Skjetten, Norway",,59.9675537,11.000441,NOR,Europe
 37814,"School of Medicine of University of São Paulo, São Paulo, Brazil","São Paulo, São Paulo, Brazil",,-23.5506507,-46.6333824,BRA,South America
-37815,"Université Laval, Québec City, Canada","Université Laval, Québec City, Canada",,46.78116215,-71.27680024340233,CAN,North America
+37815,"Université Laval, Québec City, Canada","Université Laval, Québec City, Canada",,46.7811622,-71.2768002,CAN,North America
 37816,"Data, Design + Writing, Portland, OR, United States","Portland, United States",,45.5202471,-122.674194,USA,North America
 37817,"Project HOPE, Washington, DC, United States","Washington, DC, United States",,38.8950368,-77.0365427,USA,North America
 37818,"Inspirali Educação, MG, Belo Horizonte, Brazil","Belo Horizonte, Brazil",,-19.9227318,-43.9450948,BRA,South America
-37819,"Aga Khan University of East Africa, Nairobi, Kenya","East Africa, Nairobi, Kenya",,-1.2686662000000002,36.81613772646084,KEN,Africa
+37819,"Aga Khan University of East Africa, Nairobi, Kenya","East Africa, Nairobi, Kenya",,-1.2686662,36.8161377,KEN,Africa
 37820,"Surgical Equity Research Hub, Jos, Nigeria","Jos, Nigeria",,9.9175125,8.8979401,NGA,Africa
-37821,"Medical faculty, Universität Münster, Münster, 48149, Germany","Universität Münster, Münster, Germany",,51.96734215,7.599243326272159,DEU,Europe
-37822,"College of Intensive Care Medicine of Australia and New Zealand, Melbourne, Australia","Australia, New Zealand, Melbourne, Australia",,-37.853922350000005,144.98130990434896,AUS,Oceania
+37821,"Medical faculty, Universität Münster, Münster, 48149, Germany","Universität Münster, Münster, Germany",,51.9673422,7.5992433,DEU,Europe
+37822,"College of Intensive Care Medicine of Australia and New Zealand, Melbourne, Australia","Australia, New Zealand, Melbourne, Australia",,-37.8539224,144.9813099,AUS,Oceania
 37823,"Departament of Medicine, Hospital Universitary of Sergipe– Federal University of Sergipe, Sergipe, Aracaju, Brazil","Sergipe–, Sergipe, Sergipe, Aracaju, Brazil",,-10.9696367,-37.0363861,BRA,South America
 37824,"Universidad Miguel Hernández, Elche, Spain","Elche, Spain",,38.2653307,-0.6988391,ESP,Europe
 37825,"”Curso Intensivo MIR Asturias” Academy, Avenida de Roma S/N, Oviedo, 33011, Spain","Oviedo, Spain",,43.3618625,-5.8483581,ESP,Europe
-37826,"Vilente, Doorwerth, Netherlands","Vilente, Doorwerth, Netherlands",,51.9851944,5.781736857011927,NLD,Europe
-37827,"State University of Rio Grande Do Norte, Rio Grande Do Norte, Caicó, Brazil","Rio Grande Do Norte, Rio Grande Do Norte, Caicó, Brazil",,-6.682461,-36.63327583939849,BRA,South America
-37828,"Nursing School of Porto, CINTESIS@RISE, Porto, Portugal","Porto, CINTESIS@RISE, Porto, Portugal",,41.1494512,-8.6107884,PRT,Europe
-37829,"CINTESIS@RISE, FMUP-MEDCIDS, Porto, Portugal","FMUP-MEDCIDS, Porto, Portugal",,41.1494512,-8.6107884,PRT,Europe
-37830,"mediX Gruppenpraxis Rotbuchstrasse, Zürich, Switzerland","Rotbuchstrasse, Zürich, Switzerland",,47.39134926294423,8.535745768520863,CHE,Europe
-37831,"Faculdade de Medicina de Vassouras, Vassouras, Brazil","Vassouras, Brazil",,-22.4093928,-43.6609318,BRA,South America
+37826,"Vilente, Doorwerth, Netherlands","Vilente, Doorwerth, Netherlands",,51.9851944,5.7817369,NLD,Europe
+37827,"State University of Rio Grande Do Norte, Rio Grande Do Norte, Caicó, Brazil","Rio Grande Do Norte, Rio Grande Do Norte, Caicó, Brazil",,-6.682461,-36.6332758,BRA,South America
+37828,"Nursing School of Porto, CINTESIS@RISE, Porto, Portugal","Porto, CINTESIS@RISE, Porto, Portugal",,41.1502195,-8.6103497,PRT,Europe
+37829,"CINTESIS@RISE, FMUP-MEDCIDS, Porto, Portugal","FMUP-MEDCIDS, Porto, Portugal",,41.1502195,-8.6103497,PRT,Europe
+37830,"mediX Gruppenpraxis Rotbuchstrasse, Zürich, Switzerland","Rotbuchstrasse, Zürich, Switzerland",,47.391702,8.5342569,CHE,Europe
+37831,"Faculdade de Medicina de Vassouras, Vassouras, Brazil","Vassouras, Brazil",,-22.3706473,-43.592331,BRA,South America
 37832,"Department of the operating room, Farmaniyeh hospital, Tehran, Iran","Farmaniyeh, Tehran, Iran",,35.7993255,51.4713527,IRN,Asia
-37833,"Movember, Level 4/21-31 Goodwood St, Richmond, 3121, VIC, Australia","Richmond, VIC, Australia",,-37.80745,144.99072125408728,AUS,Oceania
-37834,"One Percent Research Initiative, Khartoum, Sudan","Khartoum, Sudan",,15.5635972,32.5349123,SDN,Africa
+37833,"Movember, Level 4/21-31 Goodwood St, Richmond, 3121, VIC, Australia","Richmond, VIC, Australia",,-37.80745,144.9907213,AUS,Oceania
+37834,"One Percent Research Initiative, Khartoum, Sudan","Khartoum, Sudan",,15.5038301,32.5738979,SDN,Africa
 37835,"Département de chirurgie, Institut Curie– Saint-Cloud, 35 rue Dailly, Saint Cloud, 92210, France, Inserm U900, Institut Curie, Université Versailles Saint Quentin en Yvelines, Université Paris Saclay, Saint-Cloud, France","Saint Cloud, 92210, France, Inserm U900, Institut Curie, Université Versailles, Université Paris Saclay, Saint-Cloud, France",,48.8437412,2.219344,FRA,Europe
 37836,"Educational Region North, Viborg, Denmark","Viborg, Denmark",,56.4469128,9.4059354,DNK,Europe
-37837,"Cedars-Sinai, Los Angeles, CA, United States","Cedars-Sinai, Los Angeles, CA, United States",,34.0751604,-118.38109362449856,USA,North America
+37837,"Cedars-Sinai, Los Angeles, CA, United States","Cedars-Sinai, Los Angeles, CA, United States",,34.0751604,-118.3810936,USA,North America
 37838,"Manchester, United Kingdom","Manchester, United Kingdom",,53.4794892,-2.2451148,GBR,Europe
-37839,"South Devon, United Kingdom","South Devon, United Kingdom",,50.415562300000005,-3.5860102709541377,GBR,Europe
-37840,"Vice Rectorate for Teaching and Study Affairs, Medical University of Innsbruck, Fritz-Pregl-Strasse 3, Innsbruck, 6020, Austria","Innsbruck, Innsbruck, Austria",,47.26951525,11.397137204221064,AUT,Europe
-37841,"Université des Antilles, Guadeloupe, Pointe-à-Pitre, 97100, France","Université des Antilles, Guadeloupe, Pointe-à-Pitre, France",,16.2246205,-61.529095265690046,FRA,Europe
-37842,"Department of cardiac surgery, Pitié-Salpêtrière, Bld Vincent Auriol, Paris, 75013, France","Paris, France",,48.8588897,2.3200410217200766,FRA,Europe
-37843,"Vogellanden Revalidatie Centrum, Zwolle, Netherlands","Vogellanden Revalidatie Centrum, Zwolle, Netherlands",,52.5089759,6.0943765,NLD,Europe
+37839,"South Devon, United Kingdom","South Devon, United Kingdom",,50.4155623,-3.5860103,GBR,Europe
+37840,"Vice Rectorate for Teaching and Study Affairs, Medical University of Innsbruck, Fritz-Pregl-Strasse 3, Innsbruck, 6020, Austria","Innsbruck, Innsbruck, Austria",,47.2695152,11.3971372,AUT,Europe
+37841,"Université des Antilles, Guadeloupe, Pointe-à-Pitre, 97100, France","Université des Antilles, Guadeloupe, Pointe-à-Pitre, France",,16.2246205,-61.5290953,FRA,Europe
+37842,"Department of cardiac surgery, Pitié-Salpêtrière, Bld Vincent Auriol, Paris, 75013, France","Paris, France",,48.8588897,2.320041,FRA,Europe
+37843,"Vogellanden Revalidatie Centrum, Zwolle, Netherlands","Vogellanden Revalidatie Centrum, Zwolle, Netherlands",,52.5145653,6.0977204,NLD,Europe
 37844,"Emergency department, Peking university third hospital, Beijing, 100191, China","Peking, Beijing, China",,39.9057136,116.3912972,CHN,Asia
 37845,"Emergency department, The first affiliated hospital of Bengbu medical college, Bengbu, 233004, China","Bengbu, Bengbu, China",,32.9448281,117.3718148,CHN,Asia
 37846,"Emergency department, Beijing, 100029, China","Beijing, China",,40.190632,116.412144,CHN,Asia
-37847,"Emergency department, the second hospital of Hebei medical hospital, Shijiazhuang, 050000, China","Hebei, Shijiazhuang, China",,37.97742555,114.51560972019823,CHN,Asia
+37847,"Emergency department, the second hospital of Hebei medical hospital, Shijiazhuang, 050000, China","Hebei, Shijiazhuang, China",,37.9774255,114.5156097,CHN,Asia
 37848,"Emergency department, the first affiliated hospital of Zhengzhou university, Zhengzhou, 450052, China","Zhengzhou, Zhengzhou, China",,34.7475076,113.6536663,CHN,Asia
-37849,"Emergency department, Jiangsu province hospital, Nanjing, 210029, China","Jiangsu province, Nanjing, China",,32.1384178,118.8649314138176,CHN,Asia
+37849,"Emergency department, Jiangsu province hospital, Nanjing, 210029, China","Jiangsu province, Nanjing, China",,31.6377208,119.0245363,CHN,Asia
 37850,"Emergency department, the second affiliated hospital of Nanchang university, Nanchang, 330006, China","Nanchang, Nanchang, China",,28.687547,115.8540042,CHN,Asia
-37851,"Emergency department, Lanzhou university second hospital, Lanzhou, 730030, China","Lanzhou, Lanzhou, China",,36.034178,103.8485056,CHN,Asia
-37852,"Ljubljana Community Health Centre, Metelkova 9, Ljubljana, 1000, Slovenia","Metelkova 9, Ljubljana, Slovenia",,46.056605149999996,14.515065738098649,SVN,Europe
+37851,"Emergency department, Lanzhou university second hospital, Lanzhou, 730030, China","Lanzhou, Lanzhou, China",,36.0615192,103.8318849,CHN,Asia
+37852,"Ljubljana Community Health Centre, Metelkova 9, Ljubljana, 1000, Slovenia","Metelkova 9, Ljubljana, Slovenia",,46.0566052,14.5150657,SVN,Europe
 37853,"Beijing life oasis public service center, Beijing, China","Beijing, Beijing, China",,39.9057136,116.3912972,CHN,Asia
 37854,"Gift of Life Donor Program, Philadelphia, PA, United States","Philadelphia, PA, United States",,39.9527237,-75.1635262,USA,North America
 37855,"Universidade do Estado da Bahia, Campus X, Teixeira de Freitas, Bahia, Brazil","Bahia, Brazil",,-12.285251,-41.9294776,BRA,South America
-37856,"Dermatologische Klinik, Universitätsspital Basel, Basel, Switzerland","Universitätsspital Basel, Basel, Switzerland",,47.561681699999994,7.583136475873543,CHE,Europe
-37857,"Sykehuset i Vestfold, Halfdan Wilhelmsens alle 17, Tønsberg, 3116, Norway","Vestfold, Tønsberg, Norway",,59.27212645,10.418981708567843,NOR,Europe
-37858,"Service des urgences de l’hôpital Cochin, APHP centre, Université de Paris Cité, Paris, France","APHP, Paris, France",,48.847611900000004,2.38288423439227,FRA,Europe
-37859,"Postgraduate Program in Health Sciences, Faculty of Medicine of Jundiaí, Jundiaí, 13202-550, Brazil","Jundiaí, Jundiaí, Brazil",,-23.2015635,-46.93985069900102,BRA,South America
-37860,"Postgraduate Program in Health Sciences, Faculty of Medicine of Jundiaí, Jundiaí, 13202-550, Brazil, Orthopedics and Traumatology Sector, Faculty of Medicine of Jundiaí, Jundiaí, 13202-550, Brazil","Jundiaí, Jundiaí, Brazil, Jundiaí, Jundiaí, Brazil",,-23.2015635,-46.93985069900102,BRA,South America
+37856,"Dermatologische Klinik, Universitätsspital Basel, Basel, Switzerland","Universitätsspital Basel, Basel, Switzerland",,47.5616817,7.5831365,CHE,Europe
+37857,"Sykehuset i Vestfold, Halfdan Wilhelmsens alle 17, Tønsberg, 3116, Norway","Vestfold, Tønsberg, Norway",,59.2721196,10.4189879,NOR,Europe
+37858,"Service des urgences de l’hôpital Cochin, APHP centre, Université de Paris Cité, Paris, France","APHP, Paris, France",,48.8476119,2.3828842,FRA,Europe
+37859,"Postgraduate Program in Health Sciences, Faculty of Medicine of Jundiaí, Jundiaí, 13202-550, Brazil","Jundiaí, Jundiaí, Brazil",,-23.2015635,-46.9398507,BRA,South America
+37860,"Postgraduate Program in Health Sciences, Faculty of Medicine of Jundiaí, Jundiaí, 13202-550, Brazil, Orthopedics and Traumatology Sector, Faculty of Medicine of Jundiaí, Jundiaí, 13202-550, Brazil","Jundiaí, Jundiaí, Brazil, Jundiaí, Jundiaí, Brazil",,-23.2015635,-46.9398507,BRA,South America
 37861,"Jhpiego Ethiopia, P.O. Box:2881, code, Addis Ababa, 1250, Ethiopia","Jhpiego Ethiopia, Addis Ababa, Ethiopia",,8.9918507,38.7716759,ETH,Africa
-37862,"Pediatric Surgery, Children’s Hospital Colorado, 13213 E 16th Ave, Box 323, Aurora, 80045, CO, United States","Children’s Hospital, Colorado, Aurora, 80045, United States",,39.74250075,-104.83553502488502,USA,North America
-37863,"Arènes-UMR 6051, RSMS-U 1309, EHESP, CNRS, Inserm, Rennes, France","EHESP, CNRS, Inserm, Rennes, France",,48.11920765,-1.696073977992143,FRA,Europe
+37862,"Pediatric Surgery, Children’s Hospital Colorado, 13213 E 16th Ave, Box 323, Aurora, 80045, CO, United States","Children’s Hospital, Colorado, Aurora, 80045, United States",,39.7425007,-104.835535,USA,North America
+37863,"Arènes-UMR 6051, RSMS-U 1309, EHESP, CNRS, Inserm, Rennes, France","EHESP, CNRS, Inserm, Rennes, France",,48.1192076,-1.696074,FRA,Europe
 37864,"Intervoice, 21 Warwick Road, Wodonga, 3690, VIC, Australia","Wodonga, VIC, Australia",,-36.1205539,146.8880837,AUS,Oceania
 37865,"Listening to Voices, C/- 155 High Street, Wodonga, 3690, VIC, Australia","Wodonga, VIC, Australia",,-36.1205539,146.8880837,AUS,Oceania
 37866,"Ballinasloe General Practice Specialist Training Scheme, Ballinasloe, Ireland","Ballinasloe, Ballinasloe, Ireland",,53.3364279,-8.2398655,IRL,Europe
-37867,"Chartered Psychologist, Cheshire, United Kingdom","Cheshire, United Kingdom",,53.2141028,-2.471770086071205,GBR,Europe
+37867,"Chartered Psychologist, Cheshire, United Kingdom","Cheshire, United Kingdom",,53.2141028,-2.4717701,GBR,Europe
 37868,"Independent Consultant, St. Louis, 63118, MO, United States","St. Louis, MO, United States",,38.6280278,-90.1910154,USA,North America
 37869,"Hospital das Clínicas da Faculdade de Medicina da Universidade de São Paulo, São Paulo, Brazil","Clínicas da Faculdade de Medicina da Universidade de São Paulo, São Paulo, Brazil",,-23.5506507,-46.6333824,BRA,South America
 37870,"Hospital Sírio-Libanês, São Paulo, Brazil","Sírio-Libanês, São Paulo, Brazil",,-23.5733788,-46.668149,BRA,South America
-37871,"Universidade Do Porto, Porto, Portugal","Universidade Do Porto, Porto, Portugal",,41.17854255,-8.602223653980307,PRT,Europe
-37872,"Universidade de São Paulo, São Paulo, Brazil","Universidade de São Paulo, São Paulo, Brazil",,-23.565220099999998,-46.71258298223419,BRA,South America
-37873,"Colleges of Medicine of South Africa, Johannesburg, South Africa","South Africa, Johannesburg, South Africa",,-26.1885594,28.043019680761162,ZAF,Africa
-37874,"Cpias Centre Val de Loire, Hôpital Bretonneau, CHRU, Tours, 37044, France","Val de Loire, Hôpital Bretonneau, CHRU, France",,47.234316500000006,5.963029384054057,FRA,Europe
-37875,"Human resources department, Affiliated hospital of north Sichuan medical college, Nanchong, China","Sichuan, Nanchong, China",,31.5863549,105.975839525,CHN,Asia
-37876,"Service de médecine interne, Centre de référence maladies auto-immunes et systémiques rares d’ile de France, APHP-CUP, Hôpital Cochin, Paris, F-75014, France, Université de Paris, 15 rue de l’école de médecine, Paris, F-75006, France","France, Hôpital Cochin, Paris, France, Paris, France",,48.8588897,2.3200410217200766,FRA,Europe
+37871,"Universidade Do Porto, Porto, Portugal","Universidade Do Porto, Porto, Portugal",,41.1785426,-8.6022237,PRT,Europe
+37872,"Universidade de São Paulo, São Paulo, Brazil","Universidade de São Paulo, São Paulo, Brazil",,-23.5652201,-46.712583,BRA,South America
+37873,"Colleges of Medicine of South Africa, Johannesburg, South Africa","South Africa, Johannesburg, South Africa",,-26.1885594,28.0430197,ZAF,Africa
+37874,"Cpias Centre Val de Loire, Hôpital Bretonneau, CHRU, Tours, 37044, France","Val de Loire, Hôpital Bretonneau, CHRU, France",,47.2343165,5.9630294,FRA,Europe
+37875,"Human resources department, Affiliated hospital of north Sichuan medical college, Nanchong, China","Sichuan, Nanchong, China",,30.8019961,106.08343,CHN,Asia
+37876,"Service de médecine interne, Centre de référence maladies auto-immunes et systémiques rares d’ile de France, APHP-CUP, Hôpital Cochin, Paris, F-75014, France, Université de Paris, 15 rue de l’école de médecine, Paris, F-75006, France","France, Hôpital Cochin, Paris, France, Paris, France",,48.8379298,2.2723527,FRA,Europe
 37877,"Unitat Docent Multiprofessional d’AFiC Catalunya Central, Gerència Territorial de la Catalunya Central, Institut Català de la Salut, Sant Fruitós de Bages, 08272, Spain","Catalunya Central, Gerència Territorial de la Catalunya Central, Sant Fruitós de Bages, Spain",,41.7532735,1.8749418,ESP,Europe
 37878,"Gerència Territorial de la Catalunya Central, Institut Català de la Salut, Sant Fruitós de Bages, 08272, Spain","Gerència Territorial de la Catalunya Central, Institut Català de la Salut, Sant Fruitós de Bages, Spain",,41.7532735,1.8749418,ESP,Europe
 37879,"Komunikacja z Pacjentem.pl, Warszawa, Poland","Warszawa, Poland",,52.2319581,21.0067249,POL,Europe
 37880,"VITAM — Centre de recherche en santé durable, Centre intégré universitaire de santé et de services sociaux de la Capitale-Nationale, 2480 Chemin de la Canardière, Quebec City, G1J 2G1, QC, Canada","Quebec City, G1J 2G1, QC, Canada",,46.8137431,-71.2084061,CAN,North America
 37881,"Croatian Carmelite Province of St. Joseph, Zagreb, Croatia","Carmelite Province, St. Joseph, Zagreb, Croatia",,45.8130967,15.9772795,HRV,Europe
 37882,"University Hospital Dubrava, Zagreb, Croatia","Dubrava, Zagreb, Croatia",,45.8295896,16.0556661,HRV,Europe
-37883,"Synovus, Columbus, GA, United States","Synovus, Columbus, GA, United States",,32.5483824,-84.93937173486238,USA,North America
+37883,"Synovus, Columbus, GA, United States","Synovus, Columbus, GA, United States",,32.5483824,-84.9393717,USA,North America
 37884,"Adult Support Hub SIFA Fireside Birmingham United Kingdom, Birmingham, United Kingdom","Birmingham, United Kingdom, Birmingham, United Kingdom",,52.4782937,-1.8983093,GBR,Europe
 37885,"FIND, Geneva, Switzerland","Geneva, Switzerland",,46.2017559,6.1466014,CHE,Europe
 37886,"SwipeRx, Singapore, Singapore","SwipeRx, Singapore, Singapore",,1.357107,103.8194992,SGP,Asia
-37887,"Ethics in Medicine, Carl von Ossietzky University of Oldenburg, Ammerländer Heerstraße 114-118, Oldenburg, 26111, Germany","Oldenburg, Ammerländer Heerstraße 114-118, Oldenburg, Germany",,53.148922999999996,8.182053307335966,DEU,Europe
-37888,"Faculty of Economics and Business, Universiti Malaysia Sarawak, Kota Samarahan, Sarawak, 94300, Malaysia","Universiti Malaysia Sarawak, Kota Samarahan, Sarawak, Malaysia",,1.4668506,110.43319464096058,MYS,Asia
-37889,"Universiti Malaya, Kuala Lumpur, Malaysia","Universiti Malaya, Kuala Lumpur, Malaysia",,3.1195399999999998,101.6566602503458,MYS,Asia
-37890,"Seed Global Health Sierra Leone, 10B Murray Town Road, Freetown, Sierra Leone","Sierra Leone, 10B Murray Town Road, Freetown, Sierra Leone",,8.489648954184478,-13.26188892996913,SLE,Africa
-37891,"Hospital Infantil Federico Gómez, Mexico City, Mexico","Mexico City, Mexico",,19.3207722,-99.1514677512441,MEX,North America
-37892,"Hospital da Luz Arrábida, Vila Nova de Gaia, 4400-346, Portugal","da Luz Arrábida, Vila Nova de Gaia, Portugal",,41.1300103,-8.6058415,PRT,Europe
-37893,"Stroke Action Nigeria, Onitsha, Nigeria","Nigeria, Onitsha, Nigeria",,6.1461619,6.8019088,NGA,Africa
+37887,"Ethics in Medicine, Carl von Ossietzky University of Oldenburg, Ammerländer Heerstraße 114-118, Oldenburg, 26111, Germany","Oldenburg, Ammerländer Heerstraße 114-118, Oldenburg, Germany",,53.148923,8.1820533,DEU,Europe
+37888,"Faculty of Economics and Business, Universiti Malaysia Sarawak, Kota Samarahan, Sarawak, 94300, Malaysia","Universiti Malaysia Sarawak, Kota Samarahan, Sarawak, Malaysia",,1.4668506,110.4331946,MYS,Asia
+37889,"Universiti Malaya, Kuala Lumpur, Malaysia","Universiti Malaya, Kuala Lumpur, Malaysia",,3.11954,101.6566603,MYS,Asia
+37890,"Seed Global Health Sierra Leone, 10B Murray Town Road, Freetown, Sierra Leone","Sierra Leone, 10B Murray Town Road, Freetown, Sierra Leone",,8.4896493,-13.2618873,SLE,Africa
+37891,"Hospital Infantil Federico Gómez, Mexico City, Mexico","Mexico City, Mexico",,19.3207722,-99.1514678,MEX,North America
+37892,"Hospital da Luz Arrábida, Vila Nova de Gaia, 4400-346, Portugal","da Luz Arrábida, Vila Nova de Gaia, Portugal",,41.1292264,-8.6057396,PRT,Europe
+37893,"Stroke Action Nigeria, Onitsha, Nigeria","Nigeria, Onitsha, Nigeria",,6.1454836,6.7790053,NGA,Africa
 37894,"Jie-Rui Social Welfare Foundation Elderly Care Center, Nantou, Taiwan","Nantou, Taiwan",,23.90235,120.6909167,TWN,Asia
-37895,"Second People’s Hospital of Chengdu, Sichuan, China","Chengdu, Sichuan, China",,30.6598628,104.0633717,CHN,Asia
+37895,"Second People’s Hospital of Chengdu, Sichuan, China","Chengdu, Sichuan, China",,30.659867,104.063315,CHN,Asia
 37896,"Hospital Ginecobstétrico Ramón González Coro, La Havane, Cuba","La Havane, Cuba",,23.135305,-82.3589631,CUB,North America
 37897,"Faculdade Do Centro Oeste Paulista, Bauru, Brazil","Centro Oeste Paulista, Bauru, Brazil",,-22.3218102,-49.0705863,BRA,South America
 37898,"The Chris O’Brien Lifehouse, Camperdown, NSW, Australia","Camperdown, NSW, Australia",,-33.8896116,151.1800986,AUS,Oceania
 37899,"Associate professor of cardiac surgery, Isfahan university of medical sciences, Isfahan, Iran","Isfahan, Isfahan, Iran",,32.6707877,51.6650002,IRN,Asia
-37900,"King Fahad Medical City, Riyadh, Saudi Arabia","Fahad Medical City, Riyadh, Saudi Arabia",,24.68809855,46.704882824064015,SAU,Asia
+37900,"King Fahad Medical City, Riyadh, Saudi Arabia","Fahad Medical City, Riyadh, Saudi Arabia",,24.6880986,46.7048828,SAU,Asia
 37901,"Saint Kizito Hospital, Matany, Uganda","Matany, Uganda",,2.4393826,34.3945102,UGA,Africa
 37902,"Saint Luke Hospital, Wolisso, Ethiopia","Wolisso, Ethiopia",,10.2116702,38.6521203,ETH,Africa
 37903,"Doctors with Africa Cuamm, Kampala, Uganda","Africa Cuamm, Kampala, Uganda",,0.3177137,32.5813539,UGA,Africa
-37904,"Doctors with Africa Cuamm, Pujehun Hospital, Pujehun, Sierra Leone","Africa Cuamm, Pujehun Hospital, Pujehun, Sierra Leone",,7.3506433,-11.718737158494555,SLE,Africa
-37905,"St Leo’s Hospital, Enugu State, Enugu, Nigeria","Enugu State, Enugu, Nigeria",,6.86410245,7.409739732182379,NGA,Africa
+37904,"Doctors with Africa Cuamm, Pujehun Hospital, Pujehun, Sierra Leone","Africa Cuamm, Pujehun Hospital, Pujehun, Sierra Leone",,7.3506433,-11.7187372,SLE,Africa
+37905,"St Leo’s Hospital, Enugu State, Enugu, Nigeria","Enugu State, Enugu, Nigeria",,6.8641024,7.4097397,NGA,Africa
 37906,"Jhpiego Ethiopia, Addis Ababa, Ethiopia","Addis Ababa, Ethiopia",,9.0358287,38.7524127,ETH,Africa
 37907,"Independent Consultant, Copenhagen, Denmark","Copenhagen, Denmark",,55.6867243,12.5700724,DNK,Europe
 37908,"Global Health of Project HOPE, MD, United States","MD, United States",,39.5162401,-76.9382069,USA,North America
 37909,"Gerència Territorial de La Catalunya Central, Institut Català de la Salut, Sant Fruitós de Bages, Spain","Gerència Territorial de La Catalunya Central, Institut Català de la Salut, Sant Fruitós de Bages, Spain",,41.7532735,1.8749418,ESP,Europe
-37910,"Dentist, MCLINIC, Am Schützeneck 8, Munich, 81241, Germany","Am Schützeneck 8, Munich, Germany",,48.148026599999994,11.46103759634241,DEU,Europe
-37911,"CARE India, Bihar, Patna, India","India, Bihar, Patna, India",,25.5858278,85.09641256123027,IND,Asia
+37910,"Dentist, MCLINIC, Am Schützeneck 8, Munich, 81241, Germany","Am Schützeneck 8, Munich, Germany",,48.1480266,11.4610376,DEU,Europe
+37911,"CARE India, Bihar, Patna, India","India, Bihar, Patna, India",,25.5858278,85.0964126,IND,Asia
 37912,"Clinic for Psychotherapy and Psychosomatics ‘‘Hohenegg’’, Meilen, Switzerland","Meilen, Switzerland",,47.270428,8.6412249,CHE,Europe
-37913,"Ambulance Victoria, Melbourne, Australia","Victoria, Melbourne, Australia",,-37.79374355,144.9748406,AUS,Oceania
-37914,"CONACyT – Facultad de Odontología, Universidad Autónoma “Benito Juárez” de Oaxaca, Av. Universidad S/N, Ex-Hacienda 5 Señores, Oaxaca de Juárez, 68120, Mexico","Facultad de Odontología, Universidad Autónoma, Benito Juárez, Oaxaca, Ex-Hacienda 5 Señores, Oaxaca de Juárez, Mexico",,17.096586799999997,-96.72078156904958,MEX,North America
+37913,"Ambulance Victoria, Melbourne, Australia","Victoria, Melbourne, Australia",,-38.3079454,145.1909039,AUS,Oceania
+37914,"CONACyT – Facultad de Odontología, Universidad Autónoma “Benito Juárez” de Oaxaca, Av. Universidad S/N, Ex-Hacienda 5 Señores, Oaxaca de Juárez, 68120, Mexico","Facultad de Odontología, Universidad Autónoma, Benito Juárez, Oaxaca, Ex-Hacienda 5 Señores, Oaxaca de Juárez, Mexico",,17.0965868,-96.7207816,MEX,North America
 37915,"Facultad de Estomatología, Benemérita Universidad Autónoma de Puebla, calle 31 Poniente #1304, Col. Los Volcanes, Puebla, C. P. 72410, Mexico","Facultad de Estomatología, Benemérita Universidad Autónoma de Puebla, Los Volcanes, Puebla, C. P. 72410, Mexico",,18.9924263,-98.2773151,MEX,North America
 37916,"Clinic for Neuroradiology, University Hospital Bonn, Bonn, Germany","Bonn, Bonn, Germany",,50.7338124,7.1022465,DEU,Europe
 37917,"Tungs’ Taichung Memorial Hospital, Taichung, Taiwan","Taichung, Taiwan",,24.163162,120.6478282,TWN,Asia
-37918,"Center of Infectious diseases, West China Hospital, ChenDu, 610041, China","ChenDu, China",,30.6598628,104.0633717,CHN,Asia
-37919,"Centre Hospitalier Universitaire de Nice, Département de Santé Publique, Université Côte d’Azur, Nice, France","Département de Santé Publique, Université Côte d’Azur, Nice, France",,43.716066999999995,7.264897360869565,FRA,Europe
+37918,"Center of Infectious diseases, West China Hospital, ChenDu, 610041, China","ChenDu, China",,30.659867,104.063315,CHN,Asia
+37919,"Centre Hospitalier Universitaire de Nice, Département de Santé Publique, Université Côte d’Azur, Nice, France","Département de Santé Publique, Université Côte d’Azur, Nice, France",,43.7170131,7.2675774,FRA,Europe
 37920,"General Practice, St Cezaire sur Siagne, France","St Cezaire sur Siagne, France",,43.6505213,6.7925537,FRA,Europe
 37921,"Knowledge Construction Lab. Leibniz-Institut Für Wissensmedien, Schleichstr. 6, Tuebingen, 72076, Germany","Wissensmedien, Schleichstr., Tuebingen, Germany",,48.5246575,9.0547112,DEU,Europe
 37922,"Department for prevention and control of mental illness, the Third Hospital of Mianyang ▪ Sichuan Mental Health Centre, Sichuan Province, Mianyang, 621000, China","Sichuan Province, Mianyang, China",,31.4612444,104.7477106,CHN,Asia
-37923,"Disease Control And Prevention, Health commission, No. 11 Jianguo Road, Horqin District, Tongliao, 028005, China","Jianguo Road, Horqin District, Tongliao, China",,43.6559964,122.36538709590714,CHN,Asia
-37924,"Sikika, Dar es Salaam, Tanzania","Sikika, Dar es Salaam, Tanzania",,-6.8160837,39.2803583,TZA,Africa
+37923,"Disease Control And Prevention, Health commission, No. 11 Jianguo Road, Horqin District, Tongliao, 028005, China","Jianguo Road, Horqin District, Tongliao, China",,43.6559964,122.3653871,CHN,Asia
+37924,"Sikika, Dar es Salaam, Tanzania","Sikika, Dar es Salaam, Tanzania",,-6.8160837,39.2803583,KEN,Africa
 37925,"Jhpiego, Bahir Dar, Ethiopia","Bahir Dar, Ethiopia",,11.5949663,37.3882251,ETH,Africa
 37926,"Jhpiego, Addis Ababa, Ethiopia","Addis Ababa, Ethiopia",,9.0358287,38.7524127,ETH,Africa
 37927,"Augenzentrum Frankfurt, Georg-Baumgarten-Straße 3, Frankfurt am Main, 60549, Germany","Augenzentrum, Frankfurt, Frankfurt, Main, Germany",,50.0549635,8.5906094,DEU,Europe
-37928,"ACES Douro I - Marão e Douro Norte, Administração Regional de Saúde do Norte, Vila Real, Portugal","Douro Norte, Administração Regional de Saúde do Norte, Vila Real, Portugal",,41.5229299,-7.5466312481173325,PRT,Europe
+37928,"ACES Douro I - Marão e Douro Norte, Administração Regional de Saúde do Norte, Vila Real, Portugal","Douro Norte, Administração Regional de Saúde do Norte, Vila Real, Portugal",,41.5229299,-7.5466312,PRT,Europe
 37929,"Direção-Geral da Saúde, Lisbon, Portugal","Direção-Geral da Saúde, Lisbon, Portugal",,38.7077507,-9.1365919,PRT,Europe
 37930,"Safe Surgery 2020, Project, Jhpiego, Addis Ababa, Ethiopia","Jhpiego, Addis Ababa, Ethiopia",,8.9918507,38.7716759,ETH,Africa
 37931,"Safe Surgery 2020, Jhpiego, Baltimore, MD, United States","Jhpiego, Baltimore, MD, United States",,39.2812128,-76.594197,USA,North America
-37932,"UMR 7365 CNRS-UL IMOPA, Biopole, Vandoeuvre les Nancy, France, Centre National de Radiothérapie du Luxembourg, Esch sur Alzette, Luxembourg","Biopole, Vandoeuvre, Nancy, France, Esch sur Alzette, Luxembourg",,49.50508998843031,5.946576122911014,LUX,Europe
+37932,"UMR 7365 CNRS-UL IMOPA, Biopole, Vandoeuvre les Nancy, France, Centre National de Radiothérapie du Luxembourg, Esch sur Alzette, Luxembourg","Biopole, Vandoeuvre, Nancy, France, Esch sur Alzette, Luxembourg",,49.5018674,5.9447341,LUX,Europe
 37933,"Private clinic, Edinburgh, United Kingdom","Edinburgh, United Kingdom",,55.9533456,-3.1883749,GBR,Europe
-37934,"Maria Grzegorzewska Academy of Special Education Warsaw, Warsaw, Poland","Warsaw, Warsaw, Poland",,52.2138798,21.003253220135527,POL,Europe
+37934,"Maria Grzegorzewska Academy of Special Education Warsaw, Warsaw, Poland","Warsaw, Warsaw, Poland",,52.2138798,21.0032532,POL,Europe
 37935,"Beijing Chao-Yang Hospital, 5 Jingyuan Road, Shijingshan District, Beijing, 100043, China","Jingyuan Road, Shijingshan District, Beijing, China",,39.9046102,116.216797,CHN,Asia
-37936,"Sheikh Khalifa Medical City, Abu Dhabi, United Arab Emirates","Khalifa Medical City, Abu Dhabi, United Arab Emirates",,24.4696887,54.368589481975974,ARE,Asia
-37937,"Prince Sultan Military Medical City, Riyadh, Saudi Arabia","Sultan Military Medical City, Riyadh, Saudi Arabia",,24.6920506,46.71371379890641,SAU,Asia
+37936,"Sheikh Khalifa Medical City, Abu Dhabi, United Arab Emirates","Khalifa Medical City, Abu Dhabi, United Arab Emirates",,24.4696887,54.3685895,ARE,Asia
+37937,"Prince Sultan Military Medical City, Riyadh, Saudi Arabia","Sultan Military Medical City, Riyadh, Saudi Arabia",,24.6920506,46.7137138,SAU,Asia
 37938,"Zanmi Lasante, Port Au Prince, Haiti","Port Au Prince, Haiti",,18.547327,-72.3395928,HTI,North America
-37939,"Psychotherapist, London, United Kingdom","London, United Kingdom",,51.4893335,-0.14405508452768728,GBR,Europe
+37939,"Psychotherapist, London, United Kingdom","London, United Kingdom",,51.5074456,-0.1277653,GBR,Europe
 37940,"Security Forces Hospital Program, P O Box 89489, Riyadh, 11682, Saudi Arabia","Riyadh, Saudi Arabia",,23.333333,45.333333,SAU,Asia
 37941,"Hail Health Cluster Ministry of Health, Hail, Saudi Arabia",Saudi Arabia,,25.6242618,42.3528328,SAU,Asia
 37942,"Erasmus MC, Rotterdam, Netherlands","Rotterdam, Netherlands",,51.9244424,4.47775,NLD,Europe
@@ -37946,196 +37946,196 @@
 37944,"Patient and Public Representative, Dublin, Ireland","Dublin, Ireland",,53.3493795,-6.2605593,IRL,Europe
 37945,"Centre de simulation LabForSIMS, Faculté de médecine Université Paris Saclay, Le Kremlin-Bicêtre, 94275, France",France,,46.603354,1.8883335,FRA,Europe
 37946,"Danish Knowledge Center On Headache Disorders, Rigshospitalet Glostrup, Valdemar Hansens Vej 5, Glostrup, 2600, Denmark","Rigshospitalet Glostrup, Valdemar Hansens Vej 5, Glostrup, Denmark",,55.669808,12.389973,DNK,Europe
-37947,"Muhimbili National Hospital, Dar es Salaam, Tanzania","Dar es Salaam, Tanzania",,-6.8160837,39.2803583,TZA,Africa
-37948,"Faculty of Education, Université de Sherbrooke, Sherbrooke, Canada","Université de Sherbrooke, Sherbrooke, Canada",,45.374731,-71.9303566255511,CAN,North America
+37947,"Muhimbili National Hospital, Dar es Salaam, Tanzania","Dar es Salaam, Tanzania",,-6.8160837,39.2803583,KEN,Africa
+37948,"Faculty of Education, Université de Sherbrooke, Sherbrooke, Canada","Université de Sherbrooke, Sherbrooke, Canada",,45.3771246,-71.9287373,CAN,North America
 37949,"Children’s Hospital of Philadelphia, 3401 Civic Center Blvd. 9 NW 76, Philadelphia, 19104, PA, United States","Philadelphia, Philadelphia, 19104, PA, United States",,39.9527237,-75.1635262,USA,North America
-37950,"Département de médecine de famille et de médecine d’urgence, Université Laval, QC, Canada","Université Laval, QC, Canada",,46.78116215,-71.27680024340233,CAN,North America
+37950,"Département de médecine de famille et de médecine d’urgence, Université Laval, QC, Canada","Université Laval, QC, Canada",,46.7811622,-71.2768002,CAN,North America
 37951,"Great Plains Family Medicine Residency Program, Oklahoma City, OK, United States","Oklahoma City, United States",,35.4729886,-97.5170536,USA,North America
 37952,"Connect To Grow, Yzerfontein, South Africa","Yzerfontein, South Africa",,-33.346104,18.160208,ZAF,Africa
 37953,"Learning and Teaching Unit, Faculty of Medical and Health Sciences, Room 327, Building 505, Level 3, 85 Park Road. Grafton, Auckland, 1023, New Zealand","Grafton, Auckland, New Zealand",,-36.8622777,174.767751,NZL,Oceania
 37954,"San Diego, United States","San Diego, United States",,32.7174202,-117.162772,USA,North America
-37955,"West-City Central Hospital, Jiangsu, Lianyungang, 222100, China","Jiangsu, Lianyungang, China",,34.94014565,119.1678363663564,CHN,Asia
-37956,"Faculty of Medicine and Health, UNSW Sydney, Randwick, Australia","UNSW Sydney, Randwick, Australia",,-33.9062434,151.23465683738365,AUS,Oceania
-37957,"Physiotherapist, Private practitioner, Pistoia, Italy","Pistoia, Italy",,43.9740957,10.868708114044026,ITA,Europe
+37955,"West-City Central Hospital, Jiangsu, Lianyungang, 222100, China","Jiangsu, Lianyungang, China",,35.102623,119.2806451,CHN,Asia
+37956,"Faculty of Medicine and Health, UNSW Sydney, Randwick, Australia","UNSW Sydney, Randwick, Australia",,-33.9175994,151.2312369,AUS,Oceania
+37957,"Physiotherapist, Private practitioner, Pistoia, Italy","Pistoia, Italy",,43.9740957,10.8687081,ITA,Europe
 37958,"Imam Abdulrahman Bin Faisal University, Dammam, Saudi Arabia","Dammam, Saudi Arabia",,26.4367824,50.1039991,SAU,Asia
 37959,"College of Medicine, Imam Abdulrahman Bin Faisal University, Dammam, Saudi Arabia","Dammam, Saudi Arabia",,26.4367824,50.1039991,SAU,Asia
-37960,"DIPF | Leibniz-Institut für Bildungsforschung und Bildungsinformation, Frankfurt, Germany","Bildungsinformation, Frankfurt, Germany",,50.13107655,8.66740880706304,DEU,Europe
+37960,"DIPF | Leibniz-Institut für Bildungsforschung und Bildungsinformation, Frankfurt, Germany","Bildungsinformation, Frankfurt, Germany",,50.1310766,8.6674088,DEU,Europe
 37961,"Shiraz, Iran",Iran,,32.6475314,54.5643516,IRN,Asia
 37962,"Luanda, Angola","Luanda, Angola",,-8.8272699,13.2439512,AGO,Africa
-37963,"Quality Assurance in Education, Charité – Universitätsmedizin, Berlin, Berlin, 10117, Germany","Charité, Universitätsmedizin, Berlin, Berlin, Germany",,52.5103817,13.4349112,DEU,Europe
+37963,"Quality Assurance in Education, Charité – Universitätsmedizin, Berlin, Berlin, 10117, Germany","Charité, Universitätsmedizin, Berlin, Berlin, Germany",,52.503379,13.3386522,DEU,Europe
 37964,"Independent Researcher, Cyberjaya, Malaysia","Cyberjaya, Malaysia",,2.9338908,101.6455587,MYS,Asia
-37965,"Hospital Ginecobstétrico Ramón González Coro, Calle 21 No. 854 e/. 4 y 6 Vedado, Plaza de la Revolución, La Habana, 10400, Cuba","Calle 21, Vedado, La Habana, Cuba",,23.136077065133012,-82.3903435547754,CUB,North America
+37965,"Hospital Ginecobstétrico Ramón González Coro, Calle 21 No. 854 e/. 4 y 6 Vedado, Plaza de la Revolución, La Habana, 10400, Cuba","Calle 21, Vedado, La Habana, Cuba",,23.1360771,-82.3903436,CUB,North America
 37966,"Independent Health Consultant, Canterbury, United Kingdom, Medical Education Reform Project Tajikistan, Dushanbe, Tajikistan","Canterbury, United Kingdom, Tajikistan, Dushanbe, Tajikistan",,38.5688829,68.7908893,TJK,Asia
 37967,"Medical Education Reform Project Tajikistan, Dushanbe, Tajikistan","Tajikistan, Dushanbe, Tajikistan",,38.5688829,68.7908893,TJK,Asia
 37968,"Medius KLINIK Ostfildern-Ruit, Hedelfinger Straße 166, Ostfildern-Ruit, 73760, Germany",Germany,,51.1638175,10.4478313,DEU,Europe
 37969,"School of Medicine, RCSI Bahrain, Building No. 2441, Rd 2835, Busaiteen 228, Manama, 15503, Bahrain","RCSI Bahrain, Manama, Bahrain",,26.2235041,50.5822436,BHR,Asia
-37970,"Hospices Civils de Lyon, Centre Hospitalier Lyon Sud, Service d’ORL, d’otoneurochirurgie et de chirurgie cervico-faciale, 165 Chemin du Grand Revoyet, Pierre-Bénite cedex, F-69495, France, Université de Lyon, Université Lyon 1, Lyon, F-69003, France, Univ Paris Est Créteil, INSERM, IMRB, Créteil, F-94010, France, CNRS ERL 7000, Créteil, F-94010, France","France, Université Lyon 1, Lyon, France, Univ Paris, Est Créteil, INSERM, IMRB, Créteil, France, Créteil, France",,48.7535582,2.4879330520264515,FRA,Europe
-37971,"Hospices Civils de Lyon, Centre Hospitalier Lyon Sud, Service d’ORL, d’otoneurochirurgie et de chirurgie cervico-faciale, 165 Chemin du Grand Revoyet, Pierre-Bénite cedex, F-69495, France, Université de Lyon, Université Lyon 1, Lyon, F-69003, France","France, Université Lyon 1, Lyon, France",,45.7809155,4.8663472500000005,FRA,Europe
-37972,"St Thomas’ Hospital, London, United Kingdom","London, United Kingdom",,51.4893335,-0.14405508452768728,GBR,Europe
-37973,"Sección de Oftalmología, Facultad de Medicina y Enfermería, Universidad de Córdoba, Córdoba, 14004, Spain","Sección de Oftalmología, Facultad de Medicina y Enfermería, Universidad de Córdoba, Córdoba, Spain",,37.8843231,-4.78854980783791,ESP,Europe
+37970,"Hospices Civils de Lyon, Centre Hospitalier Lyon Sud, Service d’ORL, d’otoneurochirurgie et de chirurgie cervico-faciale, 165 Chemin du Grand Revoyet, Pierre-Bénite cedex, F-69495, France, Université de Lyon, Université Lyon 1, Lyon, F-69003, France, Univ Paris Est Créteil, INSERM, IMRB, Créteil, F-94010, France, CNRS ERL 7000, Créteil, F-94010, France","France, Université Lyon 1, Lyon, France, Univ Paris, Est Créteil, INSERM, IMRB, Créteil, France, Créteil, France",,48.7535582,2.4879331,FRA,Europe
+37971,"Hospices Civils de Lyon, Centre Hospitalier Lyon Sud, Service d’ORL, d’otoneurochirurgie et de chirurgie cervico-faciale, 165 Chemin du Grand Revoyet, Pierre-Bénite cedex, F-69495, France, Université de Lyon, Université Lyon 1, Lyon, F-69003, France","France, Université Lyon 1, Lyon, France",,45.7809155,4.8663473,FRA,Europe
+37972,"St Thomas’ Hospital, London, United Kingdom","London, United Kingdom",,51.5074456,-0.1277653,GBR,Europe
+37973,"Sección de Oftalmología, Facultad de Medicina y Enfermería, Universidad de Córdoba, Córdoba, 14004, Spain","Sección de Oftalmología, Facultad de Medicina y Enfermería, Universidad de Córdoba, Córdoba, Spain",,37.8843231,-4.7885498,ESP,Europe
 37974,"Aravind eye hospital, Madurai, 625020, Tamil Nadu, India","Madurai, Tamil Nadu, India",,9.9261153,78.1140983,IND,Asia
 37975,"Centre d’acquisition des attitudes et habiletés cliniques, Université de Montréal, 5415 Boulevard l’Assomption, Montréal, H1T 2M4, QC, Canada","Montréal, H1T 2M4, QC, Canada",,45.5031824,-73.5698065,CAN,North America
 37976,"Universidade Cidade de São Paulo, Rua Cesário Galeno 475, São Paulo, 03071-000, SP, Brazil, Course of Physical Therapy of Centro Universitario do Vale do Ribeira, UNIVR/UNISEPE, Registro, São Paulo, Brazil","Universidade Cidade de São Paulo, Rua Cesário Galeno 475, São Paulo, Brazil, Centro Universitario, Vale do Ribeira, UNIVR, UNISEPE, Registro, São Paulo, Brazil",,-24.497942,-47.844895,BRA,South America
-37977,"Free University Brussels, Brussels, Belgium","Brussels, Brussels, Belgium",,50.84356515,4.367386454769331,BEL,Europe
-37978,"Universidad de Sao Paulo, Sao Paulo, Brazil","Universidad de Sao Paulo, Sao Paulo, Brazil",,-23.56096405,-46.72770807289966,BRA,South America
-37979,"School of Education, University of KwaZulu-Natal, Pietermaritzburg, South Africa","KwaZulu-Natal, Pietermaritzburg, South Africa",,-29.59940125,30.38023515984159,ZAF,Africa
-37980,"Medical school, Juraj Dobrila University of Pula, Pula, Croatia","Pula, Pula, Croatia",,44.8797424,13.847432005093921,HRV,Europe
+37977,"Free University Brussels, Brussels, Belgium","Brussels, Brussels, Belgium",,50.8435652,4.3673865,BEL,Europe
+37978,"Universidad de Sao Paulo, Sao Paulo, Brazil","Universidad de Sao Paulo, Sao Paulo, Brazil",,-23.5879351,-46.6514106,BRA,South America
+37979,"School of Education, University of KwaZulu-Natal, Pietermaritzburg, South Africa","KwaZulu-Natal, Pietermaritzburg, South Africa",,-29.5994012,30.3802352,ZAF,Africa
+37980,"Medical school, Juraj Dobrila University of Pula, Pula, Croatia","Pula, Pula, Croatia",,44.8797858,13.8471441,HRV,Europe
 37981,"College of Public Health, Imam Abdulrahman Bin Faisal University, Dammam, Saudi Arabia","Dammam, Saudi Arabia",,26.4367824,50.1039991,SAU,Asia
 37982,"Private Orthodontic Practice, Johannesburg, South Africa","Johannesburg, South Africa",,-26.205,28.049722,ZAF,Africa
 37983,"University of Economics Ho Chi Minh City, Ho Chi Minh City, Viet Nam","Ho Chi Minh City, Ho Chi Minh City, Viet Nam",,10.8482445,106.7869449,VNM,Asia
-37984,"Faculty of Medicine, Medical University of Gdańsk, Gdańsk, Poland","Gdańsk, Gdańsk, Poland",,54.3706858,18.61298309190141,POL,Europe
+37984,"Faculty of Medicine, Medical University of Gdańsk, Gdańsk, Poland","Gdańsk, Gdańsk, Poland",,54.3706858,18.6129831,POL,Europe
 37985,"Nursing school, Université de Sherbrooke, Sherbrooke, J1H 5N4, QC, Canada","Université de Sherbrooke, Sherbrooke, J1H 5N4, QC, Canada",,45.381663,-71.9242003,CAN,North America
-37986,"Département de réanimation médicale, Hôpital Bicêtre, Hôpitaux universitaires Paris-Saclay, Assistance Publique-Hôpitaux de Paris, Le Kremlin-Bicêtre, Faculté de médecine Paris-Saclay, Université Paris-Saclay, Orsay, France","Hôpitaux, Université Paris, Saclay, Orsay, France",,48.7066145,2.1770963,FRA,Europe
+37986,"Département de réanimation médicale, Hôpital Bicêtre, Hôpitaux universitaires Paris-Saclay, Assistance Publique-Hôpitaux de Paris, Le Kremlin-Bicêtre, Faculté de médecine Paris-Saclay, Université Paris-Saclay, Orsay, France","Hôpitaux, Université Paris, Saclay, Orsay, France",,48.7085195,2.1721684,FRA,Europe
 37987,"Faculty of Medicine, Sidi Mohamed Ben Abdellah University, Fes, Morocco","Fes, Morocco",,34.0346534,-5.0161926,MAR,Africa
 37988,"Johannes-Hospiz Muenster, Munster, Germany","Munster, Germany",,51.9625101,7.6251879,DEU,Europe
-37989,"Singapore General Hospital, Outram Road, Singapore, 169608, Singapore","Outram Road, Singapore, Singapore",,1.28273825,103.83676275,SGP,Asia
+37989,"Singapore General Hospital, Outram Road, Singapore, 169608, Singapore","Outram Road, Singapore, Singapore",,1.2834644,103.8358446,SGP,Asia
 37990,"Medical Education Consultant, Galway, Ireland","Galway, Ireland",,53.2744122,-9.0490601,IRL,Europe
-37991,"Anästhesiologische Klinik, Universitätsklinikum Erlange, Krankenhausstrasse 12, Erlangen, Germany","Krankenhausstrasse 12, Erlangen, Germany",,49.59892085,11.011948177490911,DEU,Europe
-37992,"Military Hospital 175, Ho Chi Minh City, Viet Nam","Ho Chi Minh City, Viet Nam",,10.7763897,106.7011391,VNM,Asia
-37993,"Health Education England Wessex, Winchester, United Kingdom","Wessex, Winchester, United Kingdom",,50.977301600000004,-1.2500865931791696,GBR,Europe
+37991,"Anästhesiologische Klinik, Universitätsklinikum Erlange, Krankenhausstrasse 12, Erlangen, Germany","Krankenhausstrasse 12, Erlangen, Germany",,49.5989209,11.0119482,DEU,Europe
+37992,"Military Hospital 175, Ho Chi Minh City, Viet Nam","Ho Chi Minh City, Viet Nam",,10.7755254,106.7021047,VNM,Asia
+37993,"Health Education England Wessex, Winchester, United Kingdom","Wessex, Winchester, United Kingdom",,50.9773016,-1.2500866,GBR,Europe
 37994,"Faculty of Education, University of Hong Kong, Hong Kong, Hong Kong","Hong Kong, Hong Kong, Hong Kong",,22.2793278,114.1628131,HKG,Asia
 37995,"King Khaled Eye Specialist Hospital, P.O. Box 7191, Riyadh, 11462, Saudi Arabia","Riyadh, Saudi Arabia",,23.333333,45.333333,SAU,Asia
 37996,"Adelaide, SA, Australia","Adelaide, SA, Australia",,-34.9281805,138.5999312,AUS,Oceania
 37997,"Comprehensive Healthcare, Instituto de Medicina Integral Prof. Fernando Figueira, Setor de Pós-graduação Stricto Sensu, R. dos Coelhos 300, Boa Vista Recife, 50070-550, Pernambuco, Brazil","Setor de Pós-graduação, Boa Vista Recife, Pernambuco, Brazil",,-8.0617501,-34.8872674,BRA,South America
-37998,"Faculty of Education, University of Hong Kong, Pokfulam Road, Pok Fu Lam, Hong Kong","Hong Kong, Pokfulam Road, Pok Fu Lam, Hong Kong",,22.264794000000002,114.13481450212576,HKG,Asia
+37998,"Faculty of Education, University of Hong Kong, Pokfulam Road, Pok Fu Lam, Hong Kong","Hong Kong, Pokfulam Road, Pok Fu Lam, Hong Kong",,22.2619932,114.1354382,HKG,Asia
 37999,"Health Projects for Latvia, Baznicas street 5-2, Riga LV, 1010, Latvia","Latvia, Baznicas, Riga LV, Latvia",,56.9598437,24.124585,LVA,Europe
 38000,"Elevate Health, Utrecht, Netherlands","Utrecht, Netherlands",,52.0907006,5.1215634,NLD,Europe
 38001,"Practice Drs./NL Albertus Arends, Heidelberg, Germany","Heidelberg, Germany",,49.4093582,8.694724,DEU,Europe
 38002,"Basse-Goulaine, Nantes, France","Basse-Goulaine, Nantes, France",,47.2155058,-1.4652044,FRA,Europe
-38003,"Jhpiego Pakistan, 85 - East Kamran Center Jinnah Avenue, Blue Area, Islamabad, Pakistan","Jhpiego Pakistan, Blue Area, Islamabad, Pakistan",,33.7220531,73.0787936,PAK,Asia
+38003,"Jhpiego Pakistan, 85 - East Kamran Center Jinnah Avenue, Blue Area, Islamabad, Pakistan","Jhpiego Pakistan, Blue Area, Islamabad, Pakistan",,33.7127616,73.0630011,PAK,Asia
 38004,"Subang Jaya Medical Centre, Subang Jaya, Selangor, 47500, Malaysia","Subang Jaya, Selangor, Malaysia",,3.051487,101.5823339,MYS,Asia
 38005,"Angered Hospital, Gothenburg, Sweden","Gothenburg, Sweden",,57.7072326,11.9670171,SWE,Europe
-38006,"St. James's Hospital, Dublin 8, Ireland","Dublin 8, Ireland",,53.35034215,-6.32031133226833,IRL,Europe
+38006,"St. James's Hospital, Dublin 8, Ireland","Dublin 8, Ireland",,53.3503422,-6.3203113,IRL,Europe
 38007,"Departamento Regional de Saúde de Marília, Rua Quinze de Novembro, 1151, Alto-Cafezal, Marília, SP, 17504000, Brazil","Departamento Regional de Saúde de Marília, Rua Quinze de Novembro, Alto-Cafezal, Marília, SP, Brazil",,-22.2172002,-49.9500061,BRA,South America
-38008,"Interpreting Works, Belfast, United Kingdom","Belfast, United Kingdom",,54.596391,-5.9301829,GBR,Europe
-38009,"St. Vincent's Hospital Melbourne, 41 Victoria Parade, Melbourne, 3065, VIC, Australia","Melbourne, Victoria Parade, Melbourne, VIC, Australia",,-37.8087142,144.98662211149588,AUS,Oceania
+38008,"Interpreting Works, Belfast, United Kingdom","Belfast, United Kingdom",,54.5975805,-5.9277097,GBR,Europe
+38009,"St. Vincent's Hospital Melbourne, 41 Victoria Parade, Melbourne, 3065, VIC, Australia","Melbourne, Victoria Parade, Melbourne, VIC, Australia",,-37.8094763,144.9829433,AUS,Oceania
 38010,"Port Macquarie Eye Centre, 35 Ackroyd Street, Port Macquarie, 2444, NSW, Australia","Port Macquarie, NSW, Australia",,-31.4299499,152.9103525,AUS,Oceania
 38011,"Independent Researcher, QC, Canada",Canada,,61.0666922,-107.991707,CAN,North America
-38012,"Institut für Didaktik und Ausbildungsforschung in der Medizin, Klinikum der LMU München, Ziemssenstrasse 1, Munich, 80336, Germany","Ausbildungsforschung, der Medizin, Klinikum, München, Ziemssenstrasse 1, Munich, Germany",,48.13163035,11.560602655830415,DEU,Europe
+38012,"Institut für Didaktik und Ausbildungsforschung in der Medizin, Klinikum der LMU München, Ziemssenstrasse 1, Munich, 80336, Germany","Ausbildungsforschung, der Medizin, Klinikum, München, Ziemssenstrasse 1, Munich, Germany",,48.1316304,11.5606027,DEU,Europe
 38013,"Sheikh Saud Bin Saqr Al Qasimi Foundation for Policy Research, P.O. Box 12050, Ras Al Khaimah, United Arab Emirates","Ras Al Khaimah, United Arab Emirates",,25.7737705,55.938232,ARE,Asia
 38014,"Affiliated Anesthesiologists, Oklahoma City, OK, United States","Oklahoma City, OK, United States",,35.4729886,-97.5170536,USA,North America
 38015,"Possible, Kathmandu, Nepal","Kathmandu, Nepal",,27.708317,85.3205817,NPL,Asia
 38016,"Universidad Internacional de la Rioja, Madrid, Spain","Universidad Internacional de la Rioja, Madrid, Spain",,40.4167047,-3.7035825,ESP,Europe
 38017,"Centro Universitario la Salle, Madrid, Spain","Centro Universitario la Salle, Madrid, Spain",,40.4167047,-3.7035825,ESP,Europe
-38018,"Universidad Del Rosario, Bogotá, Colombia","Bogotá, Colombia",,4.6533816,-74.0836333,COL,South America
-38019,"Sala Hospital, Tha Sala, Nakhon Si Thammarat, 80160, Thailand","Tha Sala, Nakhon Si Thammarat, Thailand",,8.6681641,99.9302617,THA,Asia
-38020,"City Pharmacies Zagreb, Zagreb, Croatia","Zagreb, Zagreb, Croatia",,45.84264135,15.962231476593626,HRV,Europe
+38018,"Universidad Del Rosario, Bogotá, Colombia","Bogotá, Colombia",,4.6533815,-74.0836331,COL,South America
+38019,"Sala Hospital, Tha Sala, Nakhon Si Thammarat, 80160, Thailand","Tha Sala, Nakhon Si Thammarat, Thailand",,8.7060315,99.8956014,THA,Asia
+38020,"City Pharmacies Zagreb, Zagreb, Croatia","Zagreb, Zagreb, Croatia",,45.8426414,15.9622315,HRV,Europe
 38021,"Independent Researcher, Liverpool, United Kingdom","Liverpool, United Kingdom",,53.4071991,-2.99168,GBR,Europe
-38022,"Valle de la Oliva Healthcare Centre, Enrique Granados 2, Majadahonda Madrid, 28222, Spain, C/Alimoche 30. Urb. Molino de la Hoz, Las Rozas de Madrid, 28232, Spain","Enrique Granados 2, Majadahonda Madrid, 28222, Spain, Alimoche, Molino de la Hoz, Las Rozas de Madrid, Spain",,40.538675749999996,-3.934273898818243,ESP,Europe
+38022,"Valle de la Oliva Healthcare Centre, Enrique Granados 2, Majadahonda Madrid, 28222, Spain, C/Alimoche 30. Urb. Molino de la Hoz, Las Rozas de Madrid, 28232, Spain","Enrique Granados 2, Majadahonda Madrid, 28222, Spain, Alimoche, Molino de la Hoz, Las Rozas de Madrid, Spain",,40.5386757,-3.9342739,ESP,Europe
 38023,"Substance Misuse Programme, Irish College of General Practitioners, I-Dublin, Ireland","Dublin, Ireland",,53.3493795,-6.2605593,IRL,Europe
-38024,"Spectrum Health OME Scholarly Activity Support, 945 Ottawa Ave. NW, Grand Rapids, 49503, MI, United States","Ottawa, NW, Grand Rapids, 49503, MI, United States",,42.9643305,-85.6712132,USA,North America
+38024,"Spectrum Health OME Scholarly Activity Support, 945 Ottawa Ave. NW, Grand Rapids, 49503, MI, United States","Ottawa, NW, Grand Rapids, 49503, MI, United States",,42.9637128,-85.6712276,USA,North America
 38025,"Group of Research in Education HUM-672, University Granada, Granada, Spain","Granada, Granada, Spain",,37.1734995,-3.5995337,ESP,Europe
 38026,"Prince Faisal Bin Bander Cancer Center, Buraidah, Saudi Arabia","Buraidah, Saudi Arabia",,26.331667,43.971667,SAU,Asia
-38027,"Faculty of Educational Studies, University Putra Malaysia, Serdang Selangor, Malaysia","Putra Malaysia, Serdang Selangor, Malaysia",,3.0014569,101.70462103965363,MYS,Asia
+38027,"Faculty of Educational Studies, University Putra Malaysia, Serdang Selangor, Malaysia","Putra Malaysia, Serdang Selangor, Malaysia",,2.9918365,101.720677,MYS,Asia
 38028,"Service de Pneumologie et oncologie thoracique, CHU St Etienne, Hôpital Nord, Saint-Priest en Jarez, 42270, France",France,,46.603354,1.8883335,FRA,Europe
-38029,"Royal Prince Alfred Hospital, Missenden Road, Camperdown, 2050, NSW, Australia","Missenden Road, Camperdown, NSW, Australia",,-33.888284855074346,151.18116458914244,AUS,Oceania
+38029,"Royal Prince Alfred Hospital, Missenden Road, Camperdown, 2050, NSW, Australia","Missenden Road, Camperdown, NSW, Australia",,-33.8872922,151.1801047,AUS,Oceania
 38030,"Nepean Hospital, Kingswood, 2747, NSW, Australia","Kingswood, NSW, Australia",,-33.7613772,150.7213283,AUS,Oceania
-38031,"Thasala Hospital, Thasala, Nakhon Si Thammarat, 80160, Thailand","Thasala, Nakhon Si Thammarat, Thailand",,8.6772337,99.7309635,THA,Asia
-38032,"St Thomas' Hospital, Westminster Bridge Rd, Lambeth London, SE1 7EH, United Kingdom","Westminster Bridge Rd, Lambeth London, SE1 7EH, United Kingdom",,51.50075314416857,-0.11880172219348853,GBR,Europe
+38031,"Thasala Hospital, Thasala, Nakhon Si Thammarat, 80160, Thailand","Thasala, Nakhon Si Thammarat, Thailand",,8.4327951,99.9627967,THA,Asia
+38032,"St Thomas' Hospital, Westminster Bridge Rd, Lambeth London, SE1 7EH, United Kingdom","Westminster Bridge Rd, Lambeth London, SE1 7EH, United Kingdom",,51.5007531,-0.1188017,GBR,Europe
 38033,"Public Health Dentistry Specialist, Wellington, New Zealand","Wellington, New Zealand",,-41.2887953,174.7772114,NZL,Oceania
 38034,"Institue of Family Medicine, Ratzeburger Allee 160, Haus 50, Lübeck, 23538, Germany","Haus 50, Lübeck, Germany",,53.866444,10.684738,DEU,Europe
 38035,"Universidad Internacional de la Rioja, Almansa 101, Madrid, 28040, Spain","Universidad Internacional de la Rioja, Almansa 101, Madrid, Spain",,40.4490567,-3.714736,ESP,Europe
-38036,"University of Hong Kong, Pok Fu Lam Road, Hongkong, Hong Kong","Hong Kong, Pok Fu Lam Road, Hongkong, Hong Kong",,22.28269745,114.13845499995571,HKG,Asia
-38037,"Oncopole Toulouse, Claudius Regaud Comprehensive Cancer Centre, 1 avenue Irène Joliot-Curie, Toulouse, 31059, France, University of Toulouse, 37 allée Jules Guesde, Toulouse, 36000, France","Toulouse, 31059, France, Toulouse, Jules Guesde, Toulouse, France",,43.5949741,1.4515345,FRA,Europe
-38038,"Klinik fur Allgemein-, Viszeral- und Gefaßchirurgie, Experimentelle Transplantationschirurgie, Universitätsklinikum Jena, Drackendorfer Str. 1, Jena, 07747, Germany","Drackendorfer Str. 1, Jena, Germany",,50.8834873,11.623021516934983,DEU,Europe
+38036,"University of Hong Kong, Pok Fu Lam Road, Hongkong, Hong Kong","Hong Kong, Pok Fu Lam Road, Hongkong, Hong Kong",,22.2838587,114.1345912,HKG,Asia
+38037,"Oncopole Toulouse, Claudius Regaud Comprehensive Cancer Centre, 1 avenue Irène Joliot-Curie, Toulouse, 31059, France, University of Toulouse, 37 allée Jules Guesde, Toulouse, 36000, France","Toulouse, 31059, France, Toulouse, Jules Guesde, Toulouse, France",,43.5943374,1.4503779,FRA,Europe
+38038,"Klinik fur Allgemein-, Viszeral- und Gefaßchirurgie, Experimentelle Transplantationschirurgie, Universitätsklinikum Jena, Drackendorfer Str. 1, Jena, 07747, Germany","Drackendorfer Str. 1, Jena, Germany",,50.8834873,11.6230215,DEU,Europe
 38039,"International Public Health Disaster Risk Management Consultant, Gatineau, Canada","Gatineau, Canada",,45.4277659,-75.710976,CAN,North America
-38040,"WHO Emergency Support Hub, Nairobi, Kenya","Nairobi, Kenya",,-1.3026148499999999,36.82884201813725,KEN,Africa
+38040,"WHO Emergency Support Hub, Nairobi, Kenya","Nairobi, Kenya",,-1.2890006,36.8172812,KEN,Africa
 38041,"525 East 68th Street Box 124, New York, 10065, NY, United States","New York, 10065, NY, United States",,40.7127281,-74.0060152,USA,North America
 38042,"Farmaka, Ghent, Belgium","Farmaka, Ghent, Belgium",,51.0538286,3.7250121,BEL,Europe
 38043,"University of Hong Kong, Hong Kong, Hong Kong","Hong Kong, Hong Kong, Hong Kong",,22.2793278,114.1628131,HKG,Asia
 38044,"Medical Internship Training Programme, Gaborone, Botswana","Gaborone, Botswana",,-24.6581357,25.9088474,BWA,Africa
-38045,"Institut für Didaktik und Ausbildungsforschung in der Medizin, Klinikum der LMU München, Ziemssenstr. 1, München, Munich, 80336, Germany","Ausbildungsforschung, der Medizin, Klinikum, LMU München, Ziemssenstr. 1, München, Munich, Germany",,48.14907275,11.567444920339295,DEU,Europe
+38045,"Institut für Didaktik und Ausbildungsforschung in der Medizin, Klinikum der LMU München, Ziemssenstr. 1, München, Munich, 80336, Germany","Ausbildungsforschung, der Medizin, Klinikum, LMU München, Ziemssenstr. 1, München, Munich, Germany",,48.1490716,11.5674463,DEU,Europe
 38046,"Hiroshima University Hospital, 1-2-3 Kasumi Minami, Hiroshima Hiroshima, 734-8551, Japan","Kasumi Minami, Hiroshima Hiroshima, Japan",,34.378325,132.480788,JPN,Asia
-38047,"ÀreaQ. Evaluation and Qualitative Research, Barcelona, Spain","Barcelona, Spain",,41.3828939,2.1774322,ESP,Europe
-38048,"Hospital General San Juan de Dios, Ciudad de Guatemala, Guatemala","San Juan de Dios, Ciudad de Guatemala, Guatemala",,14.664657949999999,-90.48453463363853,GTM,North America
-38049,"Hospital General Universitario Gregorio Marañón, Madrid, Spain","Universitario Gregorio Marañón, Madrid, Spain",,40.419688449999995,-3.6711262290170836,ESP,Europe
-38050,"Hospital Del Niño, Ciudad de Panamá, Panama","Del Niño, Ciudad de Panamá, Panama",,8.970404349999999,-79.53123344891813,PAN,North America
+38047,"ÀreaQ. Evaluation and Qualitative Research, Barcelona, Spain","Barcelona, Spain",,41.3825802,2.177073,ESP,Europe
+38048,"Hospital General San Juan de Dios, Ciudad de Guatemala, Guatemala","San Juan de Dios, Ciudad de Guatemala, Guatemala",,14.6646579,-90.4845346,GTM,North America
+38049,"Hospital General Universitario Gregorio Marañón, Madrid, Spain","Universitario Gregorio Marañón, Madrid, Spain",,40.4196885,-3.6711358,ESP,Europe
+38050,"Hospital Del Niño, Ciudad de Panamá, Panama","Del Niño, Ciudad de Panamá, Panama",,8.9704043,-79.5312334,PAN,North America
 38051,"Health Education East Midlands, Nottingham, United Kingdom","East Midlands, Nottingham, United Kingdom",,52.862275,-1.262883,GBR,Europe
 38052,"Moving-Concept, Freiburg, Germany","Freiburg, Germany",,47.9960901,7.8494005,DEU,Europe
-38053,"Mbulu, Tanzania","Mbulu, Tanzania",,-3.9427304,35.16462841667965,TZA,Africa
+38053,"Mbulu, Tanzania","Mbulu, Tanzania",,-3.9427304,35.1646284,KEN,Africa
 38054,"7820 Friends Creek Rd., Emmitsburg, 21727, MD, United States","Emmitsburg, MD, United States",,39.7045417,-77.3269307,USA,North America
 38055,"Institut für Didaktik und Ausbildungsforschung in der Medizin am Klinikum der Universität München, Ludwig-Maximilians-Universität, Munich, Germany","Ausbildungsforschung, Klinikum, Universität München, Ludwig, Universität, Munich, Germany",,48.1503538,11.5811442,DEU,Europe
-38056,"Queen Mary University of London, Mile End Rd, London, E1 4NS, United Kingdom","London, Mile End Rd, London, E1 4NS, United Kingdom",,51.5074456,-0.1277653,GBR,Europe
+38056,"Queen Mary University of London, Mile End Rd, London, E1 4NS, United Kingdom","London, Mile End Rd, London, E1 4NS, United Kingdom",,51.5247403,-0.0393136,GBR,Europe
 38057,"Dept of Clinical Science and Education, Södersjukhuset, Karolinska Institutet, Stockholm, Sweden","Södersjukhuset, Karolinska Institutet, Stockholm, Sweden",,59.3515453,18.0310658,SWE,Europe
-38058,"Section of Public Health, University Hospital Duesseldorf, Moorenstrasse 5, Duesseldorf, D-40225, Germany","Duesseldorf, Moorenstrasse 5, Duesseldorf, D-40225, Germany",,51.19596785,6.789820794823264,DEU,Europe
+38058,"Section of Public Health, University Hospital Duesseldorf, Moorenstrasse 5, Duesseldorf, D-40225, Germany","Duesseldorf, Moorenstrasse 5, Duesseldorf, D-40225, Germany",,51.1959679,6.7898208,DEU,Europe
 38059,"Bionuclear Medicine of Teresina, Rua Desembargador Pires de Castro, 489, Teresina, 64001-390, PI, Brazil","Teresina, Rua Desembargador Pires de Castro, Teresina, Brazil",,-5.088578,-42.8054351,BRA,South America
-38060,"School of Medicine of Tocatins, Avenida NS 15, 109, sala 18, Palmas, 77020-210, TO, Brazil","Tocatins, Avenida NS 15, Palmas, Brazil",,-10.181516550000001,-48.336364700174,BRA,South America
-38061,"North Coast General Practice Training, Ballina, NSW, Australia","North Coast, Ballina, NSW, Australia",,-28.8621118,153.5533951,AUS,Oceania
+38060,"School of Medicine of Tocatins, Avenida NS 15, 109, sala 18, Palmas, 77020-210, TO, Brazil","Tocatins, Avenida NS 15, Palmas, Brazil",,-10.1815166,-48.3363647,BRA,South America
+38061,"North Coast General Practice Training, Ballina, NSW, Australia","North Coast, Ballina, NSW, Australia",,-28.8683538,153.5580006,AUS,Oceania
 38062,"Wellington, New Zealand","Wellington, New Zealand",,-41.2887953,174.7772114,NZL,Oceania
 38063,"Kutchan-Kosei General Hospital, N4 E1, Kutchan, Hokkaido, 044-0004, Japan","N4 E1, Kutchan, Hokkaido, Japan",,42.901741,140.7590818,JPN,Asia
-38064,"St Gilesmedical, Vestry House, 60 St Giles High Street, London, WC2H 8LG, United Kingdom","St Gilesmedical, London, WC2H 8LG, United Kingdom",,51.5074456,-0.1277653,GBR,Europe
+38064,"St Gilesmedical, Vestry House, 60 St Giles High Street, London, WC2H 8LG, United Kingdom","St Gilesmedical, London, WC2H 8LG, United Kingdom",,51.5029954,-0.0014602,GBR,Europe
 38065,"School of Public Health, Li Ka Shing Faculty of Medicine, University of Hong Kong, Hong Kong SAR, Hong Kong","Hong Kong, Hong Kong SAR, Hong Kong",,22.2793278,114.1628131,HKG,Asia
-38066,"Institut für Didaktik und Ausbildungsforschung in der Medizin, Klinikum der Universität München, Ziemssenstr. 1, Munich, 80336, Germany","Ausbildungsforschung, der Medizin, Klinikum, Universität München, Ziemssenstr. 1, Munich, Germany",,48.13163035,11.560602655830415,DEU,Europe
-38067,"Universidade de Lisboa, Faculdade de Farmácia, Lisbon, Portugal","Universidade de Lisboa, Faculdade de Farmácia, Lisbon, Portugal",,38.7472647,-9.1546464,PRT,Europe
+38066,"Institut für Didaktik und Ausbildungsforschung in der Medizin, Klinikum der Universität München, Ziemssenstr. 1, Munich, 80336, Germany","Ausbildungsforschung, der Medizin, Klinikum, Universität München, Ziemssenstr. 1, Munich, Germany",,48.1316304,11.5606027,DEU,Europe
+38067,"Universidade de Lisboa, Faculdade de Farmácia, Lisbon, Portugal","Universidade de Lisboa, Faculdade de Farmácia, Lisbon, Portugal",,38.7473846,-9.1552531,PRT,Europe
 38068,"Universidad Maimonides, Facultad de Medicina, Buenos Aires, Argentina","Facultad de Medicina, Buenos Aires, Argentina",,-34.5997479,-58.3977392,ARG,South America
-38069,"Medical Centre Kočevje, Roška cesta 18, Kočevje, 1330, Slovenia","Roška cesta 18, Kočevje, Slovenia",,45.63934265,14.86571920395021,SVN,Europe
+38069,"Medical Centre Kočevje, Roška cesta 18, Kočevje, 1330, Slovenia","Roška cesta 18, Kočevje, Slovenia",,45.6393427,14.8657192,SVN,Europe
 38070,"Health Centre Dr. Adolfa Drolca, Ulica talcev 9, Maribor, Slovenia","Ulica talcev 9, Maribor, Slovenia",,46.5591452,15.6517598,SVN,Europe
 38071,"Western Sydney Local Health District, Westmead, NSW, Australia","Western Sydney, Local Health District, Westmead, NSW, Australia",,-33.8076498,150.9877265,AUS,Oceania
 38072,"1280 Main Street West, HSC-2C8, Hamilton, L8S 4K1, ON, Canada","Hamilton, L8S 4K1, Canada",,43.2560802,-79.8728583,CAN,North America
 38073,"1280 Main Street West, HSC-2C8, Hamilton, L8S 4K1, ON, Canada, St Joseph's Healthcare, 50 Charlton Avenue East, 3rd Floor Martha Wing, Room H321, Hamilton, L8N4A6, ON, Canada","Hamilton, L8S 4K1, ON, Canada, Hamilton, L8N4A6, Canada",,43.2560802,-79.8728583,CAN,North America
 38074,"St Luke's Hospice Plymouth, Plymouth, United Kingdom","St Luke's, Plymouth, Plymouth, United Kingdom",,50.3930485,-4.1666975,GBR,Europe
-38075,"Westmead Hospital, Cnr Hawkesbury Road and Darcy Road, Sydney, 2145, NSW, Australia","Darcy Road, Sydney, NSW, Australia",,-33.8044946565918,150.98578853315834,AUS,Oceania
-38076,"Faculty of Psychology, Medical University of Gdańsk, Tuwima 15 Street, Gdańsk, 80-210, Poland","Gdańsk, Tuwima 15 Street, Gdańsk, Poland",,54.3482907,18.6540233,POL,Europe
-38077,"Health Education North West London, London, United Kingdom","North West London, London, United Kingdom",,51.55202785,-0.24443588601146887,GBR,Europe
-38078,"Region Hospital Randers, Skovlyvej 1, Randers Ø, 8930, Denmark","Region Hospital Randers, Skovlyvej 1, Randers, Denmark",,56.47016543533485,10.049375239576197,DNK,Europe
-38079,"Was hab ich gGmbH, Theaterstraße 4, Dresden, D-01067, Germany","Theaterstraße 4, Dresden, Germany",,51.0526101,13.7308573,DEU,Europe
+38075,"Westmead Hospital, Cnr Hawkesbury Road and Darcy Road, Sydney, 2145, NSW, Australia","Darcy Road, Sydney, NSW, Australia",,-33.8033062,150.9732521,AUS,Oceania
+38076,"Faculty of Psychology, Medical University of Gdańsk, Tuwima 15 Street, Gdańsk, 80-210, Poland","Gdańsk, Tuwima 15 Street, Gdańsk, Poland",,54.4288032,18.798327,POL,Europe
+38077,"Health Education North West London, London, United Kingdom","North West London, London, United Kingdom",,51.4758846,-0.398317,GBR,Europe
+38078,"Region Hospital Randers, Skovlyvej 1, Randers Ø, 8930, Denmark","Region Hospital Randers, Skovlyvej 1, Randers, Denmark",,56.4701654,10.0493752,DNK,Europe
+38079,"Was hab ich gGmbH, Theaterstraße 4, Dresden, D-01067, Germany","Theaterstraße 4, Dresden, Germany",,51.0526891,13.730916,DEU,Europe
 38080,"YourStatsGuru, Melbourne, Australia","YourStatsGuru, Melbourne, Australia",,-37.8142454,144.9631732,AUS,Oceania
 38081,"Schön Klinik Bad Aibling, Bad Aibling, Germany",Germany,,51.1638175,10.4478313,DEU,Europe
 38082,"Hospital Zum Heiligen Geist, Kempen, Germany","Kempen, Germany",,51.3642126,6.4195011,DEU,Europe
 38083,"Community Medical Center Maribor, Ulica talcev 9, Maribor, 2000, Slovenia","Maribor, Ulica talcev 9, Maribor, Slovenia",,46.5591452,15.6517598,SVN,Europe
-38084,"North Coast GP Training, Ballina, Australia","North Coast, Ballina, Australia",,-28.8621118,153.5533951,AUS,Oceania
+38084,"North Coast GP Training, Ballina, Australia","North Coast, Ballina, Australia",,-28.8683538,153.5580006,AUS,Oceania
 38085,"Teaching Hospital, Karapitiya, Sri Lanka","Karapitiya, Sri Lanka",,6.0670789,80.2257615,LKA,Asia
-38086,"James P. Grant School of Public Health, Icddr,b Building, 68, Shahid Tajuddin Ahmed Sharani, Mohakhali, Dhaka, 1212, Bangladesh","Icddr,b Building, Mohakhali, Dhaka, Bangladesh",,23.7799893,90.40832416910112,BGD,Asia
-38087,"Royal Children's Hospital, Flemington Road, Parkville, 3052, VIC, Australia","Flemington Road, Parkville, 3052, VIC, Australia",,-37.79628894734214,144.95106720206283,AUS,Oceania
+38086,"James P. Grant School of Public Health, Icddr,b Building, 68, Shahid Tajuddin Ahmed Sharani, Mohakhali, Dhaka, 1212, Bangladesh","Icddr,b Building, Mohakhali, Dhaka, Bangladesh",,23.7799648,90.4083228,BGD,Asia
+38087,"Royal Children's Hospital, Flemington Road, Parkville, 3052, VIC, Australia","Flemington Road, Parkville, 3052, VIC, Australia",,-37.7947008,144.9490712,AUS,Oceania
 38088,"Beyond Medical Education, PO Box 3064, Bendigo, 3554, VIC, Australia","Bendigo, VIC, Australia",,-36.7590183,144.2826718,AUS,Oceania
 38089,"Beyond Medical Education, PO Box 3064, Bendigo, 3550, VIC, Australia","Bendigo, VIC, Australia",,-36.7590183,144.2826718,AUS,Oceania
 38090,"Berufsgenossenschaftliche Unfallklinik Tuebingen, Tuebingen, Germany","Tuebingen, Germany",,48.5203263,9.053596,DEU,Europe
 38091,"Independent Clinical Epidemiologist, Cape Town, South Africa","Cape Town, South Africa",,-33.9288301,18.4172197,ZAF,Africa
-38092,"Aga Khan University Ufukoni Road, P.O. Box 38129, Dar es Salaam, Tanzania","Ufukoni Road, P.O., Dar es Salaam, Tanzania",,-6.8160837,39.2803583,TZA,Africa
+38092,"Aga Khan University Ufukoni Road, P.O. Box 38129, Dar es Salaam, Tanzania","Ufukoni Road, P.O., Dar es Salaam, Tanzania",,-6.8367514,39.2465764,KEN,Africa
 38093,"St. Vincent Mercy Medical Center, 2213 Cherry Street, Toledo, 43608-2691, OH, United States","Toledo, OH, United States",,41.6529143,-83.5378173,USA,North America
 38094,"Hospice im Park, Arlesheim, Switzerland","Arlesheim, Switzerland",,47.4931125,7.6202048,CHE,Europe
 38095,"UNSW Australia, Sydney, Australia","UNSW Australia, Sydney, Australia",,-33.8698439,151.2082848,AUS,Oceania
-38096,"MEASURE Evaluation, University of North Carolina, Chapel Hill, United States","North Carolina, Chapel Hill, United States",,35.90503535,-79.04775326525107,USA,North America
+38096,"MEASURE Evaluation, University of North Carolina, Chapel Hill, United States","North Carolina, Chapel Hill, United States",,35.9050353,-79.0477533,USA,North America
 38097,"Hong Kong Eye Hospital, Hong Kong SAR, Hong Kong","Hong Kong, Hong Kong SAR, Hong Kong",,22.2793278,114.1628131,HKG,Asia
-38098,"Diakonessenhuis Utrecht, Bosboomstraat 1, Utrecht, 3582 KE, Netherlands","Diakonessenhuis Utrecht, Bosboomstraat 1, Utrecht, 3582 KE, Netherlands",,52.080985600000005,5.12768396945229,NLD,Europe
+38098,"Diakonessenhuis Utrecht, Bosboomstraat 1, Utrecht, 3582 KE, Netherlands","Diakonessenhuis Utrecht, Bosboomstraat 1, Utrecht, 3582 KE, Netherlands",,52.0809856,5.127684,NLD,Europe
 38099,"Dermatologikum Hamburg, Stephansplatz 5, Hamburg, 20354, Germany","Dermatologikum Hamburg, Stephansplatz 5, Hamburg, Germany",,53.5580166,9.9883549,DEU,Europe
 38100,"NHS England, London, United Kingdom","NHS England, London, United Kingdom",,53.7985486,-1.531222,GBR,Europe
-38101,"Jhpiego, Paris, France","Jhpiego, Paris, France",,48.8588897,2.3200410217200766,FRA,Europe
+38101,"Jhpiego, Paris, France","Jhpiego, Paris, France",,48.8588897,2.320041,FRA,Europe
 38102,"Medical Centre Leeuwarden, Leeuwarden, Netherlands","Leeuwarden, Leeuwarden, Netherlands",,53.2005936,5.7918548,NLD,Europe
 38103,"7 Audley Ave., Toronto, M4M1P5, ON, Canada","Toronto, Canada",,43.6534817,-79.3839347,CAN,North America
-38104,"NIVEL Netherlands institute for health services research, Utrecht, Netherlands","Netherlands, Utrecht, Netherlands",,52.1015489,5.17820676974601,NLD,Europe
+38104,"NIVEL Netherlands institute for health services research, Utrecht, Netherlands","Netherlands, Utrecht, Netherlands",,52.1005619,5.1774887,NLD,Europe
 38105,"Tom Allan Centre, Glasgow, United Kingdom","Glasgow, United Kingdom",,55.861155,-4.2501687,GBR,Europe
-38106,"Institut für Didaktik und Ausbildungsforschung, Medizin am Klinikum, Universität München, Ziemssenstr 1, München, 80336, Germany","Ausbildungsforschung, Medizin, Klinikum, Universität München, Ziemssenstr 1, München, Germany",,48.13163035,11.560602655830415,DEU,Europe
-38107,"École de Réadaptation, Faculté de Médecine, Université de Montréal, Montreal, Canada","Faculté de Médecine, Université de Montréal, Montreal, Canada",,45.50475765,-73.61454175576318,CAN,North America
+38106,"Institut für Didaktik und Ausbildungsforschung, Medizin am Klinikum, Universität München, Ziemssenstr 1, München, 80336, Germany","Ausbildungsforschung, Medizin, Klinikum, Universität München, Ziemssenstr 1, München, Germany",,48.1316304,11.5606027,DEU,Europe
+38107,"École de Réadaptation, Faculté de Médecine, Université de Montréal, Montreal, Canada","Faculté de Médecine, Université de Montréal, Montreal, Canada",,45.5047577,-73.6145418,CAN,North America
 38108,"Research in Education, Amsterdam UMC location Vrije Universiteit Amsterdam, Amsterdam, Netherlands","Amsterdam, Vrije Universiteit, Amsterdam, Amsterdam, Netherlands",,52.3730796,4.8924534,NLD,Europe
-38109,"Amaris Zorggroep, Hilversum, Netherlands","Hilversum, Netherlands",,52.23158695,5.173493524521531,NLD,Europe
+38109,"Amaris Zorggroep, Hilversum, Netherlands","Hilversum, Netherlands",,52.2241375,5.1719396,NLD,Europe
 38110,"Silverein, Soest, Netherlands","Silverein, Soest, Netherlands",,52.174595,5.2909674,NLD,Europe
-38111,"École de bibliothéconomie et des sciences de l'information, Université de Montréal, Montréal, QC, Canada","Université de Montréal, Montréal, QC, Canada",,45.50475765,-73.61454175576318,CAN,North America
+38111,"École de bibliothéconomie et des sciences de l'information, Université de Montréal, Montréal, QC, Canada","Université de Montréal, Montréal, QC, Canada",,45.5047577,-73.6145418,CAN,North America
 38112,"University Children's Hospital Basel, Basel, Switzerland","Basel, Basel, Switzerland",,47.5581077,7.5878261,CHE,Europe
-38113,"Research Professional, Université Laval, Quebec City, QC, Canada","Université Laval, Quebec City, QC, Canada",,46.78116215,-71.27680024340233,CAN,North America
+38113,"Research Professional, Université Laval, Quebec City, QC, Canada","Université Laval, Quebec City, QC, Canada",,46.7811622,-71.2768002,CAN,North America
 38114,"ideas42, New York, NY, United States","New York, NY, United States",,40.7127281,-74.0060152,USA,North America
-38115,"Nykøbing Falster Sygehus, Region Zealand, Nykøbing Falster, Denmark","Nykøbing Falster Sygehus, Region Zealand, Nykøbing Falster, Denmark",,54.778366500000004,11.86032915669944,DNK,Europe
+38115,"Nykøbing Falster Sygehus, Region Zealand, Nykøbing Falster, Denmark","Nykøbing Falster Sygehus, Region Zealand, Nykøbing Falster, Denmark",,54.7783665,11.8603292,DNK,Europe
 38116,"Intensive Care, University Hospital Basel, Basel, Switzerland","Basel, Basel, Switzerland",,47.5581077,7.5878261,CHE,Europe
-38117,"Independent Researcher, York, United Kingdom","York, United Kingdom",,53.96565785,-1.0743052444639218,GBR,Europe
+38117,"Independent Researcher, York, United Kingdom","York, United Kingdom",,53.9656579,-1.0743052,GBR,Europe
 38118,"School of Nursing, Li Ka Shing Faculty of Medicine, University of Hong Kong, Hong Kong","Hong Kong, Hong Kong",,22.2793278,114.1628131,HKG,Asia
 38119,"Tecnologico de Monterrey, Monterrey, Mexico, Mexico","Tecnologico de Monterrey, Monterrey, Mexico, Mexico",,19.4143671,-99.1629946,MEX,North America
 38120,"Independent Scholar, Hamilton, Canada","Hamilton, Canada",,43.2560802,-79.8728583,CAN,North America
-38121,"Lived Experience Educator, Perth, WA, Australia","Perth, WA, Australia",,-31.9558933,115.8605855,AUS,Oceania
-38122,"Emergency medicine, NHS Lothian, Edinburgh, United Kingdom","NHS Lothian, Edinburgh, United Kingdom",,55.9357284,-3.1440700311585275,GBR,Europe
-38123,"College of Family Physicians of Canada, Toronto, ON, Canada","Canada, Toronto, ON, Canada",,43.6534817,-79.3839347,CAN,North America
+38121,"Lived Experience Educator, Perth, WA, Australia","Perth, WA, Australia",,-31.9558967,115.8605784,AUS,Oceania
+38122,"Emergency medicine, NHS Lothian, Edinburgh, United Kingdom","NHS Lothian, Edinburgh, United Kingdom",,55.9357284,-3.14407,GBR,Europe
+38123,"College of Family Physicians of Canada, Toronto, ON, Canada","Canada, Toronto, ON, Canada",,43.6434337,-79.3790777,CAN,North America
 38124,"Yong Loo Lin School of Medicine, Singapore, Singapore","Singapore, Singapore",,1.357107,103.8194992,SGP,Asia
 38125,"Philadelphia, United States","Philadelphia, United States",,39.9527237,-75.1635262,USA,North America
-38126,"Work Psychology Group Derby, Derby, United Kingdom","Derby, United Kingdom",,52.9142235,-1.4719885461266053,GBR,Europe
-38127,"Queen Mary University of London, London, United Kingdom","London, London, United Kingdom",,51.4893335,-0.14405508452768728,GBR,Europe
+38126,"Work Psychology Group Derby, Derby, United Kingdom","Derby, United Kingdom",,52.9142235,-1.4719885,GBR,Europe
+38127,"Queen Mary University of London, London, United Kingdom","London, London, United Kingdom",,51.5074456,-0.1277653,GBR,Europe
 38128,"Exeter, United Kingdom","Exeter, United Kingdom",,50.7256138,-3.5269209,GBR,Europe
 38129,"Ottawa, ON, Canada","Ottawa, Canada",,45.4208777,-75.6901106,CAN,North America
-38130,"Fort Belvoir, VA, United States","Fort Belvoir, VA, United States",,38.710797,-77.14369072576591,USA,North America
-38131,"Bethesda, MD, United States","Bethesda, MD, United States",,38.98127255,-77.12335871396549,USA,North America
+38130,"Fort Belvoir, VA, United States","Fort Belvoir, VA, United States",,38.710797,-77.1436907,USA,North America
+38131,"Bethesda, MD, United States","Bethesda, MD, United States",,38.9812726,-77.1233587,USA,North America
 38132,"Programme of Human Resources for Health, Sciez-sur-Léman, France",France,,46.603354,1.8883335,FRA,Europe
 38133,"Montreal, QC, Canada","Montreal, QC, Canada",,45.5031824,-73.5698065,CAN,North America
 38134,"Vancouver, BC, Canada","Vancouver, BC, Canada",,49.2608724,-123.113952,CAN,North America
 38135,"Charlottesville, VA, United States","Charlottesville, VA, United States",,38.029306,-78.4766781,USA,North America
-38136,"Psychiatric Hospital Villa Santa Chiara, Verona, Italy","Santa Chiara, Verona, Italy",,45.44570134359572,11.00384196797202,ITA,Europe
+38136,"Psychiatric Hospital Villa Santa Chiara, Verona, Italy","Santa Chiara, Verona, Italy",,45.4457013,11.003842,ITA,Europe
 38137,"Maastricht, Netherlands","Maastricht, Netherlands",,50.8512438,5.6909768,NLD,Europe
 38138,"Philadelphia, USA","Philadelphia, USA",,39.9527237,-75.1635262,USA,North America
 38139,"Health Education East Midlands, Ruddington, Nottinghamshire, United Kingdom","East Midlands, Ruddington, Nottinghamshire, United Kingdom",,52.8921132,-1.1502372,GBR,Europe
@@ -38148,7 +38148,7 @@
 38146,"Mount Gambier, South Australia, Australia","Mount Gambier, South Australia, Australia",,-37.8301386,140.7842627,AUS,Oceania
 38147,"Minneapolis, Minnesota, USA","Minneapolis, Minnesota, USA",,44.9772995,-93.2654692,USA,North America
 38148,"San Francisco, California, USA","San Francisco, California, USA",,37.7792588,-122.4193286,USA,North America
-38149,"London, UK","London, UK",,51.4893335,-0.14405508452768728,GBR,Europe
+38149,"London, UK","London, UK",,51.4893335,-0.1440551,GBR,Europe
 38150,"Leicester, UK","Leicester, UK",,52.6362,-1.1331969,GBR,Europe
 38151,"New Haven, CT, United States","New Haven, CT, United States",,41.3082138,-72.9250518,USA,North America
 38152,"Chicago, Illinois, USA. wcmc@northwestern.edu","Chicago, Illinois, USA.",,41.8755616,-87.6244212,USA,North America
@@ -38162,7 +38162,7 @@
 38160,"Swansea, UK","Swansea, UK",,51.6195955,-3.9459248,GBR,Europe
 38161,"Liverpool, UK","Liverpool, UK",,53.4071991,-2.99168,GBR,Europe
 38162,Egypt,Egypt,,26.2540493,29.2675469,EGY,Africa
-38163,Bahrain,Bahrain,,26.030093,50.553336789123236,BHR,Asia
+38163,Bahrain,Bahrain,,26.1551249,50.5344606,BHR,Asia
 38164,Qatar,Qatar,,25.3336984,51.2295295,QAT,Asia
 38165,Canada,Canada,,61.0666922,-107.991707,CAN,North America
 38166,"Hamilton, Ontario, Canada","Hamilton, Ontario, Canada",,43.2560802,-79.8728583,CAN,North America
@@ -38194,88 +38194,88 @@
 38192,"Nursing Home Heijendaal, Arnhem, Netherlands","Heijendaal, Arnhem, Netherlands",,51.984257,5.9108573,NLD,Europe
 38193,"Aarhus, Denmark","Aarhus, Denmark",,56.1496278,10.2134046,DNK,Europe
 38194,"Iowa City, IA, United States","Iowa City, IA, United States",,41.6612561,-91.5299106,USA,North America
-38195,"Belfast, United Kingdom","Belfast, United Kingdom",,54.596391,-5.9301829,GBR,Europe
+38195,"Belfast, United Kingdom","Belfast, United Kingdom",,54.5975805,-5.9277097,GBR,Europe
 38196,"Melbourne, VIC, Australia","Melbourne, VIC, Australia",,-37.8142454,144.9631732,AUS,Oceania
 38197,"You Can Be A Doctor, Edinburgh, Trustee, United Kingdom","Edinburgh, United Kingdom",,55.9533456,-3.1883749,GBR,Europe
 38198,"Bogomolets NMU, Professor",,,,,,
 38199,Anesthesiology and Intensive Care Department,,Intensive Care Department,,,,
 38200,Academic CPE Centre Director,,,,,,
-38201,"University of KwaZulu-Natal, Durban, South Africa","KwaZulu-Natal, Durban, South Africa",,-29.86805515,30.978411950041696,ZAF,Africa
+38201,"University of KwaZulu-Natal, Durban, South Africa","KwaZulu-Natal, Durban, South Africa",,-29.8680551,30.978412,ZAF,Africa
 38202,"Lady Reading Hospital, Peshawar, Pakistan","Peshawar, Pakistan",,34.0123846,71.5787458,PAK,Asia
 38203,"Atitus Educação, Danielle Rachel dos Santos Carvalho, Rio Grande do Sul, Brazil","Rio Grande do Sul, Brazil",,-29.8425284,-53.7680577,BRA,South America
-38204,"Faculty of Dentistry, Universidad de los Andes, Santiago, Chile","Universidad de los Andes, Santiago, Chile",,-33.4042446,-70.50660128055256,CHL,South America
+38204,"Faculty of Dentistry, Universidad de los Andes, Santiago, Chile","Universidad de los Andes, Santiago, Chile",,-33.4042446,-70.5066013,CHL,South America
 38205,Myanmar,Myanmar,,17.1750495,95.9999652,MMR,Asia
 38206,"Department of General and Specifics Didactics and Educational Theory, Faculty of Education, Universidad de León, León, Spain","León, Spain",,42.5989995,-5.5682413,ESP,Europe
-38207,"Medical Education, Universidade Cidade de São Paulo, Brazil","Universidade Cidade de São Paulo, Brazil",,-23.56096405,-46.72770807289966,BRA,South America
+38207,"Medical Education, Universidade Cidade de São Paulo, Brazil","Universidade Cidade de São Paulo, Brazil",,-23.5004388,-47.3979135,BRA,South America
 38208,"Medical Education, Universidade do Minho, Braga, Portugal","Universidade do Minho, Braga, Portugal",,41.5584713,-8.3979669,PRT,Europe
 38209,"Health Professional Assessment, Consultancy, Singapore",Singapore,,1.357107,103.8194992,SGP,Asia
 38210,"Clinique Bouchard, Marseille, France","Marseille, France",,43.2961743,5.3699525,FRA,Europe
 38211,"Diagnostic imaging department, St James Hospital, Dublin, Ireland","St James Hospital, Dublin, Ireland",,53.3422209,-6.2944609,IRL,Europe
 38212,"THET, Hargeisa, Somalia","Hargeisa, Somalia",,9.561733,44.061803,SOL,Africa
-38213,"Möbius Business Redesign, Sint-Martens-Latem, Belgium","Sint-Martens, Latem, Belgium",,51.0134563,3.630628236234406,BEL,Europe
-38214,"France Assos Santé Bretagne, Rennes, France","France, Santé Bretagne, Rennes, France",,48.09453455,-1.6372352036944244,FRA,Europe
-38215,"Microbiology, Infectious Diseases and Immunology, Université de Montréal, Montréal, Canada","Université de Montréal, Montréal, Canada",,45.50475765,-73.61454175576318,CAN,North America
-38216,"Faculty Dean of Medicine and Health, University of New England, Armidale, Australia","New England, Armidale, Australia",,-30.51563695,151.6849676206614,AUS,Oceania
-38217,"Guy’s and St Thomas’ Hospital London, London, United Kingdom","St Thomas’ Hospital, London, London, United Kingdom",,51.499389699999995,-0.11863556435601545,GBR,Europe
+38213,"Möbius Business Redesign, Sint-Martens-Latem, Belgium","Sint-Martens, Latem, Belgium",,51.0134563,3.6306282,BEL,Europe
+38214,"France Assos Santé Bretagne, Rennes, France","France, Santé Bretagne, Rennes, France",,48.1161819,-1.7023645,FRA,Europe
+38215,"Microbiology, Infectious Diseases and Immunology, Université de Montréal, Montréal, Canada","Université de Montréal, Montréal, Canada",,45.5047577,-73.6145418,CAN,North America
+38216,"Faculty Dean of Medicine and Health, University of New England, Armidale, Australia","New England, Armidale, Australia",,-30.5150171,151.6753106,AUS,Oceania
+38217,"Guy’s and St Thomas’ Hospital London, London, United Kingdom","St Thomas’ Hospital, London, London, United Kingdom",,51.4990645,-0.1186968,GBR,Europe
 38218,"The Donald and Barbara Zucker School of Medicine Hofstra/Northwell, Hempstead, NY, United States","Hofstra, Northwell, Hempstead, NY, United States",,40.6736812,-73.6190736,USA,North America
 38219,"Sheikh Zayed Hospital, Lahore, Pakistan","Lahore, Pakistan",,31.5656822,74.3141829,PAK,Asia
-38220,"Public Contributor, London, United Kingdom","London, United Kingdom",,51.4893335,-0.14405508452768728,GBR,Europe
+38220,"Public Contributor, London, United Kingdom","London, United Kingdom",,51.4893335,-0.1440551,GBR,Europe
 38221,"North West London Deanery, London, United Kingdom","North West, London Deanery, London, United Kingdom",,51.507534,-0.1514842,GBR,Europe
-38222,"South London Deanery, London, United Kingdom","South London Deanery, London, United Kingdom",,51.4893335,-0.14405508452768728,GBR,Europe
+38222,"South London Deanery, London, United Kingdom","South London Deanery, London, United Kingdom",,51.4893335,-0.1440551,GBR,Europe
 38223,"Freelance Specialist in Health Professions Education, Beuningen, Netherlands","Beuningen, Netherlands",,51.8586611,5.767357,NLD,Europe
 38224,"District of Columbia, Cambrium Assessment, Washington, DC, United States","Columbia, Cambrium Assessment, Washington, DC, United States",,38.8950368,-77.0365427,USA,North America
 38225,"Kubify, Leeds, United Kingdom","Kubify, Leeds, United Kingdom",,53.7974185,-1.5437941,GBR,Europe
 38226,"Educational Consultant, United States",United States,,39.7837304,-100.445882,USA,North America
-38227,"School of rehabilitation, Université de Sherbrooke, Sherbrooke, Canada","Université de Sherbrooke, Sherbrooke, Canada",,45.374731,-71.9303566255511,CAN,North America
-38228,"Centre de formation médicale du Nouveau-Brunswick, Université de Moncton, Moncton, Canada","Université de Moncton, Moncton, Canada",,46.1055872,-64.78698903460281,CAN,North America
+38227,"School of rehabilitation, Université de Sherbrooke, Sherbrooke, Canada","Université de Sherbrooke, Sherbrooke, Canada",,45.3771246,-71.9287373,CAN,North America
+38228,"Centre de formation médicale du Nouveau-Brunswick, Université de Moncton, Moncton, Canada","Université de Moncton, Moncton, Canada",,46.1055872,-64.786989,CAN,North America
 38229,"Vice-décanat au Développement professionnel et à la responsabilité sociale, Université de Sherbrooke, Sherbrooke, Canada","Sherbrooke, Canada",,45.403271,-71.889038,CAN,North America
-38230,"Health Education England South West, Bristol, United Kingdom","South West, Bristol, United Kingdom",,51.4538022,-2.5972985,GBR,Europe
+38230,"Health Education England South West, Bristol, United Kingdom","South West, Bristol, United Kingdom",,51.5034426,-2.6756679,GBR,Europe
 38231,"Health Education England North West, Manchester, United Kingdom","North West, Manchester, United Kingdom",,53.4794892,-2.2451148,GBR,Europe
 38232,"Faculdade Israelita de Ciências da Saúde Albert Einstein, São Paulo, Brazil","São Paulo, Brazil",,-23.5506507,-46.6333824,BRA,South America
 38233,"Professor of Medical Education (Retired), Shah Alam, Malaysia",Malaysia,,4.5693754,102.2656823,MYS,Asia
-38234,"bologna.lab, Humboldt-Universität zu Berlin, Berlin, Germany","Humboldt-Universität, Berlin, Berlin, Germany",,52.5183402,13.392920232320172,DEU,Europe
-38235,"Universidade de Caxias do Sul, Caxias do Sul, Brazil","Universidade de Caxias, Sul, Caxias do Sul, Brazil",,-29.16253545,-51.14836502095635,BRA,South America
+38234,"bologna.lab, Humboldt-Universität zu Berlin, Berlin, Germany","Humboldt-Universität, Berlin, Berlin, Germany",,52.5185794,13.3935975,DEU,Europe
+38235,"Universidade de Caxias do Sul, Caxias do Sul, Brazil","Universidade de Caxias, Sul, Caxias do Sul, Brazil",,-29.1625355,-51.148365,BRA,South America
 38236,"Institute for Autoimmune Systemic and Neurological Diseases, Athens, Greece","Athens, Greece",,37.9755648,23.7348324,GRC,Europe
-38237,"Faculty of Medicine Universitas Indonesia, Jakarta, Indonesia","Indonesia, Jakarta, Indonesia",,-6.18170005,106.82071938912948,IDN,Asia
+38237,"Faculty of Medicine Universitas Indonesia, Jakarta, Indonesia","Indonesia, Jakarta, Indonesia",,-6.1726007,106.8785732,IDN,Asia
 38238,"Donald and Barbara Zucker SOM at Hofstra/Northwell, Hempstead, NY, United States","Hofstra, Northwell, Hempstead, NY, United States",,40.6736812,-73.6190736,USA,North America
-38239,"Faculty of Medicine of Tunis, University Tunis El Manar, Tunis, Tunisia","Tunis, Tunis, El Manar, Tunis, Tunisia",,36.829187000000005,10.14631104090909,TUN,Africa
+38239,"Faculty of Medicine of Tunis, University Tunis El Manar, Tunis, Tunisia","Tunis, Tunis, El Manar, Tunis, Tunisia",,36.829187,10.146311,TUN,Africa
 38240,"Hamburg, Germany","Hamburg, Germany",,53.550341,10.000654,DEU,Europe
 38241,"Laboratory of Epidemiology, Clinical Research and Public Health, University Mohammed Premier, Oujda, Morocco","Oujda, Morocco",,34.677874,-1.929306,MAR,Africa
-38242,"Laboratory of Clinical Neurosciences, University Mohammed Ben Abdallah, Fes, Morocco",Morocco,,28.3347722,-10.371337908392647,MAR,Africa
-38243,"Lehrstuhl für die Ausbildung Personaler und Interpersonaler Kompetenzen im Gesundheitswesen, Fakultät für Gesundheit, Universität Witten/Herdecke, Witten, Germany","Gesundheitswesen, Fakultät, Universität Witten, Herdecke, Witten, Germany",,51.45218815,7.357114827030026,DEU,Europe
-38244,"Institut für Didaktik und Ausbildungsforschung in der Medizin, Klinikum der Universität München, Munich, Germany","der Medizin, Klinikum, Universität München, Munich, Germany",,48.14907275,11.567444920339295,DEU,Europe
-38245,"Lehrstuhl für die Ausbildung Personaler und Interpersonaler Kompetenzen im Gesundheitswesen, Fakultät für Gesundheit, Universität Witten/Herdecke, Witten, Germany, Institut für Didaktik und Ausbildungsforschung in der Medizin, Klinikum der Universität München, Munich, Germany","Gesundheitswesen, Fakultät, Universität Witten, Herdecke, Witten, Germany, Ausbildungsforschung, der Medizin, Klinikum, Universität München, Munich, Germany",,48.14907275,11.567444920339295,DEU,Europe
-38246,"Division of Academic Family Medicine, College of Family Physicians of Canada, Mississauga, Canada","Canada, Mississauga, Canada",,43.5896231,-79.6443879,CAN,North America
-38247,"Education Consultant and Facilitator, Lusby, MD, United States","Lusby, MD, United States",,38.36157125,-76.44187589894293,USA,North America
-38248,"Library, Université Laval, Quebec City, Canada","Université Laval, Quebec City, Canada",,46.78116215,-71.27680024340233,CAN,North America
+38242,"Laboratory of Clinical Neurosciences, University Mohammed Ben Abdallah, Fes, Morocco",Morocco,,28.3347722,-10.3713379,MAR,Africa
+38243,"Lehrstuhl für die Ausbildung Personaler und Interpersonaler Kompetenzen im Gesundheitswesen, Fakultät für Gesundheit, Universität Witten/Herdecke, Witten, Germany","Gesundheitswesen, Fakultät, Universität Witten, Herdecke, Witten, Germany",,51.4521882,7.3571148,DEU,Europe
+38244,"Institut für Didaktik und Ausbildungsforschung in der Medizin, Klinikum der Universität München, Munich, Germany","der Medizin, Klinikum, Universität München, Munich, Germany",,48.1490716,11.5674463,DEU,Europe
+38245,"Lehrstuhl für die Ausbildung Personaler und Interpersonaler Kompetenzen im Gesundheitswesen, Fakultät für Gesundheit, Universität Witten/Herdecke, Witten, Germany, Institut für Didaktik und Ausbildungsforschung in der Medizin, Klinikum der Universität München, Munich, Germany","Gesundheitswesen, Fakultät, Universität Witten, Herdecke, Witten, Germany, Ausbildungsforschung, der Medizin, Klinikum, Universität München, Munich, Germany",,48.1490716,11.5674463,DEU,Europe
+38246,"Division of Academic Family Medicine, College of Family Physicians of Canada, Mississauga, Canada","Canada, Mississauga, Canada",,43.6863953,-79.6064457,CAN,North America
+38247,"Education Consultant and Facilitator, Lusby, MD, United States","Lusby, MD, United States",,38.3615713,-76.4418759,USA,North America
+38248,"Library, Université Laval, Quebec City, Canada","Université Laval, Quebec City, Canada",,46.7811622,-71.2768002,CAN,North America
 38249,"West Morris Central, Chester, NJ, United States","West Morris Central, Chester, NJ, United States",,40.8098887,-74.7285184,USA,North America
 38250,"Health 2047, Menlo Park, CA, United States","Menlo Park, CA, United States",,37.4519671,-122.177992,USA,North America
 38251,"Critical Care, Hospital Israelita Albert Einstein, Sao Paulo, Brazil","Sao Paulo, Brazil",,-23.5506507,-46.6333824,BRA,South America
 38252,"Patient Educator across a range of UK universities, United Kingdom","UK, United Kingdom",,54.7023545,-3.2765753,GBR,Europe
 38253,"Academy for Global Interprofessional Learning and Education, Thonex, Switzerland",Switzerland,,46.7985624,8.2319736,CHE,Europe
-38254,"School of Medicine of Ribeirão Preto, Universidade Cidade de Sao Paulo, Ribeirão Preto, Brazil","Ribeirão Preto, Universidade Cidade, Sao Paulo, Ribeirão Preto, Brazil",,-21.15900115,-47.856697979358586,BRA,South America
+38254,"School of Medicine of Ribeirão Preto, Universidade Cidade de Sao Paulo, Ribeirão Preto, Brazil","Ribeirão Preto, Universidade Cidade, Sao Paulo, Ribeirão Preto, Brazil",,-21.1590012,-47.856698,BRA,South America
 38255,"Medical Education Experts, Townsville, Australia","Townsville, Australia",,-19.2569391,146.8239537,AUS,Oceania
 38256,"Skillslab, Berner Bildungszentrum Pflege, Bern, Switzerland","Bern, Switzerland",,46.9484742,7.4521749,CHE,Europe
 38257,"Dental Clinics, Mohammed Bin Naif Center, Riyadh, Saudi Arabia","Riyadh, Saudi Arabia",,23.333333,45.333333,SAU,Asia
-38258,"Family Medical Clinic, Roseau, Dominica","Roseau, Dominica",,15.423853900000001,-61.34165132887498,DMA,North America
+38258,"Family Medical Clinic, Roseau, Dominica","Roseau, Dominica",,15.4238539,-61.3416513,DMA,North America
 38259,"Vice-doyenne au développement pédagogique et professionnel, Université de Sherbrooke, Sherbrooke, Canada","Sherbrooke, Canada",,45.403271,-71.889038,CAN,North America
-38260,"Health Improvement Project Zanzibar, Zanzibar, Tanzania","Zanzibar, Zanzibar, Tanzania",,-6.1664908,39.2074312,TZA,Africa
+38260,"Health Improvement Project Zanzibar, Zanzibar, Tanzania","Zanzibar, Zanzibar, Tanzania",,-6.1664908,39.2074312,KEN,Africa
 38261,"Dr. Reinfried Pohl-Centre for Medical Education, Marburg, Germany","Marburg, Germany",,50.8090106,8.7704695,DEU,Europe
-38262,"Fundacion Santa Fe de Bogota, Bogota, Colombia","Santa Fe de Bogota, Bogota, Colombia",,4.6262578,-74.0728066665705,COL,South America
+38262,"Fundacion Santa Fe de Bogota, Bogota, Colombia","Santa Fe de Bogota, Bogota, Colombia",,4.6262578,-74.0728067,COL,South America
 38263,"Health Protection and Epidemiology, Epidemiology and Public Health, University of Nottingham, Nottingham, United Kingdom","Nottingham, Nottingham, United Kingdom",,52.9473037,-1.1449555,GBR,Europe
 38264,"TIL™, Israel",Israel,,30.8124247,34.8594762,ISR,Asia
-38265,"Clinic I, University Children’s Hospital Heidelberg, Heidelberg, Germany","Heidelberg, Heidelberg, Germany",,49.41860025,8.669240169244862,DEU,Europe
-38266,"Division of Medical Microbiology and Infectious Diseases, Hôpital du Sacré-Coeur de Montréal, Montréal, Canada","Hôpital du Sacré-Coeur de Montréal, Montréal, Canada",,45.53315485,-73.71241065209767,CAN,North America
+38265,"Clinic I, University Children’s Hospital Heidelberg, Heidelberg, Germany","Heidelberg, Heidelberg, Germany",,49.4186003,8.6692402,DEU,Europe
+38266,"Division of Medical Microbiology and Infectious Diseases, Hôpital du Sacré-Coeur de Montréal, Montréal, Canada","Hôpital du Sacré-Coeur de Montréal, Montréal, Canada",,45.5331549,-73.7124107,CAN,North America
 38267,"Health Education East of England, Cambridge, United Kingdom","East of England, Cambridge, United Kingdom",,52.2246727,0.1571584,GBR,Europe
-38268,"Health Education South West, Bristol, United Kingdom","South West, Bristol, United Kingdom",,51.4538022,-2.5972985,GBR,Europe
+38268,"Health Education South West, Bristol, United Kingdom","South West, Bristol, United Kingdom",,51.5034426,-2.6756679,GBR,Europe
 38269,"Children’s Hospital of Philadelphia, United States","Philadelphia, United States",,39.9527237,-75.1635262,USA,North America
-38270,"c Whittington Hospital, London N19 5NF, Magdala Avenue, United Kingdom","London, Magdala Avenue, United Kingdom",,51.56575949426136,-0.13896669815870114,GBR,Europe
-38271,"Queen Mary University of London, United Kingdom","London, United Kingdom",,51.4893335,-0.14405508452768728,GBR,Europe
+38270,"c Whittington Hospital, London N19 5NF, Magdala Avenue, United Kingdom","London, Magdala Avenue, United Kingdom",,51.5657595,-0.1389667,GBR,Europe
+38271,"Queen Mary University of London, United Kingdom","London, United Kingdom",,51.4893335,-0.1440551,GBR,Europe
 38272,"College of Family Physicians of Canada, Canada","Canada, Canada",,61.0666922,-107.991707,CAN,North America
-38273,"Faculty of Medicine, King Fahad Medical City, Riyadh, Saudi Arabia, P.O. Box 59045, Riyadh, 11525, Saudi Arabia","King Fahad Medical City, Riyadh, Saudi Arabia, Riyadh, Saudi Arabia",,22.3093103,46.66198227084625,SAU,Asia
-38274,"Institute of Medical Education Research Rotterdam, Erasmus, MC, Netherlands","Rotterdam, Erasmus, MC, Netherlands",,52.2434979,5.6343227,NLD,Europe
+38273,"Faculty of Medicine, King Fahad Medical City, Riyadh, Saudi Arabia, P.O. Box 59045, Riyadh, 11525, Saudi Arabia","King Fahad Medical City, Riyadh, Saudi Arabia, Riyadh, Saudi Arabia",,22.3093103,46.6619823,SAU,Asia
+38274,"Institute of Medical Education Research Rotterdam, Erasmus, MC, Netherlands","Rotterdam, Erasmus, MC, Netherlands",,51.9120141,4.4699946,NLD,Europe
 38275,"International Education and Research Consultant, United Kingdom",United Kingdom,,54.7023545,-3.2765753,GBR,Europe
-38276,"Berner Bildungszentrum Pflege, Skillslab, Freiburgstrasse 133, Bern, 3008, Switzerland","Skillslab, Freiburgstrasse 133, Bern, Switzerland",,46.943094200000004,7.408837976231688,CHE,Europe
+38276,"Berner Bildungszentrum Pflege, Skillslab, Freiburgstrasse 133, Bern, 3008, Switzerland","Skillslab, Freiburgstrasse 133, Bern, Switzerland",,46.9430942,7.408838,CHE,Europe
 38277,"Team Focus, United Kingdom",United Kingdom,,54.7023545,-3.2765753,GBR,Europe
 38278,"St. Michael's Hospital, Canada",Canada,,61.0666922,-107.991707,CAN,North America
 38279,"Pediatric Program Directors, United States",United States,,39.7837304,-100.445882,USA,North America
@@ -38287,6 +38287,6 @@
 38285,"General Practice Education and Training, PO Box 2681, Alice Springs, 0871, NT, Australia","Alice Springs, NT, Australia",,-23.6983884,133.8812885,AUS,Oceania
 38286,"Tulkarm Governmental Hospital, Palestine",Palestine,,31.7621153,-95.6307891,USA,North America
 38287,"Queen Alia Hospital, Palestine",Palestine,,31.7621153,-95.6307891,USA,North America
-38288,"a Imperial College London, London, United Kingdom","London, London, United Kingdom",,51.4893335,-0.14405508452768728,GBR,Europe
+38288,"a Imperial College London, London, United Kingdom","London, London, United Kingdom",,51.5074456,-0.1277653,GBR,Europe
 38289,"Tom Allan Centre, United Kingdom",United Kingdom,,54.7023545,-3.2765753,GBR,Europe
-38290,"University Campus Suffolk, Ipswich, United Kingdom","Suffolk, Ipswich, United Kingdom",,52.05192825,1.1640592563471208,GBR,Europe
+38290,"University Campus Suffolk, Ipswich, United Kingdom","Suffolk, Ipswich, United Kingdom",,52.0519283,1.1640593,GBR,Europe
