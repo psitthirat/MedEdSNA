@@ -1,3 +1,51 @@
+"""
+Geocoding and Affiliation Location Extraction Utility
+
+This script provides functionality to extract geographic information from textual affiliations (e.g., author institutions) 
+and convert them into structured geographic outputs. It integrates NLP for entity recognition and geocoding services 
+to enrich bibliometric or collaboration network datasets with spatial attributes.
+
+Key functionalities include:
+- Splitting and extracting the last parts of affiliation strings.
+- Using NLP (stanza) to identify organization names and location entities.
+- Geocoding text-based locations into latitude and longitude coordinates with Nominatim.
+- Mapping coordinates to countries and continents using geopandas and shapely.
+- Performing reverse geocoding to retrieve city or locality information.
+
+Dependencies:
+- stanza
+- geopy
+- geopandas
+- shapely
+- pandas
+- requests
+- tqdm
+
+Usage:
+1. Initialize the NLP pipeline and geocoder.
+2. Provide input text (affiliation strings or locations).
+3. Use the provided functions:
+   - `extract_last_parts(text, number_of_parts)`
+   - `extract_location(text)`
+   - `extract_coordination(text)`
+   - `extract_country(world, lat, lon)`
+   - `extract_city(lat, lon)`
+
+Example:
+    from geocoder import extract_location, extract_coordination, extract_country
+
+    text = "Department of Medicine, University of Oxford, Oxford, UK"
+    loc, org = extract_location(text)
+    lat, lon = extract_coordination(loc)
+    country, continent = extract_country(world, lat, lon)
+    print(loc, org, lat, lon, country, continent)
+
+Authors: P. Sitthirat et al
+Version: 1.0
+License: MIT License
+"""
+
+
 import stanza
 from geopy.geocoders import Nominatim
 from geopy.extra.rate_limiter import RateLimiter

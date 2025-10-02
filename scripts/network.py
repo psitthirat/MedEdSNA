@@ -1,3 +1,49 @@
+"""
+Co-authorship Network Analysis Utility
+
+This script provides functionality to construct and analyze co-authorship networks 
+from bibliometric datasets (e.g., Scopus exports). It is designed to evaluate 
+collaboration structures, centrality, modularity, and small-world properties of 
+research communities.
+
+Key functionalities include:
+- Building weighted co-authorship graphs from publication datasets (DOI-based grouping).
+- Adding node-level metadata (frequency, labels, attributes) for visualization in tools like Gephi.
+- Computing centrality measures: degree, betweenness, closeness, eigenvector.
+- Performing community detection using the Louvain algorithm and calculating modularity.
+- Measuring participation coefficients to assess cross-community integration.
+- Calculating graph-level statistics: clustering, density, degree distribution, shortest paths, diameter, small-world coefficient.
+- Assessing homophily based on chosen node attributes (e.g., country, institution).
+- Exporting summary network statistics in tabular format for downstream analysis.
+
+Dependencies:
+- pandas
+- numpy
+- tqdm
+- networkx
+- python-louvain (community)
+- collections
+
+Usage:
+1. Prepare a DataFrame with at least 'DOI' and node attributes (e.g., Author ID, Country).
+2. Build the graph with `network_coauthorship(df, node_col, ...)`.
+3. Analyze the graph with `network_params(df, G, homophily_attr=...)`.
+
+Example:
+    import pandas as pd
+    from network_module import network_coauthorship, network_params
+
+    df = pd.read_csv("coauthorship_data.csv")
+    G = network_coauthorship(df, node_col="Author ID", node_label=["Country"])
+    stats = network_params(df, G, homophily_attr="Country")
+    print(stats)
+
+Authors: P. Sitthirat et al
+Version: 1.0
+License: MIT License
+"""
+
+
 import pandas as pd
 import numpy as np
 from tqdm import tqdm
