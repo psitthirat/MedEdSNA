@@ -9,6 +9,8 @@ Key functionalities include:
 - Handling missing data with mapping or imputation.
 - Generating data dictionaries for better data understanding.
 - Support for interactive mapping and user-defined data transformations.
+- Parsing Scopus-style author/affiliation strings into per-author records.
+- Imputing missing geocoding results via group-mode, fuzzy-match, and manual-edit cascades.
 
 Dependencies:
 - pandas
@@ -17,6 +19,7 @@ Dependencies:
 - openpyxl
 - sklearn
 - statsmodels
+- fuzzywuzzy
 
 Usage:
 1. Import the functions into your main script or notebook.
@@ -31,6 +34,7 @@ License: MIT License
 # Standard library imports
 import os
 import re
+from itertools import zip_longest
 
 # Third-party library imports
 import pandas as pd
@@ -40,6 +44,8 @@ from tabulate import tabulate
 from openpyxl import load_workbook
 from sklearn.linear_model import LinearRegression
 import statsmodels.api as sm
+from fuzzywuzzy import fuzz
+from fuzzywuzzy import process as fuzzy_process
 from IPython.display import clear_output
 
 class DataHandler:
@@ -506,7 +512,7 @@ class DataManipulation:
 
     @staticmethod
     def str_split(input_str, pattern, number_of_groups):
-        """
+        r"""
         Split a string into groups based on a regex pattern.
 
         Parameters:
@@ -1252,5 +1258,211 @@ class DataManipulation:
         null = df[parameter].isna().sum()
         percent_null = null / len(df) * 100
         print(f'Missing values in {parameter}: {null} ({percent_null:.2f}%)')
+
+        return df
+
+    @staticmethod
+    def parse_author_affiliations(df):
+        """
+        Parse Scopus's packed 'Authors with affiliations' field into a per-row
+        mapping of author ID to author name and affiliation.
+
+        Splits 'Authors' and 'Author full names' into lists, then walks each
+        row's 'Authors with affiliations' string (using each author's name as
+        a delimiter) to recover the affiliation text belonging to each author.
+        Author IDs are taken from the parenthesised id suffix in 'Author full
+        names' (e.g. "Smith J. (12345678900)" -> "12345678900").
+
+        Parameters:
+        - df (pd.DataFrame): Must contain 'Authors', 'Author full names', and
+          'Authors with affiliations' columns (raw Scopus export format).
+
+        Returns:
+        - pd.DataFrame: Copy of `df` with added columns 'Authors List',
+          'Author Full Names List', 'Author Affiliations List', and
+          'Author ID Mapping' (dict of author_id -> {'Author name', 'Affiliation'}).
+
+        Example:
+            >>> scopus_df = DataManipulation.parse_author_affiliations(scopus_df)
+        """
+
+        df = df.copy()
+        df["Authors List"] = df["Authors"].str.split("; ")
+        df["Author Full Names List"] = df["Author full names"].str.split("; ")
+        df["Authors with affiliations"] = df["Authors with affiliations"].str.replace(" amp;", "", regex=False)
+
+        # Store author-affiliation list
+        affiliation_lists = []
+        for _, row in df.iterrows():
+            affil_text = row["Authors with affiliations"]
+
+            # Safely handle missing affiliations
+            if isinstance(affil_text, str) and row["Authors List"]:
+                for author in row["Authors List"]:
+                    affil_text = affil_text.replace(author, "||")
+                affil_split = [
+                    None if part.strip() in {";"} else part.lstrip(", ").strip()
+                    for part in affil_text.split("||")
+                ][1:]
+                affiliation_lists.append(affil_split)
+            else:
+                affiliation_lists.append([])  # fallback for missing data
+
+        df["Author Affiliations List"] = affiliation_lists
+
+        # List to store per-row dictionaries
+        per_row_author_mappings_restructured = []
+
+        for authors, full_names, affiliations in zip(df["Authors List"], df["Author Full Names List"], df["Author Affiliations List"]):
+            row_author_info = {}
+
+            # Ensure lists exist and full_names match authors (we'll handle affiliation mismatches)
+            if isinstance(authors, list) and isinstance(full_names, list) and len(authors) == len(full_names):
+
+                for author, full_name, affiliation in zip_longest(authors, full_names, affiliations, fillvalue=None):
+                    if full_name:
+                        author_id = full_name.split("(")[-1].strip(")")
+                        cleaned_affil = affiliation.rstrip(";").strip() if affiliation else None
+                        row_author_info[author_id] = {
+                            "Author name": author.strip() if author else None,
+                            "Affiliation": cleaned_affil
+                        }
+
+            per_row_author_mappings_restructured.append(row_author_info)
+
+        df["Author ID Mapping"] = per_row_author_mappings_restructured
+
+        return df
+
+    @staticmethod
+    def build_author_rows(df):
+        """
+        Expand a publication-level DataFrame with an 'Author ID Mapping' column
+        (see `parse_author_affiliations`) into one row per author per publication.
+
+        Parameters:
+        - df (pd.DataFrame): Must contain 'DOI', 'Source title', 'Year', and
+          'Author ID Mapping' (dict of author_id -> {'Author name', 'Affiliation'},
+          in author order).
+
+        Returns:
+        - pd.DataFrame: One row per (DOI, author) with columns 'DOI', 'Journal',
+          'Year', 'Author ID', 'Author name', 'Affiliation', and 'Position'
+          ('First Author' / 'Co-Author' / 'Last Author').
+
+        Example:
+            >>> authors_df = DataManipulation.build_author_rows(scopus_df)
+        """
+
+        rows = []
+
+        for _, row in df.iterrows():
+            doi = row['DOI']
+            author_dict = row['Author ID Mapping']
+            journal = row['Source title']
+            year = row['Year']
+            total_authors = len(author_dict)
+
+            i = 1
+            for author_id, details in author_dict.items():
+                position = (
+                    'First Author' if i == 1
+                    else 'Last Author' if i == total_authors and i > 1
+                    else 'Co-Author'
+                )
+                rows.append({
+                    'DOI': doi,
+                    'Journal': journal,
+                    'Year': year,
+                    'Author ID': author_id,
+                    'Author name': details.get('Author name'),
+                    'Affiliation': details.get('Affiliation'),
+                    'Position': position
+                })
+                i += 1  # increment i to move to the next author
+
+        return pd.DataFrame(rows)
+
+    @staticmethod
+    def impute_geocode(df, geo_lookup, manual_edits_path, group_cols=('Author ID', 'DOI'),
+                        geo_cols=('Location', 'Organization', 'Latitude', 'Longitude', 'Country', 'Continent'),
+                        fuzzy_score_threshold=95):
+        """
+        Fill missing geocoding results (country/continent/coordinates) using a
+        staged imputation cascade, printing the remaining null-country count
+        after each stage.
+
+        Stages, in order:
+        1. For each column in `group_cols`, group `df` by that column and fill
+           missing geo columns with the most common (mode) value already
+           present within the group (e.g. same author, then same publication).
+        2. For rows still missing a country but with a known 'Organization',
+           fuzzy-match the organization name against `geo_lookup['Affiliation']`
+           (token-set ratio) and copy over the matched row's geo columns when
+           the match score is at least `fuzzy_score_threshold`.
+        3. Overlay any manually-corrected values from `manual_edits_path` (a
+           CSV indexed the same way as `df`, with the same geo columns).
+
+        Parameters:
+        - df (pd.DataFrame): Must contain 'Affiliation', 'Organization', and
+          the columns named in `group_cols` and `geo_cols`.
+        - geo_lookup (pd.DataFrame): Reference table of known affiliations with
+          geo columns filled in, used for the fuzzy-match stage. Must contain
+          'Affiliation' plus the columns in `geo_cols`.
+        - manual_edits_path (str): Path to a CSV of manually-verified
+          corrections, indexed to align with `df`.
+        - group_cols (tuple, optional): Columns to group by, in order, for the
+          mode-imputation stage. Default ('Author ID', 'DOI').
+        - geo_cols (tuple, optional): Geo columns to impute. Default
+          ('Location', 'Organization', 'Latitude', 'Longitude', 'Country', 'Continent').
+        - fuzzy_score_threshold (int, optional): Minimum `fuzz.token_set_ratio`
+          score to accept a fuzzy-match stage result. Default 95.
+
+        Returns:
+        - pd.DataFrame: Copy of `df` with the geo columns imputed.
+
+        Example:
+            >>> df_foranalyse = DataManipulation.impute_geocode(
+            ...     authors_merge_df, geo_lookup, 'output/geocode/missing_geocode_edited.csv')
+        """
+
+        df = df.copy()
+        geo_cols = list(geo_cols)
+
+        def remaining_nulls():
+            return len(df[df['Country'].isna() & ~df['Affiliation'].isna()])
+
+        print(f'Null country remain: {remaining_nulls()} rows')
+
+        for group_col in group_cols:
+            print(f'Imputing with {group_col}...')
+            for _, group in df.groupby(group_col):
+                missing_group = group[group[geo_cols].isna().any(axis=1)]
+                if len(missing_group) > 1:
+                    for col in geo_cols:
+                        if group[col].isna().any():
+                            mode = group[col].mode(dropna=True)
+                            if not mode.empty:
+                                df.loc[group.index, col] = df.loc[group.index, col].fillna(mode.iloc[0])
+            print(f'Null country remain: {remaining_nulls()} rows')
+
+        print('Imputing with matching the organization with existing list...')
+        df_formatch = df[df['Country'].isna() & ~df['Affiliation'].isna() & ~df['Organization'].isna()]
+        for idx, row in df_formatch.iterrows():
+            result = fuzzy_process.extractOne(row['Organization'], geo_lookup['Affiliation'], scorer=fuzz.token_set_ratio)
+            if result is not None:
+                best_match, score, _ = result
+                if score >= fuzzy_score_threshold:
+                    matched_row = geo_lookup[geo_lookup['Affiliation'] == best_match].mode().iloc[0]
+                    for col in geo_cols:
+                        df.at[idx, col] = matched_row[col]
+        print(f'Null country remain: {remaining_nulls()} rows')
+
+        print('Imputing with manual edits...')
+        updated_geocode = pd.read_csv(manual_edits_path, index_col=0)
+        for col in geo_cols:
+            if col in updated_geocode.columns:
+                df.loc[updated_geocode.index, col] = updated_geocode[col]
+        print(f'Null country remain: {remaining_nulls()} rows')
 
         return df

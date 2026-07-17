@@ -5,6 +5,7 @@ tqdm
 ipywidgets
 tabulate
 openpyxl
+python-dotenv
 
 # Statistical
 scipy
@@ -28,3 +29,8 @@ matplotlib
 plotly
 nbformat
 upsetplot
+
+# App Dashboard
+streamlit
+crossrefapi
+backoff

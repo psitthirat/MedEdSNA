@@ -11,7 +11,7 @@ Key functionalities include:
 - Adding node-level metadata (frequency, labels, attributes) for visualization in tools like Gephi.
 - Computing centrality measures: degree, betweenness, closeness, eigenvector.
 - Performing community detection using the Louvain algorithm and calculating modularity.
-- Measuring participation coefficients to assess cross-community integration.
+- Measuring participation coefficients (`participation_coefficient`) to assess cross-community integration.
 - Calculating graph-level statistics: clustering, density, degree distribution, shortest paths, diameter, small-world coefficient.
 - Assessing homophily based on chosen node attributes (e.g., country, institution).
 - Exporting summary network statistics in tabular format for downstream analysis.
@@ -87,6 +87,47 @@ def network_coauthorship(df, node_col, node_label=None, filter_col=None, filter_
         
     return G
 
+def participation_coefficient(G, node_community):
+    """
+    Compute the participation coefficient of every node in a graph.
+
+    The participation coefficient measures how evenly a node's (weighted) edges
+    are distributed across communities: 0 means all edges stay within the
+    node's own community, values closer to 1 mean edges are spread evenly
+    across many communities. As a side effect, the coefficient is also stored
+    on each node as the `participation_coefficient` attribute.
+
+    Parameters:
+    - G (networkx.Graph): The graph to analyze. Edge weights are read from the
+      'weight' attribute (defaulting to 1 if absent).
+    - node_community (dict): Mapping of node -> community id, e.g. as returned
+      by `community.best_partition`.
+
+    Returns:
+    - dict: Mapping of node -> participation coefficient.
+
+    Example:
+        >>> partition = community_louvain.best_partition(G, random_state=42)
+        >>> pc = participation_coefficient(G, partition)
+    """
+
+    participation_coefficients = {}
+    for node in G.nodes():
+        k_i = G.degree(node, weight='weight')
+        if k_i == 0:
+            participation = 0
+        else:
+            comm_weights = defaultdict(float)
+            for neighbor in G.neighbors(node):
+                edge_weight = G[node][neighbor].get('weight', 1)
+                comm = node_community.get(neighbor)
+                comm_weights[comm] += edge_weight
+            participation = 1 - sum((w / k_i) ** 2 for w in comm_weights.values())
+        G.nodes[node]['participation_coefficient'] = participation
+        participation_coefficients[node] = participation
+
+    return participation_coefficients
+
 def network_params(df, G, filter_col=None, filter_value=None, homophily_attr=None):
     if filter_col and filter_value:
         df_nx = df[df[filter_col].isin(filter_value)]
@@ -115,20 +156,7 @@ def network_params(df, G, filter_col=None, filter_value=None, homophily_attr=Non
     num_communities = len(set(node_community.values()))
 
     # Participation Coefficient
-    participation_coefficients = {}
-    for node in G.nodes():
-        k_i = G.degree(node, weight='weight')
-        if k_i == 0:
-            participation = 0
-        else:
-            comm_weights = defaultdict(float)
-            for neighbor in G.neighbors(node):
-                edge_weight = G[node][neighbor].get('weight', 1)
-                comm = node_community.get(neighbor)
-                comm_weights[comm] += edge_weight
-            participation = 1 - sum((w / k_i) ** 2 for w in comm_weights.values())
-        G.nodes[node]['participation_coefficient'] = participation
-        participation_coefficients[node] = participation
+    participation_coefficients = participation_coefficient(G, node_community)
 
     avg_participation = np.mean(list(participation_coefficients.values())) if participation_coefficients else 0
     top_participation = max(participation_coefficients.values()) if participation_coefficients else 0
