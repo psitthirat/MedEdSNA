@@ -1157,9 +1157,8 @@
   }
 
   // Site code from https://www.goatcounter.com -- must match the
-  // data-goatcounter URL in index.html. Left as a placeholder until a real
-  // account exists; the view counter just stays blank until then.
-  const GOATCOUNTER_CODE = "GOATCOUNTER_CODE";
+  // data-goatcounter URL in index.html.
+  const GOATCOUNTER_CODE = "psitthirat";
 
   function wireShareAndViews() {
     const pageUrl = window.location.href;
@@ -1185,7 +1184,6 @@
       });
     });
 
-    if (GOATCOUNTER_CODE === "GOATCOUNTER_CODE") return; // not configured yet
     fetch(`https://${GOATCOUNTER_CODE}.goatcounter.com/counter/TOTAL.json`)
       .then((r) => r.json())
       .then((d) => {
