@@ -11,19 +11,46 @@ Colonial legacies persist in medical education research, dominated by high-incom
 
 ---
 
+## Live Dashboard
+An interactive dashboard (choropleth map + co-authorship network explorer) is published via GitHub Pages:
+
+**https://psitthirat.github.io/MedEdSNA/**
+
+It's a static D3.js app (`dashboard/`) that reads precomputed data bundles, so it needs no server or API calls. Any push to `dashboard/` on `main` redeploys it automatically via GitHub Actions (`.github/workflows/pages.yml`).
+
+---
+
 ## Repository Structure
 ```
-data/       # Contain bibliometric from included journal and countries' data
-scripts/    # Python scripts (data processing, geocoding, network analysis)
-main.ipynb  # Main analystical notebook
+main.ipynb            # Main analytical notebook (bibliometrics + SNA)
+subanalysis_thai.ipynb # Thailand-focused subanalysis
+
+data/
+  journal/             # Raw per-journal bibliometric exports (Scopus)
+  world-map/           # Country grouping + world boundary/language reference data
+  metadata/            # OpenAlex works/authorships metadata (gitignored — regenerate locally)
+
+output/
+  map/                 # Geocoded author/affiliation/institution coordinates
+  scraped/             # Raw OpenAlex scrape output (gitignored — regenerate locally)
+
+scripts/
+  scrp_article.py       # Scrapes works/authorships from the OpenAlex API
+  process.py             # Cleaning, parsing, geocode imputation utilities
+  geocoder.py             # Affiliation NLP + geocoding (Google Maps API)
+  network.py               # Co-authorship graph construction, centrality, community detection
+  visualization.py          # Choropleth/bump-chart/network plotting helpers
+  export_dashboard_data.py   # Exports notebook aggregations to dashboard/data.js & world.js
+
+dashboard/             # Static D3.js dashboard, published via GitHub Pages
 ```
 
 ---
 
 ## Methods
-- **Data Source**: Scopus-indexed Q1 HPE journals (2015–2024).
+- **Data Source**: HPE journals indexed via the OpenAlex API (2015–2026).
 - **Unit**: Country-level co-authorship.
-- **Analysis**: Bibliometrics, SNA (density, modularity, centrality), visualizations with NetworkX.
+- **Analysis**: Bibliometrics, SNA (density, modularity, centrality), visualizations with NetworkX and D3.js.
 
 ---
 
@@ -39,8 +66,12 @@ main.ipynb  # Main analystical notebook
 ```bash
 git clone https://github.com/psitthirat/MedEdSNA.git
 cd MedEdSNA
-pip install -r requirements.txt
-python scripts/run_analysis.py
+pip install -r scripts/requirements.txt
+```
+Then open `main.ipynb` to reproduce the analysis, or run the pipeline scripts directly:
+```bash
+python scripts/scrp_article.py           # scrape OpenAlex works/authorships
+python scripts/export_dashboard_data.py  # regenerate dashboard/data.js + world.js
 ```
 
 ---
