@@ -1156,6 +1156,44 @@
     });
   }
 
+  // Site code from https://www.goatcounter.com -- must match the
+  // data-goatcounter URL in index.html. Left as a placeholder until a real
+  // account exists; the view counter just stays blank until then.
+  const GOATCOUNTER_CODE = "GOATCOUNTER_CODE";
+
+  function wireShareAndViews() {
+    const pageUrl = window.location.href;
+    const shareText = document.title;
+
+    document.getElementById("share-x").href =
+      `https://twitter.com/intent/tweet?url=${encodeURIComponent(pageUrl)}&text=${encodeURIComponent(shareText)}`;
+    document.getElementById("share-linkedin").href =
+      `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(pageUrl)}`;
+    document.getElementById("share-email").href =
+      `mailto:?subject=${encodeURIComponent(shareText)}&body=${encodeURIComponent(pageUrl)}`;
+
+    const copyBtn = document.getElementById("share-copy");
+    copyBtn.addEventListener("click", () => {
+      navigator.clipboard.writeText(pageUrl).then(() => {
+        const original = copyBtn.textContent;
+        copyBtn.textContent = "✓";
+        copyBtn.classList.add("copied");
+        setTimeout(() => {
+          copyBtn.textContent = original;
+          copyBtn.classList.remove("copied");
+        }, 1500);
+      });
+    });
+
+    if (GOATCOUNTER_CODE === "GOATCOUNTER_CODE") return; // not configured yet
+    fetch(`https://${GOATCOUNTER_CODE}.goatcounter.com/counter/TOTAL.json`)
+      .then((r) => r.json())
+      .then((d) => {
+        document.getElementById("view-count").textContent = Number(d.count).toLocaleString();
+      })
+      .catch(() => {});
+  }
+
   // ---------------------------------------------------------------------
   // Init
   // ---------------------------------------------------------------------
@@ -1170,6 +1208,7 @@
     wireFilterBar();
     wireZoomControls();
     wireThemeToggle();
+    wireShareAndViews();
     drawBaseLand();
     fitProjection();
     renderTrendCharts();
