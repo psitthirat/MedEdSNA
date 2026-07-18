@@ -51,7 +51,7 @@ import networkx as nx
 import community as community_louvain
 from collections import defaultdict
 
-def network_coauthorship(df, node_col, node_label=None, filter_col=None, filter_value=None):
+def network_coauthorship(df, node_col, id_col='work_id', node_label=None, filter_col=None, filter_value=None):
     # Filter the dataset
     if filter_col and filter_value:
         df_nx = df[df[filter_col].isin(filter_value)]
@@ -59,13 +59,13 @@ def network_coauthorship(df, node_col, node_label=None, filter_col=None, filter_
         df_nx = df.copy()
 
     # Group by DOI to get co-authorship per publication
-    grouped = df_nx.groupby('DOI')  
+    grouped = df_nx.groupby(id_col)  
 
     # Create the graph
     G = nx.Graph()
 
     # Track frequency of each node (country or author) by DOI presence
-    node_frequency = df_nx.groupby(node_col)['DOI'].nunique().to_dict()
+    node_frequency = df_nx.groupby(node_col)[id_col].nunique().to_dict()
 
     for doi, group in tqdm(grouped, total=len(grouped), desc="Building coauthorship graph"):
         authors = group[node_col].dropna().unique()
@@ -128,16 +128,16 @@ def participation_coefficient(G, node_community):
 
     return participation_coefficients
 
-def network_params(df, G, filter_col=None, filter_value=None, homophily_attr=None):
+def network_params(df, G, id_col='work_id', filter_col=None, filter_value=None, homophily_attr=None):
     if filter_col and filter_value:
         df_nx = df[df[filter_col].isin(filter_value)]
     else:
         df_nx = df.copy()
 
     # Group by DOI to count single-author/single-country publications
-    grouped = df_nx.groupby('DOI')
-    single_author = sum(1 for _, group in grouped if len(group['Author ID'].dropna().unique()) == 1)
-    single_country = sum(1 for _, group in grouped if len(group['Country'].dropna().unique()) == 1)    
+    grouped = df_nx.groupby(id_col)
+    single_author = sum(1 for _, group in grouped if len(group['author_id'].dropna().unique()) == 1)
+    single_country = sum(1 for _, group in grouped if len(group['institution_country_code'].dropna().unique()) == 1)    
 
     # if centralities:
         
@@ -232,7 +232,7 @@ def network_params(df, G, filter_col=None, filter_value=None, homophily_attr=Non
     # Collect into dictionary
     network_stats = {
         f"{filter_col}": filter_value,
-        "No of Publications": len(df_nx['DOI'].unique()),
+        "No of Publications": len(df_nx[id_col].unique()),
         "Single Author": single_author,
         "Single Country": single_country,
         "Nodes": num_nodes,

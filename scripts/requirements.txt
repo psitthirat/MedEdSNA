@@ -1,5 +1,5 @@
 # Utilities
-pandas
+pandas<3  # upsetplot 0.9.0 is incompatible with pandas 3's mandatory Copy-on-Write (NaN colors -> matplotlib ValueError)
 numpy
 tqdm
 ipywidgets
