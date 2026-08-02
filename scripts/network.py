@@ -149,11 +149,19 @@ def network_params(df, G, id_col='work_id', filter_col=None, filter_value=None, 
         
     print('Analysed centrality successfully.')
     
-    # Community detection and modularity
-    node_community = community_louvain.best_partition(G, random_state=42)
-    nx.set_node_attributes(G, node_community, 'modularity_class')
-    modularity_score = community_louvain.modularity(node_community, G, weight='weight')
-    num_communities = len(set(node_community.values()))
+    # Community detection and modularity -- modularity is undefined on a
+    # graph with no edges (e.g. a field/subset with zero matching works, such
+    # as a low-income-first-author slice that happens to be empty), so skip
+    # it rather than let community_louvain raise.
+    if G.number_of_edges() > 0:
+        node_community = community_louvain.best_partition(G, random_state=42)
+        nx.set_node_attributes(G, node_community, 'modularity_class')
+        modularity_score = community_louvain.modularity(node_community, G, weight='weight')
+        num_communities = len(set(node_community.values()))
+    else:
+        node_community = {n: 0 for n in G.nodes()}
+        modularity_score = np.nan
+        num_communities = 0
 
     # Participation Coefficient
     participation_coefficients = participation_coefficient(G, node_community)
@@ -167,7 +175,7 @@ def network_params(df, G, id_col='work_id', filter_col=None, filter_value=None, 
     num_nodes = G.number_of_nodes()
     num_edges = G.number_of_edges()
     density = nx.density(G)
-    avg_clustering = nx.average_clustering(G)
+    avg_clustering = nx.average_clustering(G) if num_nodes > 0 else 0
     degrees = dict(G.degree())
     avg_degree = np.mean(list(degrees.values())) if degrees else 0
     max_degree = max(degrees.values()) if degrees else 0

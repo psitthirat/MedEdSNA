@@ -7,3 +7,10 @@ __pycache__/
 # large raw data — regenerate locally, not needed for the published dashboard
 /data/metadata/
 /output/scraped/
+
+# scratch exports from scripts/geocode_workflow.py -- consumed by merge_labels()
+/output/map/pending/
+
+# pre-OpenAlex Scopus-era pipeline, kept locally for reference -- not yet
+# committed/deleted, pending a decision on whether to keep or drop it
+/legacy/

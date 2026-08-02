@@ -44,8 +44,6 @@ from tabulate import tabulate
 from openpyxl import load_workbook
 from sklearn.linear_model import LinearRegression
 import statsmodels.api as sm
-from fuzzywuzzy import fuzz
-from fuzzywuzzy import process as fuzzy_process
 from IPython.display import clear_output
 
 class DataHandler:
@@ -1382,87 +1380,3 @@ class DataManipulation:
                 i += 1  # increment i to move to the next author
 
         return pd.DataFrame(rows)
-
-    @staticmethod
-    def impute_geocode(df, geo_lookup, manual_edits_path, group_cols=('Author ID', 'DOI'),
-                        geo_cols=('Location', 'Organization', 'Latitude', 'Longitude', 'Country', 'Continent'),
-                        fuzzy_score_threshold=95):
-        """
-        Fill missing geocoding results (country/continent/coordinates) using a
-        staged imputation cascade, printing the remaining null-country count
-        after each stage.
-
-        Stages, in order:
-        1. For each column in `group_cols`, group `df` by that column and fill
-           missing geo columns with the most common (mode) value already
-           present within the group (e.g. same author, then same publication).
-        2. For rows still missing a country but with a known 'Organization',
-           fuzzy-match the organization name against `geo_lookup['Affiliation']`
-           (token-set ratio) and copy over the matched row's geo columns when
-           the match score is at least `fuzzy_score_threshold`.
-        3. Overlay any manually-corrected values from `manual_edits_path` (a
-           CSV indexed the same way as `df`, with the same geo columns).
-
-        Parameters:
-        - df (pd.DataFrame): Must contain 'Affiliation', 'Organization', and
-          the columns named in `group_cols` and `geo_cols`.
-        - geo_lookup (pd.DataFrame): Reference table of known affiliations with
-          geo columns filled in, used for the fuzzy-match stage. Must contain
-          'Affiliation' plus the columns in `geo_cols`.
-        - manual_edits_path (str): Path to a CSV of manually-verified
-          corrections, indexed to align with `df`.
-        - group_cols (tuple, optional): Columns to group by, in order, for the
-          mode-imputation stage. Default ('Author ID', 'DOI').
-        - geo_cols (tuple, optional): Geo columns to impute. Default
-          ('Location', 'Organization', 'Latitude', 'Longitude', 'Country', 'Continent').
-        - fuzzy_score_threshold (int, optional): Minimum `fuzz.token_set_ratio`
-          score to accept a fuzzy-match stage result. Default 95.
-
-        Returns:
-        - pd.DataFrame: Copy of `df` with the geo columns imputed.
-
-        Example:
-            >>> df_foranalyse = DataManipulation.impute_geocode(
-            ...     authors_merge_df, geo_lookup, 'output/geocode/missing_geocode_edited.csv')
-        """
-
-        df = df.copy()
-        geo_cols = list(geo_cols)
-
-        def remaining_nulls():
-            return len(df[df['Country'].isna() & ~df['Affiliation'].isna()])
-
-        print(f'Null country remain: {remaining_nulls()} rows')
-
-        for group_col in group_cols:
-            print(f'Imputing with {group_col}...')
-            for _, group in df.groupby(group_col):
-                missing_group = group[group[geo_cols].isna().any(axis=1)]
-                if len(missing_group) > 1:
-                    for col in geo_cols:
-                        if group[col].isna().any():
-                            mode = group[col].mode(dropna=True)
-                            if not mode.empty:
-                                df.loc[group.index, col] = df.loc[group.index, col].fillna(mode.iloc[0])
-            print(f'Null country remain: {remaining_nulls()} rows')
-
-        print('Imputing with matching the organization with existing list...')
-        df_formatch = df[df['Country'].isna() & ~df['Affiliation'].isna() & ~df['Organization'].isna()]
-        for idx, row in df_formatch.iterrows():
-            result = fuzzy_process.extractOne(row['Organization'], geo_lookup['Affiliation'], scorer=fuzz.token_set_ratio)
-            if result is not None:
-                best_match, score, _ = result
-                if score >= fuzzy_score_threshold:
-                    matched_row = geo_lookup[geo_lookup['Affiliation'] == best_match].mode().iloc[0]
-                    for col in geo_cols:
-                        df.at[idx, col] = matched_row[col]
-        print(f'Null country remain: {remaining_nulls()} rows')
-
-        print('Imputing with manual edits...')
-        updated_geocode = pd.read_csv(manual_edits_path, index_col=0)
-        for col in geo_cols:
-            if col in updated_geocode.columns:
-                df.loc[updated_geocode.index, col] = updated_geocode[col]
-        print(f'Null country remain: {remaining_nulls()} rows')
-
-        return df

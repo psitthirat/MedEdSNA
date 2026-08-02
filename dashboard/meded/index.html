@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Decolonizing HPE Research — Global Network Dashboard</title>
+<meta name="description" content="An interactive analysis of global co-authorship network patterns and equity implications across leading health professions education journals.">
+
+<!-- Open Graph / Facebook, LinkedIn -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://psitthirat.github.io/OpenKnowledgeAtlas/meded/">
+<meta property="og:title" content="Decolonizing Health Professions Education Research">
+<meta property="og:description" content="An interactive analysis of global co-authorship network patterns and equity implications across leading health professions education journals.">
+<meta property="og:image" content="https://psitthirat.github.io/OpenKnowledgeAtlas/shared/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+<!-- Twitter/X Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:url" content="https://psitthirat.github.io/OpenKnowledgeAtlas/meded/">
+<meta name="twitter:title" content="Decolonizing Health Professions Education Research">
+<meta name="twitter:description" content="An interactive analysis of global co-authorship network patterns and equity implications across leading health professions education journals.">
+<meta name="twitter:image" content="https://psitthirat.github.io/OpenKnowledgeAtlas/shared/og-image.jpg">
+
+<script>
+  // Applied synchronously, before CSS paints, so the theme never flashes
+  // the wrong value first. Always stamps data-theme (falling back to the
+  // OS preference when nothing is saved yet) so style.css has exactly one
+  // set of rules to define per theme -- no separate prefers-color-scheme
+  // block to keep in sync by hand.
+  (function () {
+    try {
+      var t = localStorage.getItem("theme");
+      if (t !== "light" && t !== "dark") {
+        t = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      }
+      document.documentElement.setAttribute("data-theme", t);
+    } catch (e) {}
+  })();
+</script>
+<link rel="stylesheet" href="../shared/style.css?v=27">
+</head>
+<body class="viz-root">
+
+  <div id="map-layer"><svg id="world-svg"></svg></div>
+  <div class="map-vignette"></div>
+  <div id="tooltip"></div>
+  <div class="glass" id="map-legend"></div>
+  <div id="zoom-controls">
+    <button id="zoom-in" title="Zoom in" aria-label="Zoom in">+</button>
+    <button id="zoom-out" title="Zoom out" aria-label="Zoom out">&minus;</button>
+    <button id="zoom-reset" title="Reset view" aria-label="Reset view">&#8634;</button>
+    <button id="theme-toggle" title="Toggle light/dark theme" aria-label="Toggle light/dark theme"></button>
+  </div>
+  <p id="zoom-hint">Drag to pan &middot; Ctrl/&#8984; + scroll or pinch to zoom</p>
+
+  <div id="content">
+
+    <header class="glass hero">
+      <p class="hero-eyebrow">
+        <a href="../">OpenKnowledgeAtlas</a> &rsaquo; Health Professions Education
+        <span class="field-switch">(also see: <a href="../econ/">Economics</a>)</span>
+      </p>
+      <h1>Decolonizing Health Professions Education Research</h1>
+      <p>An analysis of global co-authorship network patterns and equity implications across leading HPE journals.
+        Bibliometric data have been retrieved with OpenAlex API and mapping with institutional country of authors to trace who collaborates with whom, and who is structurally left out.</p>
+      <div class="kpi-row" id="kpi-row"></div>
+    </header>
+
+    <nav class="glass" id="filter-bar">
+      <div class="filter-group">
+        <span class="fg-label">Map layer</span>
+        <div class="map-mode-toggle" id="map-mode-toggle">
+          <button data-mode="choropleth" class="is-active">Scholar output</button>
+          <button data-mode="network">Co-authorship network</button>
+        </div>
+      </div>
+      <div class="filter-group" id="network-variant-group" style="display:none;">
+        <span class="fg-label">Network snapshot</span>
+        <select id="network-variant-select">
+          <option value="network_full">Full period (2015&ndash;2026)</option>
+          <option value="network_early_period">Early period (2015&ndash;2019)</option>
+          <option value="network_lic_first_author">Low-income first-author only</option>
+        </select>
+      </div>
+      <div class="filter-group" id="year-range-group">
+        <span class="fg-label">Year range</span>
+        <div class="year-range">
+          <span id="year-range-min-label">2015</span>
+          <div class="range-slider">
+            <div class="range-track"></div>
+            <div class="range-track-fill" id="range-track-fill"></div>
+            <input type="range" id="year-range-min" min="2015" max="2026" value="2015" step="1">
+            <input type="range" id="year-range-max" min="2015" max="2026" value="2026" step="1">
+          </div>
+          <span id="year-range-max-label">2026</span>
+        </div>
+      </div>
+      <div class="filter-group">
+        <span class="fg-label">Income group</span>
+        <div class="chip-set" id="income-chip-set"></div>
+      </div>
+    </nav>
+
+    <section class="glass panel" id="panel-trends">
+      <h2>Publication &amp; author trends by income group</h2>
+      <p class="panel-sub">Unique publications and unique contributing authors per year, split by the World Bank
+        income classification of the author's institution country. Toggle income groups above to isolate a series.</p>
+      <div class="panel-grid cols-2">
+        <div>
+          <svg id="chart-trend-pubs" class="chart" width="100%" height="260"></svg>
+        </div>
+        <div>
+          <svg id="chart-trend-authors" class="chart" width="100%" height="260"></svg>
+        </div>
+      </div>
+    </section>
+
+    <section class="glass panel" id="panel-equity">
+      <h2>Collaboration equity</h2>
+      <p class="panel-sub">Each publication classified as <strong>High-income only</strong> authorship, <strong>developing-country
+        only</strong> (no high-income co-author), or <strong>mixed</strong>. The diverging axis makes the size of the gap,
+        and how much of it is bridged by mixed-income collaboration, visible year over year.</p>
+      <svg id="chart-equity" class="chart" width="100%" height="280"></svg>
+      <div class="legend" id="equity-legend"></div>
+    </section>
+
+    <section class="glass panel" id="panel-upset">
+      <h2>Which income groups co-publish together</h2>
+      <p class="panel-sub">Among publications with authors from more than one country, the top 10 combinations of
+        income groups represented, ranked by frequency &mdash; including within-group collaborations.
+        Filled dots mark the income groups present in that combination.</p>
+      <svg id="chart-upset" class="chart" width="100%" height="340"></svg>
+    </section>
+
+    <section class="glass panel" id="panel-network-stats">
+      <h2>Network structure over time</h2>
+      <p class="panel-sub">Graph-level statistics for the cumulative co-authorship network, rebuilt year by year from
+        the first year through each subsequent year as cumulative network.</p>
+      <div class="small-multiples" id="network-timeseries-grid">
+        <div class="ts-card">
+          <h3>Nodes &amp; density <span class="info-icon" data-metric="nodes-density">&#9432;</span></h3>
+          <svg id="chart-ts-nodes-density" class="chart" width="100%" height="210"></svg>
+          <div class="ts-legend" id="ts-legend-nodes-density"></div>
+        </div>
+        <div class="ts-card">
+          <h3>Small-world coefficient <span class="info-icon" data-metric="small-world">&#9432;</span></h3>
+          <svg id="chart-ts-smallworld" class="chart" width="100%" height="210"></svg>
+          <div class="ts-legend" id="ts-legend-smallworld"></div>
+        </div>
+        <div class="ts-card">
+          <h3>Avg. clustering &amp; modularity <span class="info-icon" data-metric="clustering-modularity">&#9432;</span></h3>
+          <svg id="chart-ts-clustering" class="chart" width="100%" height="210"></svg>
+          <div class="ts-legend" id="ts-legend-clustering"></div>
+        </div>
+        <div class="ts-card">
+          <h3>Homophily (income &amp; region) <span class="info-icon" data-metric="homophily">&#9432;</span></h3>
+          <svg id="chart-ts-homophily" class="chart" width="100%" height="210"></svg>
+          <div class="ts-legend" id="ts-legend-homophily"></div>
+        </div>
+      </div>
+      <h2 style="margin-top:28px;">Centrality &amp; participation distributions</h2>
+      <p class="panel-sub">Distribution across all countries in the network currently shown on the map
+        (<span id="network-stats-variant-label">full period, 2015&ndash;2026</span>). A right-skewed shape (most
+        countries near zero, a long tail of highly central ones) is the network signature of centralization.</p>
+      <div class="small-multiples" id="centrality-distributions"></div>
+    </section>
+
+    <section class="glass panel" id="panel-bump">
+      <h2>Who is rising and falling in the network</h2>
+      <p class="panel-sub">Rank of each country by centrality measure, every year from
+        <strong id="bump-first-label">2015</strong> to <strong id="bump-last-label">2026</strong> in the cumulative
+        network. Labels on the right are the current top 10; labels on the left were top 10 in
+        <strong id="bump-first-label-2">2015</strong> but have since fallen out of it.</p>
+      <div class="legend" id="bump-legend"></div>
+      <div class="bump-stack" id="bump-charts"></div>
+    </section>
+
+    <footer class="glass" id="site-footer">
+      <div class="footer-col">
+        <p class="footer-title">Decolonizing Health Professions Education Research</p>
+        <p class="footer-sub">An analysis of global network patterns and equity implications</p>
+        <p class="footer-authors">P. Sitthirat, et al.</p>
+        <p class="footer-cite">
+          <span class="footer-label">Suggested citation</span>
+          Sitthirat, P., et al. <span id="footer-cite-year"></span>. <em>Decolonizing Health Professions
+          Education Research: An Analysis of Global Network Patterns and Equity Implications</em> [Interactive
+          dashboard].
+        </p>
+      </div>
+      <div class="footer-col">
+        <p class="footer-label">Sources</p>
+        <p class="footer-sources">
+          <a href="https://openalex.org" target="_blank" rel="noopener">OpenAlex</a> (bibliometric records),
+          <a href="https://www.worldbank.org/en/publication/wdr2016/brief/global-database-of-shared-prosperity" target="_blank" rel="noopener">World Bank</a> (income classification),
+          <a href="https://www.naturalearthdata.com" target="_blank" rel="noopener">Natural Earth</a> (basemap).
+          Author-institution country geocoded and imputed per <code>fields/meded/pipeline.ipynb</code>.
+        </p>
+        <p class="footer-label" style="margin-top:12px;">Last updated</p>
+        <p id="generated-at"></p>
+        <p class="footer-label" style="margin-top:12px;">Contact</p>
+        <p><a href="mailto:peerasitsitthirat@gmail.com">peerasitsitthirat@gmail.com</a></p>
+      </div>
+      <div class="footer-col">
+        <p class="footer-label">Share</p>
+        <div class="share-row" id="share-row">
+          <button type="button" id="share-copy" title="Copy link" aria-label="Copy link">&#128279;</button>
+          <a id="share-x" href="#" target="_blank" rel="noopener" title="Share on X" aria-label="Share on X">&#120143;</a>
+          <a id="share-linkedin" href="#" target="_blank" rel="noopener" title="Share on LinkedIn" aria-label="Share on LinkedIn">in</a>
+          <a id="share-email" href="#" title="Share by email" aria-label="Share by email">&#9993;</a>
+        </div>
+        <p class="footer-label" style="margin-top:12px;">Views</p>
+        <p id="view-counter">&#128065;&nbsp;<span id="view-count">&mdash;</span></p>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="../shared/vendor/d3.v7.min.js"></script>
+  <script src="../shared/world.js?v=26"></script>
+  <script src="data.js?v=26"></script>
+  <script src="../shared/app.js?v=28"></script>
+
+  <!-- Privacy-friendly page-view tracking: https://www.goatcounter.com -->
+  <script data-goatcounter="https://psitthirat.goatcounter.com/count"
+          async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>

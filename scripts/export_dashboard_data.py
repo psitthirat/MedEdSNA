@@ -1,17 +1,21 @@
 """
-Export precomputed dashboard data.
+Export precomputed dashboard data for one field.
 
-Reproduces the aggregations built in `main.ipynb` (Section 3: Country-level
-Analysis) and writes them to a single JS file (`dashboard/data.js`) that
-assigns the payload to `window.DASHBOARD_DATA`, plus a simplified world
-boundary file (`dashboard/world.js` -> `window.WORLD_GEOJSON`). Both are
-loaded via <script> tags so the dashboard works from a plain `file://` URL
-with no server and no fetch/CORS concerns.
+Reproduces the aggregations built in each field's `fields/<field>/pipeline.ipynb`
+(Section 3: Country-level Analysis) and writes them to a per-field JS file
+(`dashboard/<field>/data.js`) that assigns the payload to
+`window.DASHBOARD_DATA`, plus a simplified world boundary file shared by every
+field (`dashboard/shared/world.js` -> `window.WORLD_GEOJSON`, identical
+regardless of field so it's written once, not duplicated). Both are loaded
+via <script> tags so each field's dashboard page works from a plain `file://`
+URL with no server and no fetch/CORS concerns.
 
 Run from the project root with the project venv active:
-    python3 scripts/export_dashboard_data.py
+    python3 scripts/export_dashboard_data.py --field meded
+    python3 scripts/export_dashboard_data.py --field econ
 """
 
+import argparse
 import json
 import os
 
@@ -26,8 +30,9 @@ from shapely.geometry import MultiPolygon, Polygon
 from scripts import network
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-OUT_DIR = os.path.join(REPO_ROOT, "dashboard")
-os.makedirs(OUT_DIR, exist_ok=True)
+DASHBOARD_DIR = os.path.join(REPO_ROOT, "dashboard")
+SHARED_DIR = os.path.join(DASHBOARD_DIR, "shared")
+os.makedirs(SHARED_DIR, exist_ok=True)
 
 EARLY_WINDOW = range(2015, 2020)   # 2015-2019 snapshot for the map's "early period" network
 LATEST_FULL_YEAR = 2025            # 2026 is a partial year in the source data
@@ -47,16 +52,19 @@ def to_records(df):
     return json.loads(df.to_json(orient="records"))
 
 
-def main():
+def main(field):
+    out_dir = os.path.join(DASHBOARD_DIR, field)
+    os.makedirs(out_dir, exist_ok=True)
+
     print("Loading base map + language data...")
     world = gpd.read_file(os.path.join(REPO_ROOT, "data/world-map/ne_10m_admin_0_countries.zip"))
     world = world[world["ADMIN"] != "Antarctica"]
     language = gpd.read_file(os.path.join(REPO_ROOT, "data/world-map/world_languages.zip"))
     world = world.merge(language[["COUNTRY", "FIRST_OFFI"]], how="left", left_on="GEOUNIT", right_on="COUNTRY")
 
-    print("Loading works/authorships...")
-    works_df = pd.read_csv(os.path.join(REPO_ROOT, "data/metadata/works.csv"))
-    authorships_df = pd.read_csv(os.path.join(REPO_ROOT, "data/metadata/authorships.csv"))
+    print(f"Loading works/authorships for field '{field}'...")
+    works_df = pd.read_csv(os.path.join(REPO_ROOT, "data/metadata", field, "works.csv"))
+    authorships_df = pd.read_csv(os.path.join(REPO_ROOT, "data/metadata", field, "authorships.csv"))
 
     income_gr = pd.read_csv(os.path.join(REPO_ROOT, "data/world-map/country_group.csv"))
     income_gr = income_gr.merge(
@@ -190,7 +198,11 @@ def main():
         cls = nx.closeness_centrality(G)
         try:
             eig = nx.eigenvector_centrality(G, max_iter=1000, tol=1e-6)
-        except nx.PowerIterationFailedConvergence:
+        except (nx.PowerIterationFailedConvergence, nx.NetworkXPointlessConcept):
+            # PowerIterationFailedConvergence: didn't converge on a real graph.
+            # NetworkXPointlessConcept: the null graph (e.g. a field with zero
+            # low-income-first-author works has no nodes at all to build a
+            # subnetwork from) -- eigenvector centrality is undefined either way.
             eig = {n: np.nan for n in G.nodes}
         partition = community_louvain.best_partition(G, random_state=42) if G.number_of_nodes() else {}
         pc = network.participation_coefficient(G, partition) if partition else {}
@@ -310,7 +322,7 @@ def main():
     # ------------------------------------------------------------------
     # Write data.js
     # ------------------------------------------------------------------
-    data_path = os.path.join(OUT_DIR, "data.js")
+    data_path = os.path.join(out_dir, "data.js")
     with open(data_path, "w") as f:
         f.write("window.DASHBOARD_DATA = ")
         f.write(json.dumps(payload, separators=(",", ":")))
@@ -318,7 +330,9 @@ def main():
     print(f"Wrote {data_path} ({os.path.getsize(data_path) / 1e6:.2f} MB)")
 
     # ------------------------------------------------------------------
-    # Write simplified world boundaries
+    # Write simplified world boundaries -- identical across every field, so
+    # this lives in dashboard/shared/ and is simply overwritten (not
+    # duplicated per field) each time this script runs.
     # ------------------------------------------------------------------
     print("Simplifying world boundaries...")
     world_geo = world[["ADMIN", "ADM0_A3", "ISO_A2_EH", "GEOUNIT", "geometry"]].copy()
@@ -367,7 +381,7 @@ def main():
     for feat in gj["features"]:
         feat["geometry"]["coordinates"] = round_coords(feat["geometry"]["coordinates"])
 
-    world_path = os.path.join(OUT_DIR, "world.js")
+    world_path = os.path.join(SHARED_DIR, "world.js")
     with open(world_path, "w") as f:
         f.write("window.WORLD_GEOJSON = ")
         f.write(json.dumps(gj, separators=(",", ":")))
@@ -378,4 +392,6 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    parser.add_argument("--field", required=True, help="Field slug matching a data/metadata/<field>/ folder, e.g. meded, econ")
+    main(parser.parse_args().field)
