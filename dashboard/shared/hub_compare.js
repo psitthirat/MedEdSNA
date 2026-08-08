@@ -107,7 +107,10 @@
     if (!el) return;
     const width = el.clientWidth || 500;
     const height = +el.getAttribute("height");
-    const margin = { top: 10, right: 12, bottom: 20, left: 32 };
+    // Extra right margin for a direct value-label at each line's end (mark
+    // spec: "lines -> value at the end"), so identity+value both read
+    // without leaning on the legend alone.
+    const margin = { top: 10, right: 34, bottom: 20, left: 32 };
     const innerW = width - margin.left - margin.right;
     const innerH = height - margin.top - margin.bottom;
 
@@ -130,15 +133,22 @@
       .call((sel) => sel.select(".domain").remove());
 
     const lineFor = d3.line().x((d) => x(d.year)).y((d) => y(d.value)).curve(d3.curveMonotoneX);
+    // Soft wash under each line -- a background layer of color rather than
+    // a flat card, per the mark spec's area-fill rule (series hue, ~10%).
+    const areaFor = d3.area().x((d) => x(d.year)).y0(innerH).y1((d) => y(d.value)).curve(d3.curveMonotoneX);
 
     fields.forEach((field, i) => {
       const rows = field.small_world_series;
       if (!rows.length) return;
       const color = fieldColor(i);
+      g.append("path").attr("fill", color).attr("fill-opacity", 0.08).attr("stroke", "none").attr("d", areaFor(rows));
       g.append("path").attr("fill", "none").attr("stroke", color).attr("stroke-width", 2).attr("d", lineFor(rows));
       const last = rows[rows.length - 1];
       g.append("circle").attr("cx", x(last.year)).attr("cy", y(last.value)).attr("r", 3.5)
         .attr("fill", color).attr("stroke", SURFACE).attr("stroke-width", 1.5);
+      g.append("text").attr("class", "direct-label muted")
+        .attr("x", x(last.year) + 7).attr("y", y(last.value) + 3.5)
+        .style("font-size", "10px").text(last.value.toFixed(1));
     });
 
     const legendEl = document.getElementById("compare-smallworld-legend");
