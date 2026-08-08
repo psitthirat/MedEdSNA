@@ -64,10 +64,12 @@ scripts/
   network.py                     # Co-authorship graph construction, centrality, community detection
   visualization.py                # Choropleth/bump-chart/network plotting helpers (used inside each field's notebook)
   export_dashboard_data.py         # Exports one field's aggregations to dashboard/<field>/data.js + dashboard/shared/world.js
+  export_hub_comparison.py         # Re-aggregates every field's data.js into dashboard/shared/hub_comparison.js for the hub page's cross-field comparison
 
 dashboard/
-  index.html            # Hub page, links to each field
-  shared/                # style.css, app.js, world.js, vendor/ -- identical across every field, not duplicated
+  index.html            # Hub page, links to each field + the cross-field comparison section
+  shared/                # style.css, app.js, world.js, vendor/, tooltip.js, share.js -- identical across every field, not duplicated
+                            # hub_comparison.js + hub_compare.js are hub-page-only (cross-field comparison data + renderer)
   meded/, econ/           # One index.html + data.js per field
 
 legacy/                # Pre-OpenAlex, Scopus-era pipeline and the original Thailand subanalysis -- kept for reference, not maintained (see legacy/README.md)
@@ -132,7 +134,12 @@ re-running it doesn't regenerate a bloated list of things you've already labeled
    `dashboard/<field>/data.js`.
 5. Copy `dashboard/econ/` to `dashboard/<field>/`, edit the hero copy and meta tags in
    `index.html` (paths already point at `../shared/`, no need to touch those).
-6. Add a card for the new field on `dashboard/index.html`'s hub page.
+6. Add a card for the new field on `dashboard/index.html`'s hub page, and a `FIELD_NAMES`
+   entry in `scripts/export_hub_comparison.py`.
+7. Run `python3 -m scripts.export_hub_comparison` to fold the new field into the hub
+   page's cross-field comparison (collaboration equity, small-world coefficient, most
+   central countries). If this is the 3rd field or beyond, `dashboard/shared/hub_compare.js`
+   also needs a new validated color added to `FIELD_COLOR_VARS` -- see the dataviz skill.
 
 ---
 

@@ -61,78 +61,9 @@
   const fmtDec = (n, d = 2) => (n === null || n === undefined || Number.isNaN(n) ? "—" : n.toFixed(d));
 
   // ---------------------------------------------------------------------
-  // Tooltip
+  // Tooltip + info-icon definitions now live in shared/tooltip.js (loaded
+  // before this file) -- showTooltip/hideTooltip are its globals.
   // ---------------------------------------------------------------------
-  const tooltipEl = document.getElementById("tooltip");
-  function showTooltip(html, evt) {
-    tooltipEl.innerHTML = html;
-    tooltipEl.style.opacity = 1;
-    moveTooltip(evt);
-  }
-  function moveTooltip(evt) {
-    const pad = 14;
-    let x = evt.clientX + pad;
-    let y = evt.clientY + pad;
-    const rect = tooltipEl.getBoundingClientRect();
-    if (x + rect.width > window.innerWidth) x = evt.clientX - rect.width - pad;
-    if (y + rect.height > window.innerHeight) y = evt.clientY - rect.height - pad;
-    tooltipEl.style.left = x + "px";
-    tooltipEl.style.top = y + "px";
-  }
-  function hideTooltip() { tooltipEl.style.opacity = 0; }
-
-  // ---------------------------------------------------------------------
-  // Metric definitions (info-icon hover, wired via delegation so it covers
-  // both static markup and chart titles re-rendered by D3)
-  // ---------------------------------------------------------------------
-  const METRIC_DEFINITIONS = {
-    "nodes-density": {
-      label: "Nodes & density",
-      text: "Nodes: number of countries active in the network that year. Density: the share of all possible country-pairs that are actually connected by at least one co-authored publication (0 = none connected, 1 = every pair connected).",
-    },
-    "small-world": {
-      label: "Small-world coefficient",
-      text: "Compares the network's clustering and path length to a random network of the same size. Values above 1 indicate small-world structure — tightly clustered locally, yet still reachable in a few steps globally; higher is more pronounced.",
-    },
-    "clustering-modularity": {
-      label: "Avg. clustering & modularity",
-      text: "Avg. clustering: how often a country's collaborators are also connected to each other. Modularity: how strongly the network splits into distinct clusters that collaborate mostly within themselves rather than across.",
-    },
-    homophily: {
-      label: "Homophily",
-      text: "The share of collaboration ties that connect two countries in the same income group or region, rather than crossing between groups. Higher means more within-group clustering and less cross-group mixing.",
-    },
-    degree: {
-      label: "Degree centrality",
-      text: "The share of all other countries in the network that a country is directly connected to. Higher means more direct collaborators.",
-    },
-    betweenness: {
-      label: "Betweenness centrality",
-      text: "How often a country sits on the shortest connecting path between two other countries. High values mark a 'broker' bridging otherwise separate parts of the network.",
-    },
-    closeness: {
-      label: "Closeness centrality",
-      text: "How close a country is, on average, to every other country via the shortest paths. Higher means faster reach across the whole network.",
-    },
-    participation: {
-      label: "Participation coefficient",
-      text: "How evenly a country's ties are spread across different communities rather than concentrated in its own. Near 1 = broadly connected across communities; near 0 = ties stay within one community.",
-    },
-  };
-
-  document.addEventListener("mousemove", (evt) => {
-    const icon = evt.target.closest(".info-icon");
-    if (!icon) return;
-    const def = METRIC_DEFINITIONS[icon.dataset.metric];
-    if (!def) return;
-    showTooltip(`<div class="tt-title">${def.label}</div><div class="tt-row"><span>${def.text}</span></div>`, evt);
-  });
-  document.addEventListener("mouseout", (evt) => {
-    const icon = evt.target.closest(".info-icon");
-    if (!icon) return;
-    if (evt.relatedTarget && evt.relatedTarget.closest(".info-icon") === icon) return;
-    hideTooltip();
-  });
 
   // ---------------------------------------------------------------------
   // KPI row (hero)
@@ -160,7 +91,7 @@
       .on("mousemove", (evt, d) => {
         if (!d.tooltip) return;
         const lines = (Array.isArray(d.tooltip) ? d.tooltip : [d.tooltip])
-          .map((line) => `<div class="tt-row"><span>${line}</span></div>`)
+          .map((line) => `<div class="tt-desc">${line}</div>`)
           .join("");
         showTooltip(`<div class="tt-title">${d.label}</div>${lines}`, evt);
       })
@@ -950,8 +881,28 @@
         .attr("fill", (d) => d.color)
         .text((d) => `${d.rank}. ${d.economy}`);
     }
+    // Country names vary a lot in length ("China" vs. "Hong Kong SAR, China");
+    // the margins only budget so much room for them. Rather than clip against
+    // the SVG's edge (which cuts off the *start* of "end"-anchored left labels),
+    // shorten anything that doesn't fit into an ellipsis and expose the full
+    // name via <title> so it's still available on hover.
+    function truncateToFit(sel, maxWidth) {
+      sel.each(function (d) {
+        const node = this;
+        const full = `${d.rank}. ${d.economy}`;
+        if (node.getComputedTextLength() <= maxWidth) return;
+        let text = full;
+        while (text.length > 1 && node.getComputedTextLength() > maxWidth) {
+          text = text.slice(0, -1);
+          node.textContent = text.trimEnd() + "…";
+        }
+        d3.select(node).append("title").text(full);
+      });
+    }
     const rightLabelSel = placeLabels(rightLabels, "right");
     const leftLabelSel = placeLabels(leftLabels, "left");
+    truncateToFit(rightLabelSel, margin.right - 14);
+    truncateToFit(leftLabelSel, margin.left - 14);
 
     // Selection badge: names the currently-picked country so a chosen line
     // is unambiguous even where several lines cross or share a color.
@@ -1156,42 +1107,6 @@
     });
   }
 
-  // Site code from https://www.goatcounter.com -- must match the
-  // data-goatcounter URL in index.html.
-  const GOATCOUNTER_CODE = "psitthirat";
-
-  function wireShareAndViews() {
-    const pageUrl = window.location.href;
-    const shareText = document.title;
-
-    document.getElementById("share-x").href =
-      `https://twitter.com/intent/tweet?url=${encodeURIComponent(pageUrl)}&text=${encodeURIComponent(shareText)}`;
-    document.getElementById("share-linkedin").href =
-      `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(pageUrl)}`;
-    document.getElementById("share-email").href =
-      `mailto:?subject=${encodeURIComponent(shareText)}&body=${encodeURIComponent(pageUrl)}`;
-
-    const copyBtn = document.getElementById("share-copy");
-    copyBtn.addEventListener("click", () => {
-      navigator.clipboard.writeText(pageUrl).then(() => {
-        const original = copyBtn.textContent;
-        copyBtn.textContent = "✓";
-        copyBtn.classList.add("copied");
-        setTimeout(() => {
-          copyBtn.textContent = original;
-          copyBtn.classList.remove("copied");
-        }, 1500);
-      });
-    });
-
-    fetch(`https://${GOATCOUNTER_CODE}.goatcounter.com/counter/TOTAL.json`)
-      .then((r) => r.json())
-      .then((d) => {
-        document.getElementById("view-count").textContent = Number(d.count).toLocaleString();
-      })
-      .catch(() => {});
-  }
-
   // ---------------------------------------------------------------------
   // Init
   // ---------------------------------------------------------------------
@@ -1206,7 +1121,6 @@
     wireFilterBar();
     wireZoomControls();
     wireThemeToggle();
-    wireShareAndViews();
     drawBaseLand();
     fitProjection();
     renderTrendCharts();

@@ -37,6 +37,8 @@
 </head>
 <body class="viz-root">
 
+  <div id="tooltip"></div>
+
   <div id="map-layer"></div>
   <div class="map-vignette"></div>
 
@@ -72,6 +74,32 @@
       </div>
     </section>
 
+    <section class="glass panel" id="panel-compare">
+      <h2>Across fields</h2>
+      <p class="panel-sub">The same structural-equity lens, applied to every field side by side &mdash; how
+        collaboration is shared between high-income and developing-country authors, how tightly each network
+        clusters over time, and who sits at its core.</p>
+
+      <div class="bump-stack">
+        <div class="ts-card">
+          <h3>Collaboration equity, latest year <span class="info-icon" data-metric="collab-equity">&#9432;</span></h3>
+          <div class="equity-rows" id="compare-equity"></div>
+          <div class="ts-legend" id="compare-equity-legend"></div>
+        </div>
+
+        <div class="ts-card">
+          <h3>Small-world coefficient over time <span class="info-icon" data-metric="small-world">&#9432;</span></h3>
+          <svg id="chart-compare-smallworld" class="chart" width="100%" height="200"></svg>
+          <div class="ts-legend" id="compare-smallworld-legend"></div>
+        </div>
+
+        <div class="ts-card">
+          <h3>Most central countries, by degree centrality <span class="info-icon" data-metric="degree">&#9432;</span></h3>
+          <div class="leaders-columns" id="compare-leaders"></div>
+        </div>
+      </div>
+    </section>
+
     <footer class="glass" id="site-footer">
       <div class="footer-col">
         <p class="footer-title">OpenKnowledgeAtlas</p>
@@ -86,9 +114,26 @@
         <p class="footer-label" style="margin-top:12px;">Contact</p>
         <p><a href="mailto:peerasitsitthirat@gmail.com">peerasitsitthirat@gmail.com</a></p>
       </div>
+      <div class="footer-col">
+        <p class="footer-label">Share</p>
+        <div class="share-row" id="share-row">
+          <button type="button" id="share-copy" title="Copy link" aria-label="Copy link">&#128279;</button>
+          <a id="share-x" href="#" target="_blank" rel="noopener" title="Share on X" aria-label="Share on X">&#120143;</a>
+          <a id="share-linkedin" href="#" target="_blank" rel="noopener" title="Share on LinkedIn" aria-label="Share on LinkedIn">in</a>
+          <a id="share-email" href="#" title="Share by email" aria-label="Share by email">&#9993;</a>
+        </div>
+        <p class="footer-label" style="margin-top:12px;">Views</p>
+        <p id="view-counter">&#128065;&nbsp;<span id="view-count">&mdash;</span></p>
+      </div>
     </footer>
 
   </div>
+
+  <script src="shared/vendor/d3.v7.min.js"></script>
+  <script src="shared/tooltip.js?v=1"></script>
+  <script src="shared/hub_comparison.js?v=1"></script>
+  <script src="shared/hub_compare.js?v=1"></script>
+  <script src="shared/share.js?v=1"></script>
 
   <!-- Privacy-friendly page-view tracking: https://www.goatcounter.com -->
   <script data-goatcounter="https://psitthirat.goatcounter.com/count"
