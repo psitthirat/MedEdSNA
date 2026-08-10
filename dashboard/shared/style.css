@@ -230,8 +230,11 @@ body {
   box-shadow: 0 8px 40px rgba(0,0,0,0.28);
 }
 
-/* Hero */
-.hero { padding: 32px 32px 28px; }
+/* Hero -- capped narrower than #content's own width: on the hub page
+   #content is wide so the data-rich panels (Fields, Across fields) can
+   breathe, but the hero is prose and reads better kept to a narrow
+   measure than stretched into an oversized, mostly-empty glass card. */
+.hero { max-width: 760px; padding: 32px 32px 28px; }
 .hero-eyebrow {
   color: var(--text-secondary);
   font-size: 13px;
@@ -443,7 +446,12 @@ select {
 .ts-legend .legend-item { font-size: 10.5px; }
 .ts-legend .swatch { width: 8px; height: 8px; }
 
-/* Cross-field comparison (hub page) */
+/* Cross-field comparison (hub page) -- the richest chart (evolution over
+   time) gets the full-width top row; the two snapshot summaries share the
+   row below it, side by side rather than stacked in a single narrow column. */
+.compare-layout { display: flex; flex-direction: column; gap: 24px; }
+.compare-bottom { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; }
+
 .equity-rows { display: flex; flex-direction: column; gap: 12px; margin-top: 8px; }
 .equity-row { display: flex; align-items: center; gap: 12px; }
 .equity-row .equity-field-label { width: 128px; flex-shrink: 0; font-size: 12.5px; color: var(--text-secondary); }
@@ -583,6 +591,12 @@ footer.glass {
   display: grid;
   grid-template-columns: 1fr;
   gap: 22px;
+}
+/* Field pages stay in a narrow column below this, so this only fires on
+   the hub page's wide #content -- 3 footer-col children side by side
+   instead of stacked. */
+@media (min-width: 900px) {
+  footer.glass:has(.footer-col:nth-child(3)) { grid-template-columns: repeat(3, 1fr); }
 }
 footer.glass a { color: var(--text-secondary); }
 footer.glass a:hover { color: var(--text-primary); }

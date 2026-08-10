@@ -42,7 +42,7 @@
   <div id="map-layer"></div>
   <div class="map-vignette"></div>
 
-  <div id="content" style="width:min(700px, 92vw); padding:64px 0 96px 40px;">
+  <div id="content" style="width:min(1180px, 94vw); margin:0 auto; padding:64px 24px 96px;">
 
     <header class="glass hero">
       <p class="hero-eyebrow">Global Epistemic Decolonization</p>
@@ -80,22 +80,24 @@
         collaboration is shared between high-income and developing-country authors, how tightly each network
         clusters over time, and who sits at its core.</p>
 
-      <div class="bump-stack">
-        <div class="ts-card">
-          <h3>Collaboration equity, latest year <span class="info-icon" data-metric="collab-equity">&#9432;</span></h3>
-          <div class="equity-rows" id="compare-equity"></div>
-          <div class="ts-legend" id="compare-equity-legend"></div>
-        </div>
-
-        <div class="ts-card">
+      <div class="compare-layout">
+        <div class="ts-card compare-hero">
           <h3>Small-world coefficient over time <span class="info-icon" data-metric="small-world">&#9432;</span></h3>
-          <svg id="chart-compare-smallworld" class="chart" width="100%" height="200"></svg>
+          <svg id="chart-compare-smallworld" class="chart" width="100%" height="320"></svg>
           <div class="ts-legend" id="compare-smallworld-legend"></div>
         </div>
 
-        <div class="ts-card">
-          <h3>Most central countries, by degree centrality <span class="info-icon" data-metric="degree">&#9432;</span></h3>
-          <div class="leaders-columns" id="compare-leaders"></div>
+        <div class="compare-bottom">
+          <div class="ts-card">
+            <h3>Collaboration equity, latest year <span class="info-icon" data-metric="collab-equity">&#9432;</span></h3>
+            <div class="equity-rows" id="compare-equity"></div>
+            <div class="ts-legend" id="compare-equity-legend"></div>
+          </div>
+
+          <div class="ts-card">
+            <h3>Most central countries, by degree centrality <span class="info-icon" data-metric="degree">&#9432;</span></h3>
+            <div class="leaders-columns" id="compare-leaders"></div>
+          </div>
         </div>
       </div>
     </section>
