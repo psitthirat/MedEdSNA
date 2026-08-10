@@ -3,23 +3,23 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Decolonizing Economics Research — Global Network Dashboard</title>
-<meta name="description" content="An interactive analysis of global co-authorship network patterns and equity implications across leading economics, finance, and business journals.">
+<title>Decolonizing Hospice &amp; Palliative Care Research — Global Network Dashboard</title>
+<meta name="description" content="An interactive analysis of global co-authorship network patterns and equity implications across the top 20 hospice and palliative care journals.">
 
 <!-- Open Graph / Facebook, LinkedIn -->
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://psitthirat.github.io/OpenKnowledgeAtlas/econ/">
-<meta property="og:title" content="Decolonizing Economics Research">
-<meta property="og:description" content="An interactive analysis of global co-authorship network patterns and equity implications across leading economics, finance, and business journals.">
+<meta property="og:url" content="https://psitthirat.github.io/OpenKnowledgeAtlas/palli/">
+<meta property="og:title" content="Decolonizing Hospice & Palliative Care Research">
+<meta property="og:description" content="An interactive analysis of global co-authorship network patterns and equity implications across the top 20 hospice and palliative care journals.">
 <meta property="og:image" content="https://psitthirat.github.io/OpenKnowledgeAtlas/shared/og-image.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 
 <!-- Twitter/X Card -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:url" content="https://psitthirat.github.io/OpenKnowledgeAtlas/econ/">
-<meta name="twitter:title" content="Decolonizing Economics Research">
-<meta name="twitter:description" content="An interactive analysis of global co-authorship network patterns and equity implications across leading economics, finance, and business journals.">
+<meta name="twitter:url" content="https://psitthirat.github.io/OpenKnowledgeAtlas/palli/">
+<meta name="twitter:title" content="Decolonizing Hospice & Palliative Care Research">
+<meta name="twitter:description" content="An interactive analysis of global co-authorship network patterns and equity implications across the top 20 hospice and palliative care journals.">
 <meta name="twitter:image" content="https://psitthirat.github.io/OpenKnowledgeAtlas/shared/og-image.jpg">
 
 <script>
@@ -58,13 +58,14 @@
 
     <header class="glass hero">
       <p class="hero-eyebrow">
-        <a href="../">OpenKnowledgeAtlas</a> &rsaquo; Economics &amp; Business
-        <span class="field-switch">(also see: <a href="../meded/">Health Professions Education</a>, <a href="../palli/">Hospice &amp; Palliative Care</a>)</span>
+        <a href="../">OpenKnowledgeAtlas</a> &rsaquo; Hospice &amp; Palliative Care
+        <span class="field-switch">(also see: <a href="../meded/">Health Professions Education</a>, <a href="../econ/">Economics &amp; Business</a>)</span>
       </p>
-      <h1>Decolonizing Economics Research</h1>
-      <p>An analysis of global co-authorship network patterns and equity implications across leading economics,
-        finance, and business journals. Bibliometric data have been retrieved with OpenAlex API and mapped to
-        institutional country of authors to trace who collaborates with whom, and who is structurally left out.</p>
+      <h1>Decolonizing Hospice &amp; Palliative Care Research</h1>
+      <p>An analysis of global co-authorship network patterns and equity implications across the top 20 hospice
+        and palliative care journals (per Google Scholar Metrics' Hospice &amp; Palliative Medicine category).
+        Bibliometric data have been retrieved with OpenAlex API and mapped to institutional country of authors to
+        trace who collaborates with whom, and who is structurally left out.</p>
       <div class="kpi-row" id="kpi-row"></div>
     </header>
 
@@ -179,13 +180,13 @@
 
     <footer class="glass" id="site-footer">
       <div class="footer-col">
-        <p class="footer-title">Decolonizing Economics Research</p>
+        <p class="footer-title">Decolonizing Hospice &amp; Palliative Care Research</p>
         <p class="footer-sub">An analysis of global network patterns and equity implications</p>
         <p class="footer-authors">P. Sitthirat, et al.</p>
         <p class="footer-cite">
           <span class="footer-label">Suggested citation</span>
-          Sitthirat, P., et al. <span id="footer-cite-year"></span>. <em>Decolonizing Economics
-          Research: An Analysis of Global Network Patterns and Equity Implications</em> [Interactive
+          Sitthirat, P., et al. <span id="footer-cite-year"></span>. <em>Decolonizing Hospice &amp; Palliative
+          Care Research: An Analysis of Global Network Patterns and Equity Implications</em> [Interactive
           dashboard].
         </p>
       </div>
@@ -195,7 +196,9 @@
           <a href="https://openalex.org" target="_blank" rel="noopener">OpenAlex</a> (bibliometric records),
           <a href="https://www.worldbank.org/en/publication/wdr2016/brief/global-database-of-shared-prosperity" target="_blank" rel="noopener">World Bank</a> (income classification),
           <a href="https://www.naturalearthdata.com" target="_blank" rel="noopener">Natural Earth</a> (basemap).
-          Author-institution country geocoded and imputed per <code>fields/econ/pipeline.ipynb</code>.
+          Journal list from Google Scholar Metrics' Hospice &amp; Palliative Medicine category.
+          Author-institution country geocoded and imputed per
+          <code>fields/palli/pipeline.ipynb</code>.
         </p>
         <p class="footer-label" style="margin-top:12px;">Last updated</p>
         <p id="generated-at"></p>

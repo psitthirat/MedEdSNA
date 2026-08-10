@@ -13,13 +13,13 @@
   const css = getComputedStyle(document.documentElement);
   const tok = (name) => css.getPropertyValue(name).trim();
 
-  // Field identity color, assigned by position -- the same blue/red pair
-  // already used for every other two-series comparison on the field pages
-  // (e.g. "Avg. clustering & modularity", "Homophily income & region").
-  // Only 2 fields exist today. A 3rd needs a 3rd hue picked and validated
-  // deliberately (see the dataviz skill) and added here -- never cycled or
-  // borrowed from the reserved status palette.
-  const FIELD_COLOR_VARS = ["--seq-450", "--div-neg"];
+  // Field identity color, assigned by position -- blue/red reused from the
+  // two-series comparisons elsewhere on the field pages (e.g. "Avg.
+  // clustering & modularity", "Homophily income & region"), plus a 3rd hue
+  // (--cat-3, green) picked and validated via the dataviz skill against
+  // that blue/red pair on both surfaces -- never cycled or borrowed from
+  // the reserved status palette. A 4th field needs the same treatment.
+  const FIELD_COLOR_VARS = ["--seq-450", "--div-neg", "--cat-3"];
   const fieldColor = (i) => tok(FIELD_COLOR_VARS[i] || "--text-muted");
 
   const DIV_POS = tok("--div-pos");

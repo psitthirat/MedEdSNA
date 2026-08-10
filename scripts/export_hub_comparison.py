@@ -30,6 +30,7 @@ SHARED_DIR = os.path.join(DASHBOARD_DIR, "shared")
 FIELD_NAMES = {
     "meded": "Health Professions Education",
     "econ": "Economics & Business",
+    "palli": "Hospice & Palliative Care",
 }
 
 TOP_N_LEADERS = 5

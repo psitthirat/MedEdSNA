@@ -54,6 +54,14 @@
   --div-neg: #e66767;
   --div-mid: #ffffff;
 
+  /* Categorical slot 3, for a 3rd field on the hub comparison charts
+     (blue=field 1, red=field 2 already reused from --seq-450/--div-neg).
+     Validated via the dataviz skill against both surfaces + the existing
+     blue/red pair (all-pairs CVD + normal-vision floor + contrast) --
+     distinct from --status-good, which stays reserved for state, not
+     series identity. */
+  --cat-3: #008300;
+
   --status-good: #0ca30c;
 
   --radius-lg: 20px;
@@ -100,6 +108,8 @@
   --div-neg: #e66767;
   --div-mid: #ffffff;
 
+  --cat-3: #008300;
+
   --status-good: #0ca30c;
 
   --vignette-rgb: 0, 0, 0;
@@ -131,6 +141,8 @@
   --div-pos: #2a78d6;
   --div-neg: #e34948;
   --div-mid: #c3c2b7;
+
+  --cat-3: #008300;
 
   --status-good: #006300;
 

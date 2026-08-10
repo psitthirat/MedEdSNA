@@ -10,8 +10,8 @@ and pipeline, so the project scales by adding fields rather than by rewriting it
 
 It started as a single-field study — *"Decolonizing Health Professions Education Research: An
 Analysis of Global Network Patterns and Equity Implications"* — and has since expanded to a
-second field (Economics & Business), with the pipeline and dashboard now built to take a third,
-fourth, or Nth field without restructuring.
+second field (Economics & Business) and a third (Hospice & Palliative Care), with the pipeline
+and dashboard now built to take a fourth or Nth field without restructuring.
 
 ---
 
@@ -31,6 +31,7 @@ GitHub Pages, one per field plus a hub page:
 - **https://psitthirat.github.io/OpenKnowledgeAtlas/** — hub, links to every field
 - **https://psitthirat.github.io/OpenKnowledgeAtlas/meded/** — Health Professions Education
 - **https://psitthirat.github.io/OpenKnowledgeAtlas/econ/** — Economics & Business
+- **https://psitthirat.github.io/OpenKnowledgeAtlas/palli/** — Hospice & Palliative Care
 
 Each is a static D3.js app that reads precomputed data bundles, so it needs no server or API
 calls. Any push to `dashboard/` on `main` redeploys it automatically via GitHub Actions
@@ -55,6 +56,7 @@ output/
 fields/
   meded/pipeline.ipynb   # Scrape -> clean -> geocode -> SNA for Health Professions Education
   econ/pipeline.ipynb    # Same pipeline, parameterized for Economics & Business
+  palli/pipeline.ipynb   # Same pipeline, parameterized for Hospice & Palliative Care
 
 scripts/
   scrp_article.py         # Scrapes works/authorships from the OpenAlex API
@@ -70,7 +72,7 @@ dashboard/
   index.html            # Hub page, links to each field + the cross-field comparison section
   shared/                # style.css, app.js, world.js, vendor/, tooltip.js, share.js -- identical across every field, not duplicated
                             # hub_comparison.js + hub_compare.js are hub-page-only (cross-field comparison data + renderer)
-  meded/, econ/           # One index.html + data.js per field
+  meded/, econ/, palli/   # One index.html + data.js per field
 
 legacy/                # Pre-OpenAlex, Scopus-era pipeline and the original Thailand subanalysis -- kept for reference, not maintained (see legacy/README.md)
 ```
@@ -144,7 +146,11 @@ re-running it doesn't regenerate a bloated list of things you've already labeled
 ---
 
 ## Methods
-- **Data Source**: Field-specific journals indexed via the OpenAlex API (2015–2026).
+- **Data Source**: Field-specific journals indexed via the OpenAlex API (2015–2026). Each field's
+  journal list is authored once in `data/source_id.csv`, with its selection basis noted in that
+  field's pipeline notebook -- the Hospice & Palliative Care list, for instance, is the top 20
+  publications under Google Scholar Metrics' *Hospice & Palliative Medicine* subcategory, ranked
+  by h5-index.
 - **Unit**: Country-level co-authorship.
 - **Analysis**: Bibliometrics, SNA (density, modularity, centrality), visualizations with NetworkX and D3.js.
 
@@ -156,7 +162,9 @@ re-running it doesn't regenerate a bloated list of things you've already labeled
 - Some LMICs (e.g., Kenya, Cambodia, Sudan) show emerging centrality.
 - The field is in a transitional phase of decolonization.
 
-Economics & Business findings are still being written up — see the [live dashboard](https://psitthirat.github.io/OpenKnowledgeAtlas/econ/) for the current data.
+Economics & Business and Hospice & Palliative Care findings are still being written up — see the
+live dashboards ([econ](https://psitthirat.github.io/OpenKnowledgeAtlas/econ/),
+[palli](https://psitthirat.github.io/OpenKnowledgeAtlas/palli/)) for the current data.
 
 ---
 
