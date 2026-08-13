@@ -614,8 +614,9 @@
   // Network structure over time (cumulative, year by year)
   // ---------------------------------------------------------------------
   function drawTsChart(svgId, seriesSpecs, opts = {}) {
-    const rows = DATA.network_yearly_stats;
+    const rows = opts.rows || DATA.network_yearly_stats;
     const el = document.getElementById(svgId);
+    if (!el || !rows || !rows.length) return;
     const width = el.clientWidth || 260;
     const height = +el.getAttribute("height");
     const hasRight = seriesSpecs.some((sp) => sp.axis === "right");
@@ -632,10 +633,13 @@
 
     const leftSpecs = seriesSpecs.filter((sp) => sp.axis !== "right");
     const rightSpecs = seriesSpecs.filter((sp) => sp.axis === "right");
-    const scaleFor = (specs) => d3.scaleLinear()
-      .domain([0, d3.max(rows, (r) => d3.max(specs.map((sp) => r[sp.key]))) * 1.1 || 1]).nice()
+    const scaleFor = (specs, domain) => d3.scaleLinear()
+      .domain(domain || [0, d3.max(rows, (r) => d3.max(specs.map((sp) => r[sp.key]))) * 1.1 || 1]).nice()
       .range([innerH, 0]);
-    const yLeft = scaleFor(leftSpecs);
+    // opts.yDomain fits the axis to the data instead of anchoring at zero.
+    // Only for index-style line series (Gini, centralisation) where the whole
+    // signal is a movement of a few hundredths -- never for bars.
+    const yLeft = scaleFor(leftSpecs, opts.yDomain);
     const yRight = rightSpecs.length ? scaleFor(rightSpecs) : null;
 
     g.append("g").selectAll("line").data(yLeft.ticks(4)).join("line")
@@ -718,6 +722,186 @@
       { key: "Homophily on Income group", label: "Income", color: SEQ_ACCENT, axis: "left" },
       { key: "Homophily on Region", label: "Region", color: DIV_NEG, axis: "left" },
     ], { leftFormat: (d) => d.toFixed(2), legendId: "ts-legend-homophily" });
+  }
+
+  // ---------------------------------------------------------------------
+  // Concentration: collaboration topology, within-bloc inequality, and
+  // centralisation over time.
+  //
+  // Every function here no-ops unless BOTH the payload key and the target
+  // element exist, so a field whose data.js predates these keys -- or a page
+  // that chooses not to show the panel -- renders exactly as before.
+  // ---------------------------------------------------------------------
+  const BUCKET_COLOR = () => ({ "High only": DIV_POS, "Developing only": DIV_NEG });
+
+  function renderTopologyChart() {
+    const el = document.getElementById("chart-topology");
+    const topo = DATA.collaboration_topology;
+    if (!el || !topo) return;
+
+    const byBucket = new Map(topo.buckets.map((b) => [b.bucket, b]));
+    const hi = byBucket.get("High only");
+    const dev = byBucket.get("Developing only");
+    if (!hi || !dev) return;
+
+    const colors = BUCKET_COLOR();
+    const bars = [
+      { label: "High-income ↔ high-income", short: "North–North", value: hi.multi_country,
+        pct: hi.multi_country_pct, total: hi.works, color: colors["High only"] },
+      { label: "LMIC ↔ LMIC", short: "South–South", value: dev.multi_country,
+        pct: dev.multi_country_pct, total: dev.works, color: colors["Developing only"] },
+    ];
+
+    const width = el.clientWidth || 900;
+    const height = +el.getAttribute("height");
+    const margin = { top: 10, right: 96, bottom: 26, left: 168 };
+    const innerW = width - margin.left - margin.right;
+    const innerH = height - margin.top - margin.bottom;
+
+    const s = d3.select("#chart-topology").attr("viewBox", `0 0 ${width} ${height}`);
+    s.selectAll("*").remove();
+    const g = s.append("g").attr("transform", `translate(${margin.left},${margin.top})`);
+
+    const x = d3.scaleLinear().domain([0, d3.max(bars, (b) => b.value) * 1.05]).nice().range([0, innerW]);
+    const y = d3.scaleBand().domain(bars.map((b) => b.short)).range([0, innerH]).padding(0.38);
+
+    g.append("g").selectAll("line").data(x.ticks(5)).join("line")
+      .attr("class", "gridline").attr("x1", x).attr("x2", x).attr("y1", 0).attr("y2", innerH);
+    g.append("line").attr("class", "baseline").attr("x1", 0).attr("x2", 0).attr("y1", 0).attr("y2", innerH);
+
+    g.append("g").attr("class", "axis").attr("transform", `translate(0,${innerH})`)
+      .call(d3.axisBottom(x).ticks(5).tickFormat(fmtCompact).tickSize(0))
+      .call((sel) => sel.select(".domain").remove());
+
+    const row = g.selectAll(".topo-row").data(bars).join("g")
+      .attr("class", "topo-row")
+      .attr("transform", (d) => `translate(0,${y(d.short)})`);
+
+    // 4px rounded data-end, anchored to the baseline at x = 0
+    row.append("rect")
+      .attr("x", 0).attr("y", 0)
+      .attr("width", (d) => Math.max(2, x(d.value)))
+      .attr("height", y.bandwidth())
+      .attr("rx", 4)
+      .attr("fill", (d) => d.color);
+
+    row.append("text").attr("class", "topo-label")
+      .attr("x", -12).attr("y", y.bandwidth() / 2)
+      .attr("dy", "-0.15em").attr("text-anchor", "end")
+      .text((d) => d.short);
+    row.append("text").attr("class", "topo-sublabel")
+      .attr("x", -12).attr("y", y.bandwidth() / 2)
+      .attr("dy", "1.05em").attr("text-anchor", "end")
+      .text((d) => d.label);
+
+    row.append("text").attr("class", "topo-value")
+      .attr("x", (d) => Math.max(2, x(d.value)) + 10)
+      .attr("y", y.bandwidth() / 2).attr("dy", "0.35em")
+      .text((d) => d3.format(",")(d.value));
+
+    row.append("rect")
+      .attr("x", 0).attr("y", 0).attr("width", innerW).attr("height", y.bandwidth())
+      .attr("fill", "transparent")
+      .on("mousemove", (evt, d) => {
+        showTooltip(
+          `<div class="tt-title">${d.short}</div>
+           <div class="tt-row"><span style="color:${d.color}">● Multi-country works</span><span>${d3.format(",")(d.value)}</span></div>
+           <div class="tt-row"><span>Single-country works</span><span>${d3.format(",")(d.total - d.value)}</span></div>
+           <div class="tt-row"><span>Share collaborative</span><span>${d.pct}%</span></div>`,
+          evt
+        );
+      })
+      .on("mouseleave", hideTooltip);
+
+    const note = document.getElementById("topology-note");
+    if (!note) return;
+
+    const tail = `Only <strong>${dev.multi_country_pct}%</strong> of works with no high-income author span more
+      than one country &mdash; the rest is domestic output, not South&ndash;South collaboration.`;
+
+    // Below ~30 South-South works the ratio is dominated by its denominator (a
+    // single paper moves it by tens), so state the counts instead of a
+    // multiplier that would read as far more precise than it is.
+    const MIN_FOR_RATIO = 30;
+    if (dev.multi_country >= MIN_FOR_RATIO) {
+      const ratio = hi.multi_country / dev.multi_country;
+      note.innerHTML = `High-income countries co-author with each other <strong>${ratio.toFixed(0)}×</strong> more
+        often than LMICs co-author with each other. ${tail}`;
+    } else if (dev.multi_country > 0) {
+      note.innerHTML = `Across the whole period, just <strong>${d3.format(",")(dev.multi_country)}</strong>
+        publications joined two or more LMICs, against <strong>${d3.format(",")(hi.multi_country)}</strong> joining
+        two or more high-income countries. ${tail}`;
+    } else {
+      note.innerHTML = `Across the whole period, <strong>no</strong> publication joined two or more LMICs, against
+        <strong>${d3.format(",")(hi.multi_country)}</strong> joining two or more high-income countries. ${tail}`;
+    }
+  }
+
+  function renderBlocConcentration() {
+    const host = document.getElementById("bloc-concentration");
+    const blocs = DATA.bloc_concentration;
+    if (!host || !blocs || !blocs.length) return;
+
+    const colors = { "High income": DIV_POS, "Non-high income": DIV_NEG };
+    const metrics = [
+      { key: "gini", label: "Gini of output", fmt: (v) => v.toFixed(3) },
+      { key: "top1_pct", label: "Top country", fmt: (v, b) => `${v}%`, sub: (b) => b.top1_economy },
+      { key: "top3_pct", label: "Top 3 countries", fmt: (v) => `${v}%` },
+      { key: "countries", label: "Countries contributing", fmt: (v) => d3.format(",")(v) },
+    ];
+
+    host.innerHTML = blocs.map((b) => `
+      <div class="bloc-card">
+        <p class="bloc-title"><span class="swatch" style="background:${colors[b.bloc] || SEQ_ACCENT}"></span>${b.bloc}</p>
+        ${metrics.map((m) => `
+          <div class="bloc-metric">
+            <span class="bloc-metric-label">${m.label}</span>
+            <span class="bloc-metric-value">${m.fmt(b[m.key], b)}${m.sub ? `<span class="bloc-metric-sub">${m.sub(b)}</span>` : ""}</span>
+          </div>`).join("")}
+      </div>`).join("");
+  }
+
+  function renderConcentrationTimeSeries() {
+    const rows = DATA.concentration_timeseries;
+    if (!rows || !rows.length) return;
+
+    // Fit the axis to the data, padded, and clamped to the index's own [0,1]
+    // bounds -- these series move by hundredths, which a zero-anchored axis
+    // flattens into a straight line.
+    const fitDomain = (keys, pad = 0.04) => {
+      const vals = rows.flatMap((r) => keys.map((k) => r[k])).filter((v) => v !== null && v !== undefined && !Number.isNaN(v));
+      if (!vals.length) return undefined;
+      return [Math.max(0, d3.min(vals) - pad), Math.min(1, d3.max(vals) + pad)];
+    };
+
+    drawTsChart("chart-ts-gini", [
+      { key: "gini_high_income", label: "High income", color: DIV_POS, axis: "left" },
+      { key: "gini_non_high_income", label: "Non-high income", color: DIV_NEG, axis: "left" },
+    ], {
+      rows, leftFormat: (d) => d.toFixed(2), legendId: "ts-legend-gini",
+      yDomain: fitDomain(["gini_high_income", "gini_non_high_income"]),
+    });
+
+    drawTsChart("chart-ts-centralisation", [
+      { key: "freeman_centralisation", label: "Freeman centralisation", color: SEQ_ACCENT, axis: "left" },
+    ], {
+      rows, leftFormat: (d) => d.toFixed(2), legendId: "ts-legend-centralisation",
+      yDomain: fitDomain(["freeman_centralisation"]),
+    });
+  }
+
+  function renderConcentration() {
+    // A page can carry the panel markup before its data.js has been
+    // regenerated with these keys. Hide the whole section in that case rather
+    // than leaving empty headings above blank charts.
+    const panel = document.getElementById("panel-concentration");
+    const ready = !!(DATA.collaboration_topology && DATA.bloc_concentration && DATA.concentration_timeseries);
+    if (panel) panel.style.display = ready ? "" : "none";
+    if (!ready) return;
+
+    renderTopologyChart();
+    renderBlocConcentration();
+    renderConcentrationTimeSeries();
   }
 
   // ---------------------------------------------------------------------
@@ -1095,6 +1279,7 @@
     renderTrendCharts();
     renderEquityChart();
     renderUpsetChart();
+    renderConcentration();
     renderNetworkTimeSeries();
     renderCentralityDistributions();
     renderBumpCharts();
@@ -1126,6 +1311,7 @@
     renderTrendCharts();
     renderEquityChart();
     renderUpsetChart();
+    renderConcentration();
     updateNetworkVariantLabel();
     renderNetworkTimeSeries();
     renderCentralityDistributions();
@@ -1139,6 +1325,7 @@
         renderTrendCharts();
         renderEquityChart();
         renderUpsetChart();
+        renderConcentration();
         renderNetworkTimeSeries();
         renderCentralityDistributions();
         renderBumpCharts();

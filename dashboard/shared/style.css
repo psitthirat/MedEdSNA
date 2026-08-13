@@ -453,6 +453,50 @@ select {
 .sm-card { text-align: center; }
 .sm-card .sm-title { font-size: 12px; color: var(--text-secondary); margin: 6px 0 0; }
 
+/* Sub-heading inside a panel that carries more than one view */
+.panel .sub-head {
+  font-size: 14px; font-weight: 600; color: var(--text-primary);
+  margin: 30px 0 6px; padding-top: 20px;
+  border-top: 1px solid var(--border-hairline);
+}
+.panel .sub-head:first-of-type { margin-top: 6px; padding-top: 0; border-top: 0; }
+
+/* Concentration panel: collaboration topology + within-bloc inequality.
+   Only the palli page mounts these; the styles are harmless elsewhere. */
+.topo-label { fill: var(--text-primary); font-size: 12.5px; font-weight: 600; }
+.topo-sublabel { fill: var(--text-muted); font-size: 10.5px; }
+.topo-value { fill: var(--text-primary); font-size: 12.5px; font-weight: 600; }
+.topo-note {
+  color: var(--text-secondary); font-size: 13px; line-height: 1.55;
+  margin: 14px 0 0; max-width: 78ch;
+}
+.topo-note strong { color: var(--text-primary); }
+
+.bloc-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
+.bloc-card {
+  border: 1px solid var(--border-hairline);
+  border-radius: 10px;
+  padding: 14px 16px;
+  background: var(--surface-glass);
+}
+.bloc-title {
+  display: flex; align-items: center; gap: 8px;
+  font-size: 13px; font-weight: 600; color: var(--text-primary);
+  margin: 0 0 10px;
+}
+.bloc-title .swatch { width: 10px; height: 10px; border-radius: 2px; flex-shrink: 0; }
+.bloc-metric {
+  display: flex; align-items: baseline; justify-content: space-between; gap: 12px;
+  padding: 6px 0;
+  border-top: 1px solid var(--border-hairline);
+}
+.bloc-metric-label { font-size: 12px; color: var(--text-secondary); }
+.bloc-metric-value {
+  font-size: 15px; font-weight: 600; color: var(--text-primary);
+  font-variant-numeric: tabular-nums; text-align: right;
+}
+.bloc-metric-sub { display: block; font-size: 10.5px; font-weight: 400; color: var(--text-muted); }
+
 .ts-card h3 { font-size: 12.5px; font-weight: 600; color: var(--text-secondary); margin: 0 0 4px; text-align: left; }
 .ts-legend { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-top: 2px; }
 .ts-legend .legend-item { font-size: 10.5px; }
