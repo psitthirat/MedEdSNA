@@ -2,7 +2,8 @@
 Export precomputed dashboard data for one field.
 
 Reproduces the aggregations built in each field's `fields/<field>/pipeline.ipynb`
-(Section 3: Country-level Analysis) and writes them to a per-field JS file
+(sections 3-5: country-level analysis, co-authorship network, and
+concentration) and writes them to a per-field JS file
 (`dashboard/<field>/data.js`) that assigns the payload to
 `window.DASHBOARD_DATA`, plus a simplified world boundary file shared by every
 field (`dashboard/shared/world.js` -> `window.WORLD_GEOJSON`, identical
@@ -39,6 +40,15 @@ LATEST_FULL_YEAR = 2025            # 2026 is a partial year in the source data
 TOP_N_BUMP = 10
 BUMP_START_YEAR = 2020             # rank-trajectory bump charts start here, not at the network's true first year
 
+# World Bank economies whose ISO3 code has no Natural Earth ADM0_A3 match, so
+# the crosswalk below would leave them with a NaN ISO_A2_EH. See the comment at
+# the merge for why a NaN there is not merely a missing label but a data bug.
+ISO2_PATCH = {
+    "BHS": "BS", "CHI": "JE", "COG": "CG", "CPV": "CV", "CUW": "CW",
+    "CZE": "CZ", "GNB": "GW", "MAC": "MO", "MKD": "MK", "SSD": "SS",
+    "STP": "ST", "SWZ": "SZ", "TZA": "TZ", "VIR": "VI", "XKX": "XK",
+}
+
 INCOME_COLORS = {
     "High income": "#4C9F70",
     "Upper middle income": "#D9A441",
@@ -50,6 +60,21 @@ INCOME_COLORS = {
 
 def to_records(df):
     return json.loads(df.to_json(orient="records"))
+
+
+def gini(values):
+    """Gini coefficient of a 1-D array of non-negative values.
+
+    Used instead of the small-world coefficient to answer "is production
+    distributed?": sigma is confounded by density and reads a star topology --
+    maximal centralisation -- as low, so it cannot separate an equitable
+    network from a hub-dominated one.
+    """
+    x = np.sort(np.asarray(values, dtype=float))
+    n = len(x)
+    if n == 0 or x.sum() == 0:
+        return None
+    return float((2 * np.sum(np.arange(1, n + 1) * x) / (n * x.sum())) - (n + 1) / n)
 
 
 def main(field):
@@ -70,12 +95,24 @@ def main(field):
     income_gr = income_gr.merge(
         world[["ADM0_A3", "FIRST_OFFI", "ISO_A2_EH"]], how="left", left_on="Code", right_on="ADM0_A3"
     )
+    # pandas joins NaN to NaN on a merge key. Without this, every authorship row
+    # whose country code never resolved would match all 15 unmatched economies
+    # and be duplicated once per spurious income group -- which inflated the
+    # low-income series roughly threefold. Patch the codes we can recover, then
+    # drop the rest so the key is unique and non-null before it is joined on.
+    income_gr["ISO_A2_EH"] = income_gr["ISO_A2_EH"].fillna(income_gr["Code"].map(ISO2_PATCH))
+    income_gr = income_gr.dropna(subset=["ISO_A2_EH"]).drop_duplicates("ISO_A2_EH")
 
     df = authorships_df.merge(
         income_gr[["ISO_A2_EH", "Income group", "Region", "Economy"]],
         how="left", left_on="institution_country_code", right_on="ISO_A2_EH",
     )
-    df = df.merge(world[["ISO_A2_EH", "FIRST_OFFI"]].drop_duplicates("ISO_A2_EH"), how="left", on="ISO_A2_EH")
+    df = df.merge(
+        world[["ISO_A2_EH", "FIRST_OFFI"]].dropna(subset=["ISO_A2_EH"]).drop_duplicates("ISO_A2_EH"),
+        how="left", on="ISO_A2_EH",
+    )
+    # These merges are lookups, not joins -- they must never change the row count.
+    assert len(df) == len(authorships_df), "income/language merge duplicated authorship rows"
     df = df.merge(
         works_df[["work_id", "publication_year", "journal_name"]].drop_duplicates("work_id"),
         how="left", on="work_id", suffixes=("", "_w"),
@@ -186,7 +223,55 @@ def main(field):
     payload["upset_combinations"] = to_records(combo_counts)
 
     # ------------------------------------------------------------------
-    # 6. Country-level co-authorship network (cumulative, all years)
+    # 6. Collaboration topology + within-bloc concentration
+    #
+    #    The equity buckets above count a "Developing only" work the same
+    #    whether it joined four countries or none. Splitting each bucket by
+    #    country spread separates South-South *collaboration* from parallel
+    #    domestic production, and comparing concentration inside each bloc
+    #    tests whether the non-high-income bloc is any more evenly
+    #    distributed than the one it is usually contrasted with.
+    # ------------------------------------------------------------------
+    print("Building collaboration topology + bloc concentration...")
+    topo = work_income[work_income["bucket"] != "Unclassified"].copy()
+    topo["is_multi"] = topo["n_countries"] > 1
+    topology = (
+        topo.groupby("bucket")
+        .agg(works=("is_multi", "size"), multi_country=("is_multi", "sum"))
+        .reset_index()
+    )
+    topology["single_country"] = topology["works"] - topology["multi_country"]
+    topology["multi_country_pct"] = (100 * topology["multi_country"] / topology["works"]).round(1)
+    payload["collaboration_topology"] = {
+        "buckets": to_records(topology),
+        "total_works": int(len(topo)),
+    }
+
+    economy_of = country_meta.set_index("ISO_A2_EH")["Economy"]
+    bloc_masks = {
+        "High income": df["Income group"] == "High income",
+        "Non-high income": df["Income group"].notna() & (df["Income group"] != "High income"),
+    }
+    bloc_rows = []
+    for label, mask in bloc_masks.items():
+        counts = df[mask].groupby("ISO_A2_EH")["work_id"].nunique().sort_values(ascending=False)
+        if counts.empty:
+            continue
+        bloc_rows.append({
+            "bloc": label,
+            "countries": int(len(counts)),
+            "works": int(counts.sum()),
+            "top1_code": counts.index[0],
+            "top1_economy": economy_of.get(counts.index[0], counts.index[0]),
+            "top1_pct": round(100 * counts.iloc[0] / counts.sum(), 1),
+            "top3_pct": round(100 * counts.head(3).sum() / counts.sum(), 1),
+            "top5_pct": round(100 * counts.head(5).sum() / counts.sum(), 1),
+            "gini": round(gini(counts.values), 3),
+        })
+    payload["bloc_concentration"] = bloc_rows
+
+    # ------------------------------------------------------------------
+    # 7. Country-level co-authorship network (cumulative, all years)
     # ------------------------------------------------------------------
     print("Building co-authorship network (this runs centrality + community detection, may take a bit)...")
     df_net = df
@@ -246,7 +331,7 @@ def main(field):
     payload["network_early_period"] = build_network_payload(df_early_full, "early-period network (2015-2019)")
 
     # ------------------------------------------------------------------
-    # 7. Network structure over time + rank trajectories: cumulative
+    # 8. Network structure over time + rank trajectories: cumulative
     #    network rebuilt through each year from the first year to the
     #    last (mirrors the notebook's year-by-year G_all accumulation).
     #    One pass builds both the graph-level stat time series and the
@@ -259,6 +344,7 @@ def main(field):
 
     yearly_rows = []
     rank_rows = []
+    concentration_rows = []
     for y in range(first_year, last_year + 1):
         df_cum = df_net[df_net["publication_year"].between(first_year, y)]
         G_cum = network.network_coauthorship(df_cum, "institution_country_code", node_label=["Region", "Income group"])
@@ -280,13 +366,42 @@ def main(field):
                 "closeness": cls.get(country),
             })
 
+        # Freeman degree centralisation, on a COPY that also carries countries
+        # publishing only domestically. network_coauthorship creates nodes from
+        # edges, so those countries are absent from G_cum -- leaving them out
+        # would hide exactly the periphery a centralisation measure is for.
+        # The copy keeps G_cum itself untouched for the stats/centrality above.
+        if y <= LATEST_FULL_YEAR:  # a partial year would read as a collapse
+            G_with_isolates = G_cum.copy()
+            G_with_isolates.add_nodes_from(df_cum["institution_country_code"].dropna().unique())
+            degrees = np.array([d for _, d in G_with_isolates.degree()])
+            n_nodes = len(degrees)
+
+            df_year = df_net[df_net["publication_year"] == y]
+            nonhic = df_year[df_year["Income group"].notna() & (df_year["Income group"] != "High income")]
+            hic = df_year[df_year["Income group"] == "High income"]
+
+            def works_per_country(d):
+                return d.groupby("institution_country_code")["work_id"].nunique().values
+
+            concentration_rows.append({
+                "year": y,
+                "countries": int(n_nodes),
+                "freeman_centralisation": round(float((degrees.max() - degrees).sum() / ((n_nodes - 1) * (n_nodes - 2))), 3) if n_nodes > 2 else None,
+                "gini_all_cumulative": round(gini(works_per_country(df_cum)), 3),
+                "gini_non_high_income": round(gini(works_per_country(nonhic)), 3),
+                "gini_high_income": round(gini(works_per_country(hic)), 3),
+            })
+
         print(f"  {y}: {G_cum.number_of_nodes()} nodes, {G_cum.number_of_edges()} edges")
+
+    payload["concentration_timeseries"] = concentration_rows
 
     yearly_stats_df = pd.concat(yearly_rows, ignore_index=True)
     payload["network_yearly_stats"] = json.loads(yearly_stats_df.to_json(orient="records"))
 
     # ------------------------------------------------------------------
-    # 8. Rank-trajectory bump charts: each top-10 country's rank across
+    # 9. Rank-trajectory bump charts: each top-10 country's rank across
     #    every year from first to last (a full rise/fall trajectory, not
     #    just a two-point before/after comparison).
     # ------------------------------------------------------------------
